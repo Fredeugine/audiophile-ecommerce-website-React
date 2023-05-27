@@ -1,0 +1,811 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/Manrope-VariableFont_wght.woff2') format('woff2');
+    /* Add additional font formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+}
+*{
+
+}
+@media screen and (max-width: 431px) {
+    .buttonsDiv{
+        background-color: black;
+        width: 385px;
+        height: auto;
+    }
+
+    body {
+        background-color: white;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+    }
+
+    .topButtons {
+        width: 327px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .topButtonsDiv {
+        height: 58px;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .xx99Div{
+        background-color: #181818;
+        height: 532px;
+        width: 385px;
+    }
+    .xx99Divs {
+        display: flex;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        max-width: 400px;
+    }
+
+
+    .xx99 {
+        position: absolute;
+        top: 70px;
+        height: 520px;
+        max-width: 385px;
+    }
+
+    .xx99Inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        gap: 2.5rem;
+        width: 300px;
+        height: 275px;
+        top: 218px;
+        left: 9.5%;
+        text-align: center;
+    }
+
+    .np {
+        position: absolute;
+        height: 19px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        opacity: 0.69;
+    }
+
+    .mk2 {
+        margin-top: 4px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 1.28571px;
+    }
+
+    .mk2Des {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.75;
+    }
+
+    .seePr {
+        margin-left: -6px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #D87D4A;
+        position: absolute;
+        left: 25.61%;
+        right: 25.61%;
+        top: 83.45%;
+        width: 160px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .sec2 {
+
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .soundDevices {
+        font-weight: 700;
+        position: relative;
+        width: 327px;
+        height: 683px;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        color: black;
+        z-index: 4;
+        justify-content: flex-end;
+    }
+
+
+    .posImg {
+
+    }
+
+    .earphonesDiv, .speakersDiv, .headphonesDiv {
+        width: 327px;
+        height: 165px;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        gap: 17px;
+    }
+
+    .proT {
+        height: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        text-transform: uppercase;
+        margin-top: 36px;
+    }
+
+    .shop {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 57.32px;
+        height: 18px;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .shopFnt {
+        opacity: 0.5;
+    }
+
+    .hd, .hdMenu, .spk, .spkMenu, .ear, .earMenu {
+        position: absolute;
+    }
+
+    .hd {
+        top: 5%;
+        left: 38%;
+        width: 84px;
+        height: 101px;
+        z-index: 0;
+    }
+    .hdMenu{
+        top: -2%;
+        left: 38%;
+        width: 84px;
+        height: 101px;
+        z-index: 0;
+    }
+
+    .spk {
+        top: 37%;
+        left: 38%;
+        width: 80px;
+        height: 104px;
+    }
+    .spkMenu{
+        top: 30%;
+        left: 38%;
+        width: 80px;
+        height: 104px;
+    }
+
+    .ear {
+        left: 34%;
+        top: 70%;
+        width: 103px;
+        height: 104px;
+    }
+    .earMenu{
+        left: 34%;
+        top: 63%;
+        width: 103px;
+        height: 104px;
+    }
+
+    .zx9Div {
+        display: flex;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        width: 327px;
+        height: 600px;
+        background: #D87D4A;
+        border-radius: 8px;
+        border: 1px solid;
+        padding-left: 5px;
+        padding-right: 3px;
+    }
+
+    /*circles creation*/
+    .container {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border: none;
+        margin-top: -3px;
+        padding: 0;
+    }
+
+    .outer-circle {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 322px;
+        height: 322px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    .inner-circle {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    .spk2 {
+        position: absolute;
+        width: 172px;
+        height: 207px;
+        left: 19%;
+        top: 13.6%;
+    }
+
+    .zx9Text {
+        position: absolute;
+        height: 80px;
+        width: 280px;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+        top: 43.5%;
+        left: 6%;
+    }
+
+    .zx9TextP {
+        position: absolute;
+        width: 280px;
+        height: 75px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        opacity: 0.75;
+        top: 62%;
+        left: 6%;
+    }
+
+    .zx9Div > button {
+        background-color: black;
+        margin-top: -20px;
+    }
+
+    .zx7Div {
+        display: flex;
+        position: relative;
+        width: 327px;
+        height: 320px;
+        background-image: url("assets/home/mobile/image-speaker-zx7.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+
+    .zx7DivInner {
+        width: 204px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 22%;
+        left: 9%;
+    }
+
+    .zx7text, .yx1DivInner2Text {
+        z-index: 345354;
+        width: 202px;
+        height: 38px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .zx7DivInner > button, .yx1DivInner2Inner > button {
+        position: static;
+        background-color: transparent;
+        color: black;
+        margin-left: 1px;
+    }
+
+    .yx1Div {
+        display: flex;
+        width: 327px;
+        height: 424px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .yx1DivInner1 {
+        background-image: url("assets/home/mobile/image-earphones-yx1.jpg");
+        background-size: cover;
+        border-radius: 8px;
+        width: 327px;
+        height: 200px;
+    }
+
+    .yx1DivInner2 {
+        position: relative;
+        color: black;
+        width: 327px;
+        height: 200px;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+
+    }
+
+    .yx1DivInner2Inner {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 247px;
+        height: 118px;
+        left: 12.5%;
+        top: 20%;
+        justify-content: space-between;
+    }
+
+    .yx1DivInner2Inner > span {
+        width: 245px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    .footerSec1{
+        width: 327px;
+        height: 698px;
+        padding: 24px;
+
+    }
+
+    .manImage {
+        width: 327px;
+        height: 300px;
+        background-image: url("assets/shared/mobile/image-best-gear.jpg");
+        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    .footerSec1Inner2 {
+        width: 327px;
+        height: 76px;
+        position: absolute;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .footerSec1Inner2 > span{
+        color: #D87D4A;
+    }
+    .footerSec1Inner3{
+        margin-top: 132px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.5;
+    }
+    .footerSec2{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        width: 100%;
+        height: 654px;
+        padding-bottom: 20px;
+    }
+    .footerSec2 > span{
+        background: #D87D4A;
+        width: 101px;
+        height: 12px;
+    }
+    .footerSec2Inner2{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        width: 108px;
+        height: 148px;
+    }
+    .footerSec2 > p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        opacity: 0.5;
+        width: 327px;
+        height: 150px;
+    }
+    .footerSec2P2{
+        font-weight: 700;
+        width: 258px;
+        height: 25px;
+    }
+    .SocialMediaLinks{
+        width: 104px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hh{
+        height: 90px;
+        background-color: black;
+        display: flex;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+    }
+    .xx99Div2{
+        display: flex;
+        margin-top: 64px;
+        margin-left: 24px;
+        flex-direction: column;
+        justify-content:  space-between;
+        background: white;
+        position: relative;
+        width: 327px;
+        height: 724px;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    .xx99Opc{
+        opacity: 20%;
+    }
+    .xx992{
+        width: 327px;
+        height: 352px;
+    }
+    .xx992Inner2{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 327px;
+        height: 340px;
+    }
+    .np{
+        height: 19px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #D87D4A;
+
+    }
+    .xx99Name {
+        margin-top: 44px;
+        height: 76px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .xx992Inner2Text{
+        justify-content: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        width: 327px;
+        height: 125px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    .xx992Inner2 > button{
+        margin-top: 8px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menuOfHam{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        z-index: 5;
+        background-color: white;
+        width: 375px;
+        height: 750px;
+    }
+    .xx992Div2Spk{
+        display: flex;
+    }
+    .xx99Div2Hear {
+        display: flex;
+    }
+    .sec2Opc{
+        background-color:  #d9d9d9;
+        opacity: 20%;
+        padding: 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    a{
+        color: black;
+    }
+    .None{
+        display: none;
+    }
+    .nn{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .hamburg{
+        transform: rotate(90deg);
+    }
+    .xx99Div2x{
+        opacity: 20%;
+    }
+    .xx99Div2P{
+        display: flex;
+        margin-top: 64px;
+        margin-left: 24px;
+        flex-direction: column;
+        justify-content:  space-between;
+        background: white;
+        position: relative;
+        width: 327px;
+        height: 724px;
+        text-align: left;
+        margin-bottom: 2770px;
+        font-style: normal;
+        color: #000000;
+    }
+    .xx992Inner2P{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 327px;
+    }
+    .xx992Inner2TextP{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: left;
+        width: 327px;
+        height: 125px;
+        opacity: 0.5;
+    }
+    .price{
+        width: 73px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+
+    }
+    .spCa{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+        height: 48px;
+
+    }
+    .plusAndMinus{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 48px;
+        background: #F1F1F1;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+    .seePrP{
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #D87D4A;
+        width: 160px;
+        height: 48px;
+        cursor: pointer;
+    }
+    .add,.subtr{
+        opacity: 0.25;
+    }
+    .add{
+        position: absolute;
+        left: 15px;
+    }
+    .subtr{
+        position: absolute;
+        right: 15px;
+    }
+    .fea{
+        width: 327px;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.857143px;
+        text-transform: uppercase;
+
+    }
+    .feaText{
+        width: 327px;
+        height: 475px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.5;
+    }
+    .lists{
+        position: relative;
+        margin-bottom: 88px;
+
+    }
+    .oList{
+
+    }
+    .listsInner{
+        position: relative;
+        left: -40px;
+        display: inline-flex;
+        gap: 24px;
+        height: 25px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+
+    }
+    .orr{
+        color: #D87D4A;
+        opacity: 100%;
+
+    }
+    .ll{
+        opacity: 0.5;
+    }
+    .btPics{
+        width: 327px;
+        height: 756px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 120px;
+    }
+    .Pic1{
+        width: 327px;
+        border-radius: 8px;
+    }
+    .simPr > span{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .btmSec{
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
+    .btmDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .btmPic3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        height: 120px;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+    }
+    .btmPic3 > img{
+        width: 71.56px;
+        height: 86px;
+    }
+    .btmInn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 177px;
+        height: 113px;
+    }
+    .btmInn > span{
+        text-align: center;
+    }
+    .btmInn > button{
+        position: static;
+    }
+
+
+
+
+}
