@@ -5,14 +5,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 :root{
     --black: #000000;
     --white: #ffffff;
 }
 *{
-
 }
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 431px){
     .buttonsDiv{
         background-color: black;
         width: 385px;
@@ -102,6 +102,7 @@
     }
 
     .seePr {
+        transition: transform 0.2s;
         margin-left: -6px;
         font-weight: 700;
         font-size: 13px;
@@ -115,7 +116,14 @@
         top: 83.45%;
         width: 160px;
         height: 48px;
+        border: 2px solid  rgba(0, 0, 0, 0.5);
         cursor: pointer;
+        transform: scale(1);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .seePr:hover{
+        transform: scale(103.4%);
     }
 
     .sec2 {
@@ -167,7 +175,22 @@
         text-transform: uppercase;
         margin-top: 36px;
     }
-
+    .shop{
+        transition: transform 0.5s unset;
+        transform: scale(1);
+        cursor: pointer;
+    }
+    .shop:hover{
+        transform: scale(105.4%);
+    }
+    .add,.subtr{
+        transition: transform 0.5s unset;
+        transform: scale(1);
+        cursor: pointer;
+    }
+    .add:hover,.subtr:hover{
+        transform: scale(120%);
+    }
     .shop {
         display: inline-flex;
         justify-content: space-between;
@@ -178,7 +201,9 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         cursor: pointer;
+
     }
+
 
     .shopFnt {
         opacity: 0.5;
@@ -573,8 +598,12 @@
     .xx992Inner2 > button{
         margin-top: 8px;
     }
-    .hamburger {
-        display: flex;
+    .hamburg{
+        transform: rotate(90deg);
+    }
+    .hamburg,.hamburger{
+        transition: transform 0.4s ease;
+
     }
     .menuOfHam{
         position: absolute;
@@ -611,9 +640,7 @@
         flex-direction: column;
         gap: 24px;
     }
-    .hamburg{
-        transform: rotate(90deg);
-    }
+
     .xx99Div2x{
         opacity: 20%;
     }
@@ -682,6 +709,7 @@
 
     }
     .seePrP{
+        transition: transform 0.2s;
         font-weight: 700;
         font-size: 13px;
         line-height: 18px;
@@ -691,17 +719,33 @@
         width: 160px;
         height: 48px;
         cursor: pointer;
+        transform: scale(1);
+        border-radius: 8px;
+        border: 2px solid rgb(0,0,0,0.6);
+    }
+    .cartBtn{
+        position: relative;
+    }
+    .cartNum{
+        position: absolute;
+        top: -2px;
+        color: #D87D4A;
+        font-size: 10px;
+    }
+    .seePrP:hover{
+        transform: scale(104.4%);
     }
     .add,.subtr{
-        opacity: 0.25;
+        opacity: 0.35;
     }
     .add{
         position: absolute;
-        left: 15px;
+        right: 15px;
     }
     .subtr{
         position: absolute;
-        right: 15px;
+        left: 15px;
+
     }
     .fea{
         width: 327px;

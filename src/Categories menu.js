@@ -1,9 +1,6 @@
-import React, {useState} from "react";
 import './App.css';
-import { Link } from 'react-router-dom';
-const DivNone = document.querySelector('.nn')
 
-const buttonsDiv = document.querySelector('.buttonsDiv')
+
 
 
 export function CategoriesMenu(props) {
@@ -86,6 +83,18 @@ export function DeviceSection(props){
 
     return(
         <div className={props.prop4}>
+             <button className='HomeBtn' onClick={()=>{
+                 props.spkTP(false)
+                 props.setIsVisible2(false)
+                 props.earCatt(false)
+                 props.setHDTF(false)
+                 props.setP(false)
+                 props.setM(false)
+                 props.set599(false)
+                 props.setzx9(false)
+                 props.setzx7(false)
+                 props.setearP(false)
+             }}>Home</button>
             <div>
                 <img
                     className="xx992"
@@ -134,49 +143,60 @@ DeviceSection.defaultProps = {
 };
 
 
-export function ProductsSection({prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+
+    function cartCalc(){
+            setCartInc(cartInc + 1)
+    }
+    function subCalc(){
+        setCartInc(cartInc - 1)
+    }
+    function addToCart(){
+        setcartNumm(cartInc)
+    }
+
     return(
         <div className={prop4}>
-            <div>
-                <button className={'hdBack'} onClick={()=>{
-                    if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
-                        setIsVisible2(false)
-                        setHDTF(true)
-                        spkTP(false)
-                        earCatt(false)
-                        setP(false)
-                        setM(false)
-                        set599(false)
-                        setzx9(false)
-                        setzx7(false)
-                        setearP(false)
+            <button className={'hdBack'} onClick={()=>{
+                if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
+                    setIsVisible2(false)
+                    setHDTF(true)
+                    spkTP(false)
+                    earCatt(false)
+                    setP(false)
+                    setM(false)
+                    set599(false)
+                    setzx9(false)
+                    setzx7(false)
+                    setearP(false)
 
-                    }
-                    if (prop5 === '$ 4,500' || prop5 === '$ 3,500') {
-                        spkTP(true)
-                        setIsVisible2(false)
-                        earCatt(false)
-                        setHDTF(true)
-                        setP(false)
-                        setM(false)
-                        set599(false)
-                        setzx9(false)
-                        setzx7(false)
-                        setearP(false)
-                    }
-                    if (prop5 === '$ 599') {
-                        setHDTF(true)
-                        earCatt(true)
-                       spkTP(false)
-                        setIsVisible2(false)
-                        setP(false)
-                       setM(false)
-                       set599(false)
-                        setzx9(false)
-                       setzx7(false)
-                        setearP(false)
-                    }
-                }}>Back</button>
+                }
+                if (prop5 === '$ 4,500' || prop5 === '$ 3,500') {
+                    spkTP(true)
+                    setIsVisible2(false)
+                    earCatt(false)
+                    setHDTF(true)
+                    setP(false)
+                    setM(false)
+                    set599(false)
+                    setzx9(false)
+                    setzx7(false)
+                    setearP(false)
+                }
+                if (prop5 === '$ 599') {
+                    setHDTF(true)
+                    earCatt(true)
+                    spkTP(false)
+                    setIsVisible2(false)
+                    setP(false)
+                    setM(false)
+                    set599(false)
+                    setzx9(false)
+                    setzx7(false)
+                    setearP(false)
+                }
+            }}>Back</button>
+            <div>
                 <img
                     className="xx992"
                     src={prop1}
@@ -190,11 +210,11 @@ export function ProductsSection({prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8
                 <span className='price'>{prop5}</span>
                 <div className='spCa'>
                     <span className='plusAndMinus'>
-                        <span className='subtr'>-</span>
-                        1
-                        <span className='add'>+</span>
+                        <span className='subtr' onClick={subCalc}>-</span>
+                        <span className='cartCount'>{cartInc}</span>
+                        <span className='add' onClick={cartCalc}>+</span>
                     </span>
-                    <button className="seePrP">ADD TO CART</button>
+                    <button className="seePrP" onClick={addToCart}>ADD TO CART</button>
 
                 </div>
                 <div className='fea'>Features</div>

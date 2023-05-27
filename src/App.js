@@ -5,8 +5,7 @@ import {DeviceSection} from "./Categories menu";
 import {ProductsSection} from "./Categories menu";
 
 import {useState} from "react";
-const xx99Div2 = document.querySelector('.xx99Div2')
-const hpHeading = document.querySelector('.hh')
+
 
 export function App() {
     const [isVisible, setIsVisible] = useState(false);
@@ -19,6 +18,9 @@ export function App() {
     const [xzx9, setZx9] = useState(false);
     const [xzx7, setZx7] = useState(false);
     const [earP, setEarP] = useState(false);
+    const [cartIncr, setCartInc] = useState(0);
+    const [addC, setaddC] = useState(false);
+    const [cartNum, setcartNum] = useState(false);
 
     function handleClick() {
         setIsVisible(function (prevState){
@@ -49,7 +51,7 @@ export function App() {
         <span>
           {" "}
             <img
-                className={isVisible ? 'hamburg' : null}
+                className={isVisible ? 'hamburg' : 'hamburger'}
                 onClick={handleClick}
                 alt="icon-hamburger"
                 src={"assets/shared/tablet/icon-hamburger.svg"}
@@ -60,7 +62,8 @@ export function App() {
           <img className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg" />
         </span>
                         <span>
-          <img alt="Cart button" src="assets/shared/desktop/icon-cart.svg" />
+          <img className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg" />
+                            <span className='cartNum'>{cartNum}</span>
         </span>
                     </div>
                 </div>
@@ -68,9 +71,12 @@ export function App() {
                     {spkCat ? 'Speakers': '' || earCat ? 'Earphones' : ''|| hdTF ? 'headphones': ''}
                 </span>
             </div>
+            <div>
             <ProductsSection
+                setcartNumm={setcartNum}
+                cartInc = {cartIncr}
+                setCartInc={setCartInc}
                 setearP = {setEarP}
-                setzx9={setZx9}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
@@ -79,23 +85,26 @@ export function App() {
                 setP={setPrD}
                 setM={setM1}
                 set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop4={!prD ? 'None' : 'xx99Div2P'}
                 prop13='1x'
                 prop14='Travel Bag'
-                setzx7 ={setZx7}
+
             />
             <ProductsSection
+
                 setearP = {setEarP}
-                setzx9={setZx9}
-                setzx7 ={setZx7}
-                setM={setM1}
-                set599={set59}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
                 spkTP ={setSpkCat}
                 earCatt = {setEarCat}
                 setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop1='assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
                 prop2='XX99 Mark I Headphones'
                 prop4={!m1 ? 'None' : 'xx99Div2P'}
@@ -108,17 +117,18 @@ export function App() {
                 prop21='XX99 MARK II'
             />
             <ProductsSection
+
                 setearP = {setEarP}
-                setzx9={setZx9}
-                setzx7 ={setZx7}
-                setM={setM1}
-                set599={set59}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
                 spkTP ={setSpkCat}
                 earCatt = {setEarCat}
                 setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop1='assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                 prop2={(
                 <React.Fragment>
@@ -138,17 +148,18 @@ export function App() {
 
             />
             <ProductsSection
+
                 setearP = {setEarP}
-                setzx7 ={setZx7}
-                setzx9={setZx9}
-                setM={setM1}
-                set599={set59}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
                 spkTP ={setSpkCat}
                 earCatt = {setEarCat}
                 setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop1='assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
@@ -175,16 +186,16 @@ export function App() {
             />
             <ProductsSection
                 setearP = {setEarP}
-                setzx7 ={setZx7}
-                setzx9={setZx9}
-                setM={setM1}
-                set599={set59}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
                 spkTP ={setSpkCat}
                 earCatt = {setEarCat}
                 setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop1='assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
@@ -208,20 +219,19 @@ export function App() {
                 prop25='XX59'
                 prop8='Speaker Unit'
                 prop7='2x'
-
             />
             <ProductsSection
                 setearP = {setEarP}
-                setzx7 ={setZx7}
-                setzx9={setZx9}
-                setM={setM1}
-                set599={set59}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
                 spkTP ={setSpkCat}
                 earCatt = {setEarCat}
                 setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 prop1='assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
@@ -243,11 +253,12 @@ export function App() {
                 prop7='2x'
 
             />
+            </div>
 
 
-            <div className={hdTF || earCat ? 'None' : 'xx99Div' } >
+            <div className={hdTF || earCat ? 'None' : 'xx99Div'} >
 
-                <div className={spkCat ? 'None' : 'xx99Divs'}>
+                <div className={spkCat || prD ? 'None' : 'xx99Divs'}>
                     <img className="xx99" alt="" src="assets/home/mobile/image-header.jpg" />
                     <div className="xx99Inner">
                         <div className="np">
@@ -262,17 +273,42 @@ export function App() {
                                 for the passionate music enthusiast.
                             </p>
                         </div>
-                        <button className="seePr">SEE PRODUCT</button>
+                        <button className="seePr" onClick={()=>{
+                              setPrD(true)
+                            sethdTF(true)
+                        }}>SEE PRODUCT</button>
                     </div>
                 </div>
             </div>
             <div className={isVisible ? 'xx99Opc' : null}>
             <div className={spkCat || earCat || prD || m1 || x59 ? 'None' : null}>
                 <DeviceSection
+                    setearP = {setEarP}
+                    HDTF={hdTF}
+                    setHDTF={sethdTF}
+                    setIsVisible2={setIsVisible}
+                    spkTP ={setSpkCat}
+                    earCatt = {setEarCat}
                     setP={setPrD}
+                    setM={setM1}
+                    set599={set59}
+                    setzx9={setZx9}
+                    setzx7 ={setZx7}
+
                     prop4={hdTF ? 'xx99Div2': 'None' && isVisible ? 'xx99Div2x': 'None'}></DeviceSection>
 
                 <DeviceSection
+                    setearP = {setEarP}
+                    HDTF={hdTF}
+                    setHDTF={sethdTF}
+                    setIsVisible2={setIsVisible}
+                    spkTP ={setSpkCat}
+                    earCatt = {setEarCat}
+                    setP={setPrD}
+                    setM={setM1}
+                    set599={set59}
+                    setzx9={setZx9}
+                    setzx7 ={setZx7}
                     setM11={setM1}
                     prop1='assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
                     prop2='XX99 Mark I Headphones'
@@ -284,7 +320,18 @@ export function App() {
                 ></DeviceSection>
 
                 <DeviceSection
+                    setearP = {setEarP}
+                    HDTF={hdTF}
+                    setHDTF={sethdTF}
+                    setIsVisible2={setIsVisible}
+                    spkTP ={setSpkCat}
+                    earCatt = {setEarCat}
+                    setP={setPrD}
+                    setM={setM1}
                     set599={set59}
+                    setzx9={setZx9}
+                    setzx7 ={setZx7}
+
                     prop1='assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                     prop2={(
                         <React.Fragment>
@@ -300,9 +347,19 @@ export function App() {
             </div>
                 <div className={xzx9 || xzx7 ? 'None': null}>
                     <DeviceSection
-                        setSpk={setSpkCat}
-                        setzx9 = {setZx9}
+                        setearP = {setEarP}
+                        HDTF={hdTF}
                         setHDTF={sethdTF}
+                        setIsVisible2={setIsVisible}
+                        spkTP ={setSpkCat}
+                        earCatt = {setEarCat}
+                        setP={setPrD}
+                        setM={setM1}
+                        set599={set59}
+                        setzx9={setZx9}
+                        setzx7 ={setZx7}
+                        setSpk={setSpkCat}
+
                         prop1='assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                         prop2={(
                             <React.Fragment>
@@ -317,7 +374,18 @@ export function App() {
                     ></DeviceSection>
 
                     <DeviceSection
+                        setearP = {setEarP}
+                        HDTF={hdTF}
+                        setHDTF={sethdTF}
+                        setIsVisible2={setIsVisible}
+                        spkTP ={setSpkCat}
+                        earCatt = {setEarCat}
+                        setP={setPrD}
+                        setM={setM1}
+                        set599={set59}
+                        setzx9={setZx9}
                         setzx7 ={setZx7}
+
                         prop1='assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
                         prop2={(
                             <React.Fragment>
@@ -334,6 +402,17 @@ export function App() {
                 <div className={earP ? 'None' : null}>
                 <DeviceSection
                     setearP = {setEarP}
+                    HDTF={hdTF}
+                    setHDTF={sethdTF}
+                    setIsVisible2={setIsVisible}
+                    spkTP ={setSpkCat}
+                    earCatt = {setEarCat}
+                    setP={setPrD}
+                    setM={setM1}
+                    set599={set59}
+                    setzx9={setZx9}
+                    setzx7 ={setZx7}
+
                     prop1='assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
                     prop2='YX1 WIRELESS EARPHONES'
                     prop3='Tailor your listening experience with bespoke dynamic drivers from the
@@ -351,7 +430,18 @@ export function App() {
             </span>
                             <span className="proT">Headphones</span>
                             <span className="shop">
-              <span className="shopFnt">Shop</span>{" "}
+              <span className="shopFnt" onClick={()=>{
+                 setIsVisible(false)
+                  sethdTF(true)
+                  setSpkCat(false)
+                  setEarCat(false)
+                  setPrD(false)
+                  setM1(false)
+                  set59(false)
+                  setZx9(false)
+                 setZx7(false)
+                 setEarP(false)
+              }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
                         </div>
@@ -361,7 +451,18 @@ export function App() {
             </span>
                             <span className="proT">Speakers</span>
                             <span className="shop">
-              <span className="shopFnt">Shop</span>{" "}
+              <span className="shopFnt" onClick={()=>{
+                  setIsVisible(false)
+                  sethdTF(true)
+                  setSpkCat(true)
+                  setEarCat(false)
+                  setPrD(false)
+                  setM1(false)
+                  set59(false)
+                  setZx9(false)
+                  setZx7(false)
+                  setEarP(false)
+              }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
                         </div>
@@ -371,7 +472,18 @@ export function App() {
             </span>
                             <span className="proT">Earphones</span>
                             <span className="shop">
-              <span className="shopFnt">Shop</span>{" "}
+              <span className="shopFnt" onClick={()=>{
+                  setIsVisible(false)
+                  sethdTF(true)
+                  setSpkCat(false)
+                  setEarCat(true)
+                  setPrD(false)
+                  setM1(false)
+                  set59(false)
+                  setZx9(false)
+                  setZx7(false)
+                  setEarP(false)
+              }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
                         </div>
