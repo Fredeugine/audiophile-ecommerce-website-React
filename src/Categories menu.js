@@ -83,7 +83,7 @@ export function DeviceSection(props){
 
     return(
         <div className={props.prop4}>
-             <button className='HomeBtn' onClick={()=>{
+             <button id='hmBtn' className={props.prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'seePr' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)
                  props.earCatt(false)
@@ -131,6 +131,10 @@ export function DeviceSection(props){
                 <span className="xx992Inner2Text">{props.prop3}</span>
                 <button className="seePr" onClick={()=>{
                     props.setP(true)
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'auto' // Enables smooth scrolling animation
+                    });
                 }} >SEE PRODUCT</button>
             </div>
         </div>
@@ -157,7 +161,7 @@ export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6
 
     return(
         <div className={prop4}>
-            <button className={'hdBack'} onClick={()=>{
+            <button  id='hdBack' className='seePr' onClick={()=>{
                 if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
                     setIsVisible2(false)
                     setHDTF(true)
@@ -195,7 +199,7 @@ export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6
                     setzx7(false)
                     setearP(false)
                 }
-            }}>Back</button>
+            }}><img src='assets/MYSVGS/BackButton.svg'/></button>
             <div>
                 <img
                     className="xx992"
@@ -256,7 +260,12 @@ export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6
                             <span className='btmPic3'> <img src={prop20}/></span>
                             <span className='btmInn'>
                                 <span className='fea'>{prop21}</span>
-                                <button className='seePr'>SEE PRODUCT</button>
+                                <button className='seePr' onClick={()=>{
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'auto' // Enables smooth scrolling animation
+                                    });
+                                }}>SEE PRODUCT</button>
                             </span>
                         </div>
                         <div className='btmDiv'>
@@ -270,7 +279,12 @@ export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6
                             <span className='btmPic3'> <img src={prop24}/></span>
                             <span className='btmInn'>
                                 <span className='fea'>{prop25}</span>
-                                <button className='seePr'>SEE PRODUCT</button>
+                                <button className='seePr' onClick={()=>{
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'auto' // Enables smooth scrolling animation
+                                    });
+                                }}>SEE PRODUCT</button>
                             </span>
                         </div>
                     </div>
@@ -308,6 +322,12 @@ ProductsSection.defaultProps = {
     prop24:'assets/MYSVGS/Mspeaker.svg',
     prop25:'ZX9 SPEAKER'
 };
+export function ScrollUp(){
+    return window.scrollTo({
+        top: 0,
+        behavior: 'auto' // Enables smooth scrolling animation
+    });
+}
 
 
 

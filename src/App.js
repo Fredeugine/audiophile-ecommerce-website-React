@@ -3,6 +3,7 @@ import './App.css';
 import {CategoriesMenu} from "./Categories menu";
 import {DeviceSection} from "./Categories menu";
 import {ProductsSection} from "./Categories menu";
+import {ScrollUp} from "./Categories menu";
 
 import {useState} from "react";
 
@@ -256,7 +257,7 @@ export function App() {
             </div>
 
 
-            <div className={hdTF || earCat ? 'None' : 'xx99Div'} >
+            <div className={hdTF || earCat || xzx9 || xzx7 || earP ? 'None' : 'xx99Div'} >
 
                 <div className={spkCat || prD ? 'None' : 'xx99Divs'}>
                     <img className="xx99" alt="" src="assets/home/mobile/image-header.jpg" />
@@ -441,6 +442,10 @@ export function App() {
                   setZx9(false)
                  setZx7(false)
                  setEarP(false)
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'auto' // Enables smooth scrolling animation
+                  });
               }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
@@ -462,6 +467,10 @@ export function App() {
                   setZx9(false)
                   setZx7(false)
                   setEarP(false)
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'auto' // Enables smooth scrolling animation
+                  });
               }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
@@ -483,18 +492,22 @@ export function App() {
                   setZx9(false)
                   setZx7(false)
                   setEarP(false)
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'auto' // Enables smooth scrolling animation
+                  });
               }}>Shop</span>{" "}
                                 <img src="assets/MYSVGS/rightarr.svg" />
             </span>
                         </div>
                     </div>
 
-                    <div className={hdTF ? 'None' : 'nn'}>
+                    <div className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'nn'}>
                         <div className='zx9Div'>
                             <div className="container">
                                 <div className="outer-circle" />
                                 <div className="inner-circle">
-                                    <img className="spk2" src="assets/MYSVGS/Mspeaker.svg" />
+                                    <img className="spk2" src="assets/MYSVGS/Mspeaker.svg"/>
                                 </div>
                             </div>
                             <p className="zx9Text">
@@ -506,12 +519,24 @@ export function App() {
                                 Upgrade to premium speakers that are phenomenally built to deliver truly
                                 remarkable sound.
                             </p>
-                            <button className="seePr">SEE PRODUCT</button>
+                            <button className="seePr" onClick={()=>{
+                                setZx9(true)
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'auto' // Enables smooth scrolling animation
+                                });
+                            }}>SEE PRODUCT</button>
                         </div>
                         <div className="zx7Div">
                             <div className="zx7DivInner">
                                 <p className="zx7text">ZX7 speaker</p>
-                                <button className="seePr">SEE PRODUCT</button>
+                                <button className="seePr" onClick={()=>{
+                                    setZx7(true)
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'auto' // Enables smooth scrolling animation
+                                    });
+                                }}>SEE PRODUCT</button>
                             </div>
                         </div>
                         <div className="yx1Div">
@@ -519,7 +544,13 @@ export function App() {
                             <div className="yx1DivInner2">
                                 <div className="yx1DivInner2Inner">
                                     <span className="yx1DivInner2Text">YX1 earphones</span>
-                                    <button className="seePr">SEE PRODUCT</button>
+                                    <button className="seePr" onClick={()=>{
+                                        setEarP(true)
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: 'auto' // Enables smooth scrolling animation
+                                        });
+                                    }}>SEE PRODUCT</button>
                                 </div>
                             </div>
                         </div>

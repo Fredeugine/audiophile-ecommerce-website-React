@@ -848,6 +848,33 @@
     .btmInn > button{
         position: static;
     }
+    #hdBack{
+        position: fixed;
+        display: inline-block;
+        width: 2.5rem;
+        left: 20px;
+        bottom: 0;
+        height: 2.5rem;
+        color: black;
+        border-radius: 50%;
+        background-color: #cb8a65;
+
+        z-index: 234234;
+
+    }
+    #hmBtn{
+        position: absolute;
+        width: 3.2rem;
+        top: 0;
+        left: 5px;
+        height: 1.8rem;
+        color: white;
+        background-color: #cb8a65;
+        margin-top: -2rem;
+        border-radius: 4px;
+
+
+    }
 
 
 
