@@ -937,7 +937,66 @@
         width: auto;
         border-radius: 0;
     }
+    .dForm{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 327px;
+        height: 1378px;
+        z-index: 203948234;
+        border: 1px solid red;
+        background: white;
+        color: black;
+        padding: 24px;
+        left: 24px;
+        right: 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-style: normal;
+        gap: 24px;
+    }
+    .hh1,.h55{
+         font-size: 28px;
+         line-height: 38px;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+    .h55{
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 0.928571px;
+        text-transform: uppercase;
+        color: #D87D4A;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    .form-group > label{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.214286px;
+    }
+    .form-group > input{
+        width: 280px;
+        height: 56px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.25px;
+        border: 1px solid #CFCFCF;
+        border-radius: 8px;
+    }
 
+    .form-group > input:hover{
+        border-color: #D87D4A;
+    }
+    .form-group > input[type="tel"],.form-group > input[id="country"]{
+        margin-bottom: 32px;
+    }
+    .form-group >  label[htmlFor="address"]{
+
+    }
 
 
 

@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-export function CartBtn({carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
+export function CartBtn({setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
 
     function ImgInCart(props){
 
@@ -28,6 +28,7 @@ export function CartBtn({carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setc
                 setczx7Crt(0)
                 setczx9Crt(0)
                 setcarti(0)
+                setTotal(0)
             }}>Remove all</span></div>
 
             <div className='cartFl'>
@@ -41,7 +42,7 @@ export function CartBtn({carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setc
             </div>
 
             <div className='cartFl'>
-                <div className='cr'><span>TOTAL</span><span>3234</span></div>
+                <div className='cr'><span>TOTAL</span><span>$ {total}</span></div>
                 <button className='seePr'>CHECKOUT</button>
             </div>
         </div>

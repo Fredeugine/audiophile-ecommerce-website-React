@@ -5,6 +5,7 @@ import {DeviceSection} from "./Categories menu";
 import {ProductsSection} from "./Categories menu";
 import {cartBtn, CartBtn} from "./Cart";
 import {useState} from "react";
+import {DetailForm} from "./DetailForm";
 
 
 export function App() {
@@ -36,6 +37,8 @@ export function App() {
 
     const [czx7,setczx7] = useState(0);
     const [czx7Crt,setczx7Crt] = useState(0);
+    const [total,setTotal] = useState(0);
+
 
     function handleClick() {
         setIsVisible(function (prevState){
@@ -51,7 +54,7 @@ export function App() {
 
     return (
         <>
-
+            <DetailForm></DetailForm>
             {isVisible ? <div><CategoriesMenu
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -67,6 +70,8 @@ export function App() {
 
             /></div> : null}
             <CartBtn
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 carti={carti}
                 setmk2Crt={setmk2Crt}
@@ -112,6 +117,8 @@ export function App() {
             </div>
             <div>
             <ProductsSection
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 cartIncCrt={cartIncrCrt}
                 setCartIncCrt={setCartIncCrt}
@@ -136,6 +143,8 @@ export function App() {
 
             />
             <ProductsSection
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 m1={m1}
                 setmk2Crt={setmk2Crt}
@@ -166,6 +175,8 @@ export function App() {
             />
 
             <ProductsSection
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 setCartInc59Crt={setCartInc59Crt}
                 cartIn59Crt={cartIncr59Crt}
@@ -203,6 +214,8 @@ export function App() {
 
             />
             <ProductsSection
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 xzx9={xzx9}
                 setczx9Crt={setczx9Crt}
@@ -245,6 +258,8 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                total={total}
+                setTotal={setTotal}
                 setcarti={setcarti}
                 xzx7={xzx7}
                 setczx7Crt={setczx7Crt}
