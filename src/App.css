@@ -876,15 +876,15 @@
     }
     .cartDiv{
         display: flex;
-        left: 8px;
-        top: 80px;
+        left: 1.4px;
+        top: 60px;
         flex-direction: column;
         justify-content: space-between;
-        position: fixed;
+        position: absolute;
         width: 327px;
-        height: 488px;
+        height: auto;
         color: black;
-        background-color: seashell;
+        background-color: white;
         z-index: 234234;
         border-radius: 8px;
         padding: 28px;
@@ -895,14 +895,18 @@
         /* identical to box height */
         letter-spacing: 1.28571px;
     }
-    .rm{
+    .cr> .seePr{
         font-style: normal;
         font-weight: 500;
         line-height: 25px;
         font-size: 15px;
         opacity: 0.5;
-    }
-    .cr > .rm {
+        color: black;
+        background: white;
+        border: none;
+        position: unset;
+        box-shadow: none;
+        width: auto;
         text-decoration-line: underline;
     }
     .cr{

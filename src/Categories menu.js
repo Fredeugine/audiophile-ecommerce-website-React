@@ -147,10 +147,75 @@ DeviceSection.defaultProps = {
 };
 
 
-export function ProductsSection({cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+export function ProductsSection({setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
 
-    function addToCart(){
-        setcartNumm(cartInc)
+    function addToCart() {
+        if (prd) {
+            setcartNumm(function (prevState) {
+                return prevState + cartInc
+            })
+            setCartIncCrt(function (prevState) {
+                return prevState + cartInc
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
+        if (x59) {
+            setcartNumm(function (prevState) {
+                return prevState + cartIn59
+            })
+            setCartInc59Crt(function (prevState) {
+                return prevState + cartIn59
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
+        if(earP){
+            setcartNumm(function (prevState) {
+                return prevState + cartIncx1
+            })
+            setCartIncx1Crt(function (prevState) {
+                return prevState + cartIncx1
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
+        if(xzx7){
+            setcartNumm(function (prevState) {
+                return prevState + czx7
+            })
+            setczx7Crt(function (prevState) {
+                return prevState + czx7
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
+        if(xzx9){
+            setcartNumm(function (prevState) {
+                return prevState + czx9
+            })
+            setczx9Crt(function (prevState) {
+                return prevState + czx9
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
+        if(m1){
+            setcartNumm(function (prevState) {
+                return prevState + mk2
+            })
+            setmk2Crt(function (prevState) {
+                return prevState + mk2
+            })
+            setcarti(function (prevState){
+                return prevState + 1
+            })
+        }
     }
 
     return(
@@ -207,23 +272,8 @@ export function ProductsSection({cartIn59,setCartInc59,setcartNumm,prop1,prop2,p
 
                 <span className='price'>{prop5}</span>
                 <div className='spCa'>
-                    <ProductInCart setCartInc={()=>{
-                        if (prop1 === 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'){
-                            return setCartInc59
-                        }
-                        if (prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'){
-                            return setCartInc
-                        }
-                    }} cartInc={()=>{
-                        if (prop1 === 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'){
-                            return cartIn59
-                        }
-                        if (prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'){
-                            return cartInc
-                        }
-                        console.log(prop1)
-
-                    }}></ProductInCart>
+                    <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
+                                   cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
                     <button className="seePrP" onClick={addToCart}>ADD TO CART</button>
                 </div>
 

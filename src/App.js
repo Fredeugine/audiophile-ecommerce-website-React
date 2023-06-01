@@ -19,10 +19,23 @@ export function App() {
     const [xzx7, setZx7] = useState(false);
     const [earP, setEarP] = useState(false);
     const [cartIncr, setCartInc] = useState(0);
+    const [cartIncrCrt, setCartIncCrt] = useState(0);
+    const [cartIncr59Crt, setCartInc59Crt] = useState(0);
     const [cartIncr59, setCartInc59] = useState(0);
     const [cartIncrx1, setCartIncx1] = useState(0);
+    const [cartIncrx1Crt, setCartIncx1Crt] = useState(0);
     const [addC, setaddC] = useState(false);
     const [cartNum, setcartNum] = useState(false);
+    const [carti, setcarti] = useState(0);
+
+    const [mk2, setmk2] = useState(0);
+    const [mk2Crt, setmk2Crt] = useState(0);
+
+    const [czx9,setczx9] = useState(0);
+    const [czx9Crt,setczx9Crt] = useState(0);
+
+    const [czx7,setczx7] = useState(0);
+    const [czx7Crt,setczx7Crt] = useState(0);
 
     function handleClick() {
         setIsVisible(function (prevState){
@@ -38,16 +51,7 @@ export function App() {
 
     return (
         <>
-            <CartBtn
-                setCartInc59={setCartInc59}
-                setCartIncx1={setCartIncx1}
-                cartIncx1={cartIncrx1}
-                cartIn59={cartIncr59}
-                cartInc={cartIncr}
-                setCartInc={setCartInc}
-                addC={addC}
-                setaddC={setaddC}>
-            </CartBtn>
+
             {isVisible ? <div><CategoriesMenu
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -62,6 +66,24 @@ export function App() {
                 setzx7 ={setZx7}
 
             /></div> : null}
+            <CartBtn
+                setcarti={setcarti}
+                carti={carti}
+                setmk2Crt={setmk2Crt}
+                mk2Crt={mk2Crt}
+                setczx9Crt={setczx9Crt}
+                czx9Crt={czx9Crt}
+                setczx7Crt={setczx7Crt}
+                czx7Crt={czx7Crt}
+                setCartInc59Crt={setCartInc59Crt}
+                setCartIncx1Crt={setCartIncx1Crt}
+                cartIncx1Crt={cartIncrx1Crt}
+                cartIn59Crt={cartIncr59Crt}
+                cartIncCrt={cartIncrCrt}
+                setCartIncCrt={setCartIncCrt}
+                addC={addC}
+                setaddC={setaddC}>
+            </CartBtn>
             <div className="buttonsDiv">
                 <div className="topButtonsDiv">
                     <div className="topButtons">
@@ -90,6 +112,10 @@ export function App() {
             </div>
             <div>
             <ProductsSection
+                setcarti={setcarti}
+                cartIncCrt={cartIncrCrt}
+                setCartIncCrt={setCartIncCrt}
+                prd ={prD}
                 setcartNumm={setcartNum}
                 cartInc = {cartIncr}
                 setCartInc={setCartInc}
@@ -110,6 +136,11 @@ export function App() {
 
             />
             <ProductsSection
+                setcarti={setcarti}
+                m1={m1}
+                setmk2Crt={setmk2Crt}
+                setmk2={setmk2}
+                mk2={mk2}
                 setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -133,7 +164,12 @@ export function App() {
                 prop20='assets/MYSVGS/m2.svg'
                 prop21='XX99 MARK II'
             />
+
             <ProductsSection
+                setcarti={setcarti}
+                setCartInc59Crt={setCartInc59Crt}
+                cartIn59Crt={cartIncr59Crt}
+                x59 ={x59}
                 setcartNumm={setcartNum}
                 setCartInc59={setCartInc59}
                 cartIn59={cartIncr59}
@@ -167,6 +203,11 @@ export function App() {
 
             />
             <ProductsSection
+                setcarti={setcarti}
+                xzx9={xzx9}
+                setczx9Crt={setczx9Crt}
+                setczx9={setczx9}
+                czx9={czx9}
                 setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -204,6 +245,11 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setcarti={setcarti}
+                xzx7={xzx7}
+                setczx7Crt={setczx7Crt}
+                setczx7={setczx7}
+                czx7={czx7}
                 setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -241,10 +287,14 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setcarti={setcarti}
+                setCartIncx1Crt={setCartIncx1Crt}
+                cartIncx1Crt={cartIncrx1Crt}
                 setcartNumm={setcartNum}
                 setCartIncx1={setCartIncx1}
                 cartIncx1={cartIncrx1}
                 setearP = {setEarP}
+                earP={earP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
                 setIsVisible2={setIsVisible}
