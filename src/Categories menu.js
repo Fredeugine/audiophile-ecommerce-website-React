@@ -1,6 +1,6 @@
 import './App.css';
-
-
+import {ProductInCart} from "./Cart";
+import {useState} from "react";
 
 
 export function CategoriesMenu(props) {
@@ -147,14 +147,8 @@ DeviceSection.defaultProps = {
 };
 
 
-export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+export function ProductsSection({cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
 
-    function cartCalc(){
-            setCartInc(cartInc + 1)
-    }
-    function subCalc(){
-        setCartInc(cartInc - 1)
-    }
     function addToCart(){
         setcartNumm(cartInc)
     }
@@ -213,14 +207,26 @@ export function ProductsSection({setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6
 
                 <span className='price'>{prop5}</span>
                 <div className='spCa'>
-                    <span className='plusAndMinus'>
-                        <span className='subtr' onClick={subCalc}>-</span>
-                        <span className='cartCount'>{cartInc}</span>
-                        <span className='add' onClick={cartCalc}>+</span>
-                    </span>
-                    <button className="seePrP" onClick={addToCart}>ADD TO CART</button>
+                    <ProductInCart setCartInc={()=>{
+                        if (prop1 === 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'){
+                            return setCartInc59
+                        }
+                        if (prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'){
+                            return setCartInc
+                        }
+                    }} cartInc={()=>{
+                        if (prop1 === 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'){
+                            return cartIn59
+                        }
+                        if (prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'){
+                            return cartInc
+                        }
+                        console.log(prop1)
 
+                    }}></ProductInCart>
+                    <button className="seePrP" onClick={addToCart}>ADD TO CART</button>
                 </div>
+
                 <div className='fea'>Features</div>
                 <div className='feaText'>{prop6}</div>
                 <div className='fea'>In the box</div>

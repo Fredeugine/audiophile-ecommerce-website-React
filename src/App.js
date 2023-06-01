@@ -3,8 +3,7 @@ import './App.css';
 import {CategoriesMenu} from "./Categories menu";
 import {DeviceSection} from "./Categories menu";
 import {ProductsSection} from "./Categories menu";
-import {ScrollUp} from "./Categories menu";
-
+import {cartBtn, CartBtn} from "./Cart";
 import {useState} from "react";
 
 
@@ -20,6 +19,8 @@ export function App() {
     const [xzx7, setZx7] = useState(false);
     const [earP, setEarP] = useState(false);
     const [cartIncr, setCartInc] = useState(0);
+    const [cartIncr59, setCartInc59] = useState(0);
+    const [cartIncrx1, setCartIncx1] = useState(0);
     const [addC, setaddC] = useState(false);
     const [cartNum, setcartNum] = useState(false);
 
@@ -28,10 +29,25 @@ export function App() {
             return !prevState
         } );
     }
+    function handleCart(){
+        setaddC(function (prevState){
+            return !prevState
+        })
+    }
 
 
     return (
         <>
+            <CartBtn
+                setCartInc59={setCartInc59}
+                setCartIncx1={setCartIncx1}
+                cartIncx1={cartIncrx1}
+                cartIn59={cartIncr59}
+                cartInc={cartIncr}
+                setCartInc={setCartInc}
+                addC={addC}
+                setaddC={setaddC}>
+            </CartBtn>
             {isVisible ? <div><CategoriesMenu
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -63,7 +79,7 @@ export function App() {
           <img className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg" />
         </span>
                         <span>
-          <img className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg" />
+          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg" />
                             <span className='cartNum'>{cartNum}</span>
         </span>
                     </div>
@@ -94,7 +110,7 @@ export function App() {
 
             />
             <ProductsSection
-
+                setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -118,7 +134,9 @@ export function App() {
                 prop21='XX99 MARK II'
             />
             <ProductsSection
-
+                setcartNumm={setcartNum}
+                setCartInc59={setCartInc59}
+                cartIn59={cartIncr59}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -149,7 +167,7 @@ export function App() {
 
             />
             <ProductsSection
-
+                setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -186,6 +204,7 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setcartNumm={setcartNum}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -222,6 +241,9 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setcartNumm={setcartNum}
+                setCartIncx1={setCartIncx1}
+                cartIncx1={cartIncrx1}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -597,6 +619,7 @@ export function App() {
                     </div>
                 </div>
             </div>
+
 
         </>
 
