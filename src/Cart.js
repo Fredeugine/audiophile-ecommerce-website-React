@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-export function CartBtn({setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
+export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
 
     function ImgInCart(props){
 
@@ -42,8 +42,12 @@ export function CartBtn({setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt
             </div>
 
             <div className='cartFl'>
-                <div className='cr'><span>TOTAL</span><span>$ {total}</span></div>
-                <button className='seePr'>CHECKOUT</button>
+                <div className='cr'><span className='ttl'>TOTAL</span><span>$ {total}</span></div>
+                <button className='seePr' onClick={()=>{
+                    setCheckout(function (prevState){
+                        return !prevState
+                    })
+                }}>CHECKOUT</button>
             </div>
         </div>
     )
@@ -68,3 +72,4 @@ export function ProductInCart({cartInc,setCartInc}){
             </span>
     )
 }
+

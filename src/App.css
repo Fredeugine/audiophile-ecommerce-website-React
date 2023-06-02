@@ -634,6 +634,7 @@
     }
     .None{
         display: none;
+        margin: 0;
     }
     .nn{
         display: flex;
@@ -912,6 +913,7 @@
     .cr{
         display: flex;
       justify-content: space-between;
+        margin-bottom: 24px;
     }
     .cartImgs{
         width: 64px;
@@ -930,21 +932,20 @@
     .cartFl{
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        justify-content: space-between;
     }
     .cartFl > .seePr{
         position: static;
         width: auto;
         border-radius: 0;
+        border: none;
     }
     .dForm{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         width: 327px;
-        height: 1378px;
-        z-index: 203948234;
-        border: 1px solid red;
+        height: auto;
         background: white;
         color: black;
         padding: 24px;
@@ -954,6 +955,7 @@
         font-weight: 700;
         font-style: normal;
         gap: 24px;
+
     }
     .hh1,.h55{
          font-size: 28px;
@@ -1036,7 +1038,60 @@
         width: 10px;
         height: 10px;
     }
-
+    .cr2{
+        display: flex;
+        gap: 16px;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    .rm,.rmx{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+        opacity: 0.5;
+    }
+    .rmx{
+        position: absolute;
+        font-size: 15px;
+        right: 0;
+        margin-top: 5px;
+    }
+    .ttl{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+    .gt{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #D87D4A;
+    }
+    .cr3{
+        display: flex;
+        gap: 16px;
+        position: relative;
+        margin-bottom: 8px;
+        justify-content: space-between;
+    }
+    .cr34{
+        display: flex;
+        gap: 16px;
+        position: relative;
+        margin-top: 8px;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    .tkuPage{
+        background-color: white;
+        border: 1px solid red;
+        position: relative;
+        width: 327px;
+        height: 600px;
+    }
 
 
 

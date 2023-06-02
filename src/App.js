@@ -3,9 +3,10 @@ import './App.css';
 import {CategoriesMenu} from "./Categories menu";
 import {DeviceSection} from "./Categories menu";
 import {ProductsSection} from "./Categories menu";
-import {cartBtn, CartBtn} from "./Cart";
+import {CartBtn} from "./Cart";
 import {useState} from "react";
-import {DetailForm} from "./DetailForm";
+import {DetailForm, TkuPage} from "./DetailForm";
+import {tkuPage} from "./DetailForm";
 
 
 export function App() {
@@ -37,7 +38,11 @@ export function App() {
 
     const [czx7,setczx7] = useState(0);
     const [czx7Crt,setczx7Crt] = useState(0);
+
     const [total,setTotal] = useState(0);
+    const [gtotal,setgTotal] = useState(1098+50);
+    const [tku,settku] = useState(false);
+    const [checkout,setCheckout] = useState(false);
 
 
     function handleClick() {
@@ -54,7 +59,32 @@ export function App() {
 
     return (
         <>
-            <DetailForm></DetailForm>
+            <TkuPage tku={tku} settku={settku}></TkuPage>
+            <DetailForm
+                tku={tku}
+                settku={settku}
+                gtotal={gtotal}
+                setCheckout={setCheckout}
+                checkout={checkout}
+                total={total}
+                setTotal={setTotal}
+                setcarti={setcarti}
+                carti={carti}
+                setmk2Crt={setmk2Crt}
+                mk2Crt={mk2Crt}
+                setczx9Crt={setczx9Crt}
+                czx9Crt={czx9Crt}
+                setczx7Crt={setczx7Crt}
+                czx7Crt={czx7Crt}
+                setCartInc59Crt={setCartInc59Crt}
+                setCartIncx1Crt={setCartIncx1Crt}
+                cartIncx1Crt={cartIncrx1Crt}
+                cartIn59Crt={cartIncr59Crt}
+                cartIncCrt={cartIncrCrt}
+                setCartIncCrt={setCartIncCrt}
+            ></DetailForm>
+
+            <div className={checkout ? 'None' : null}>
             {isVisible ? <div><CategoriesMenu
                 setearP = {setEarP}
                 HDTF={hdTF}
@@ -70,6 +100,7 @@ export function App() {
 
             /></div> : null}
             <CartBtn
+                setCheckout={setCheckout}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -302,6 +333,7 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setTotal={setTotal}
                 setcarti={setcarti}
                 setCartIncx1Crt={setCartIncx1Crt}
                 cartIncx1Crt={cartIncrx1Crt}
@@ -643,8 +675,10 @@ export function App() {
                         </div>
                     </div>
                 </div>
+            </div>
 
             <div className="footer">
+                <div className={checkout ? 'None' : null}>
                 <div className="footerSec1">
                     <div className="manImage" />
                     <div className="footerSec1Inner2">
@@ -658,6 +692,7 @@ export function App() {
                         to meet some of the fantastic people who make Audiophile the best place
                         to buy your portable audio equipment.
                     </div>
+                </div>
                 </div>
                 <div className="footerSec2">
                     <span />
