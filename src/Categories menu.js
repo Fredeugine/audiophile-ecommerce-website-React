@@ -147,7 +147,10 @@ DeviceSection.defaultProps = {
 };
 
 
-export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+
+
+
 
     function addToCart() {
         var inputString = prop5;
@@ -161,9 +164,10 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
         }
 
         var integerValue = parseInt(numericString);
-        console.log(integerValue);
+
 
         if (prd) {
+
             setcartNumm(function (prevState) {
                 return prevState + cartInc
             })
@@ -177,6 +181,11 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState + integerValue * cartInc
             })
+            if (lst1.length < 1) {
+                setlst1(['a']);
+            }
+
+
         }
         if (x59) {
             setcartNumm(function (prevState) {
@@ -191,6 +200,10 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState + integerValue * cartIn59
             })
+            if (lst1.length < 1) {
+                setlst1(['b']);
+            }
+
         }
         if(earP){
             setcartNumm(function (prevState) {
@@ -205,6 +218,9 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState +  integerValue * cartIncx1
             })
+            if (lst1.length < 1) {
+                setlst1(['c']);
+            }
         }
         if(xzx7){
             setcartNumm(function (prevState) {
@@ -219,6 +235,10 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState +  integerValue * czx7
             })
+            if (lst1.length < 1) {
+                setlst1(['d']);
+            }
+
         }
         if(xzx9){
             setcartNumm(function (prevState) {
@@ -233,6 +253,10 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState +  integerValue * czx9
             })
+            if (lst1.length < 1) {
+                setlst1(['e']);
+            }
+
         }
         if(m1){
             setcartNumm(function (prevState) {
@@ -247,6 +271,10 @@ export function ProductsSection({total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt
             setTotal(function (prevState){
                 return prevState +  integerValue * mk2
             })
+            if (lst1.length < 1) {
+                setlst1(['f']);
+            }
+
         }
     }
 

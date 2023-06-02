@@ -6,7 +6,6 @@ import {ProductsSection} from "./Categories menu";
 import {CartBtn} from "./Cart";
 import {useState} from "react";
 import {DetailForm, TkuPage} from "./DetailForm";
-import {tkuPage} from "./DetailForm";
 
 
 export function App() {
@@ -43,6 +42,9 @@ export function App() {
     const [gtotal,setgTotal] = useState(1098+50);
     const [tku,settku] = useState(false);
     const [checkout,setCheckout] = useState(false);
+    const [lst1, setlst1] = useState([]);
+
+
 
 
     function handleClick() {
@@ -59,7 +61,24 @@ export function App() {
 
     return (
         <>
-            <TkuPage tku={tku} settku={settku}></TkuPage>
+            <TkuPage
+                total={total}
+                carti={carti}
+                lst1={lst1}
+                setlst1={setlst1}
+                setmk2Crt={setmk2Crt}
+                mk2Crt={mk2Crt}
+                setczx9Crt={setczx9Crt}
+                czx9Crt={czx9Crt}
+                setczx7Crt={setczx7Crt}
+                czx7Crt={czx7Crt}
+                setCartInc59Crt={setCartInc59Crt}
+                setCartIncx1Crt={setCartIncx1Crt}
+                cartIncx1Crt={cartIncrx1Crt}
+                cartIn59Crt={cartIncr59Crt}
+                cartIncCrt={cartIncrCrt}
+                setCartIncCrt={setCartIncCrt}
+                tku={tku} settku={settku}></TkuPage>
             <DetailForm
                 tku={tku}
                 settku={settku}
@@ -148,6 +167,8 @@ export function App() {
             </div>
             <div>
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -174,6 +195,8 @@ export function App() {
 
             />
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -206,6 +229,8 @@ export function App() {
             />
 
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -245,6 +270,8 @@ export function App() {
 
             />
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -289,6 +316,8 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 total={total}
                 setTotal={setTotal}
                 setcarti={setcarti}
@@ -333,6 +362,8 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                lst1={lst1}
+                setlst1={setlst1}
                 setTotal={setTotal}
                 setcarti={setcarti}
                 setCartIncx1Crt={setCartIncx1Crt}

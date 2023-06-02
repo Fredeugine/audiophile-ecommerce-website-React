@@ -546,7 +546,8 @@
         margin-bottom: 120px;
     }
     .xx99Opc{
-        opacity: 20%;
+        opacity: 60%;
+        background-color: rgb(255, 255, 255);
     }
     .xx992{
         width: 327px;
@@ -1086,11 +1087,88 @@
         margin-bottom: 32px;
     }
     .tkuPage{
+        position: absolute;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        color: black;
         background-color: white;
         border: 1px solid red;
-        position: relative;
-        width: 327px;
+        max-width: 327px;
         height: 600px;
+        font-style: normal;
+        padding: 32px;
+        border-radius: 8px;
+        z-index: 3234234234;
+    }
+    .tkuPage > .ycirs{
+        width: 64px;
+        height: 64px;
+    }
+    .tol{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.857143px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .tols{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.5;
+    }
+    .inn{
+        width: 238px;
+        height: auto;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+        padding-top: 24px;
+        padding-right: 24px;
+    }
+    .hr1{
+        height: 1px;
+        width: 215px;
+        background-color: black;
+        opacity: 0.08;
+    }
+    .inn > p{
+       text-align: center;
+    }
+    .inns{
+        width: 262px;
+        height: 70px;
+        border-radius: 0px 0px 8px 8px;
+        background-color: black;
+        color: #FFFFFF;
+        font-style: normal;
+        padding-top: 16px;
+    }
+    .inns > div{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.5;
+        margin-left: 22px;
+
+
+    }
+    .inns > span{
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 22px;
+    }
+    .tkuPage > button{
+        position: static;
+        align-self: center;
+        margin-right: 23px;
+        width: 263px;
+        border-radius: 0;
+
     }
 
 
