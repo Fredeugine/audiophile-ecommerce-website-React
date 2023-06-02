@@ -987,9 +987,17 @@
         border: 1px solid #CFCFCF;
         border-radius: 8px;
     }
+    .form-group> input::placeholder{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.25px;
+        opacity: 0.4;
+    }
 
-    .form-group > input:hover{
+    .form-group > input:hover,.form-group > input:focus,.eMon:hover{
         border-color: #D87D4A;
+        outline: 1px solid rgba(216, 125, 74, 0.2);
     }
     .form-group > input[type="tel"],.form-group > input[id="country"]{
         margin-bottom: 32px;
@@ -997,6 +1005,38 @@
     .form-group >  label[htmlFor="address"]{
 
     }
+
+    .eMon{
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        gap: 16px;
+        border: 1px solid #CFCFCF;
+        width: 280px;
+        height: 56px;
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.25px;
+        margin-bottom: 10px;
+    }
+    .ycir,.ycirs{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #CFCFCF;
+        border-radius: 50%;
+    }
+    .ycirs{
+        background-color: #D87D4A;
+        width: 10px;
+        height: 10px;
+    }
+
 
 
 

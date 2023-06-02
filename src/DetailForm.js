@@ -34,6 +34,31 @@ export function DetailForm(){
                     <input type="text" id="country" placeholder="Spain"  />
                 </div>
                 <h8 className='h55'>Payment Details</h8>
+                <div className="form-group">
+                    <label htmlFor="country">Payment Method</label>
+                   <span className='eMon'>
+                       <span className='ycir'><span className='ycirs'></span></span>
+                       <span>Credit Card/ Debit <span>
+                           <img src='assets/MYSVGS/pmethds.svg'/>
+                       </span></span>
+                   </span>
+                    <span className='eMon'>
+                       <span className='ycir'></span>
+                       <span>Cash on Delivery</span>
+                   </span>
+                    <span className='eMon'>
+                       <span className='ycir'></span>
+                       <span>Bizum <span></span></span>
+                   </span>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="country"></label>
+                    <input type="text" id="country" placeholder="Spain"  />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="country">Country</label>
+                    <input type="text" id="country" placeholder="Spain"  />
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </div>
