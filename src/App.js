@@ -163,6 +163,7 @@ export function App() {
 
             <div>
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 total={total}
@@ -191,6 +192,7 @@ export function App() {
 
             />
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 total={total}
@@ -225,6 +227,7 @@ export function App() {
             />
 
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 total={total}
@@ -266,6 +269,7 @@ export function App() {
 
             />
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 total={total}
@@ -312,6 +316,7 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 total={total}
@@ -358,6 +363,7 @@ export function App() {
                 prop7='2x'
             />
             <ProductsSection
+                setaddC={setaddC}
                 lst1={lst1}
                 setlst1={setlst1}
                 setTotal={setTotal}

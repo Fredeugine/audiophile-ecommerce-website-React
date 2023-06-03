@@ -168,7 +168,7 @@ DeviceSection.defaultProps = {
 };
 
 
-export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
+export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
 
 
 
@@ -356,7 +356,16 @@ export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,
                 <div className='spCa'>
                     <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
                                    cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
-                    <button className="seePrP" onClick={addToCart}>ADD TO CART</button>
+                    <button className="seePrP" onClick={()=>{
+                        if(cartInc > 0){
+                            addToCart()
+                            setaddC(true)
+                            setTimeout(function (){
+                                setaddC(false)
+                            },2800)
+                        }
+
+                    }}>ADD TO CART</button>
                 </div>
 
                 <div className='fea'>Features</div>
