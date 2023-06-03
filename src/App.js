@@ -61,7 +61,13 @@ export function App() {
 
     return (
         <>
+
             <TkuPage
+                setcartNum={setcartNum}
+                setaddC={setaddC}
+                settotal={setTotal}
+                setcarti={setcarti}
+                setCheckout={setCheckout}
                 total={total}
                 carti={carti}
                 lst1={lst1}
@@ -78,6 +84,18 @@ export function App() {
                 cartIn59Crt={cartIncr59Crt}
                 cartIncCrt={cartIncrCrt}
                 setCartIncCrt={setCartIncCrt}
+                isVisible={isVisible}
+                setearP = {setEarP}
+                HDTF={hdTF}
+                setHDTF={sethdTF}
+                setIsVisible2={setIsVisible}
+                spkTP ={setSpkCat}
+                earCatt = {setEarCat}
+                setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
                 tku={tku} settku={settku}></TkuPage>
             <DetailForm
                 tku={tku}
@@ -407,7 +425,10 @@ export function App() {
             />
             </div>
 
-
+                <div className={isVisible ? 'xx99Opc' : null} onClick={(event)=>{
+                    setIsVisible(false)
+                    setaddC(false)
+                }}>
             <div className={hdTF || earCat || xzx9 || xzx7 || earP ? 'None' : 'xx99Div'} >
 
                 <div className={spkCat || prD ? 'None' : 'xx99Divs'}>
@@ -432,7 +453,7 @@ export function App() {
                     </div>
                 </div>
             </div>
-            <div className={isVisible ? 'xx99Opc' : null}>
+
             <div className={spkCat || earCat || prD || m1 || x59 ? 'None' : null}>
                 <DeviceSection
                     setearP = {setEarP}
@@ -573,7 +594,7 @@ export function App() {
                     prop4={earCat ? 'xx99Div2': 'None'}
                 ></DeviceSection>
                 </div>
-            </div>
+
                 <div  className={!isVisible ? "sec2" :'sec2Opc'}>
                     <div className="soundDevices">
                         <div className="headphonesDiv">
@@ -706,6 +727,7 @@ export function App() {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 

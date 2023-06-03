@@ -26,10 +26,12 @@
         text-align: center;
         margin-bottom: 120px;
     }
+
     .xx992{
         width: 327px;
         height: 352px;
     }
+
     .xx992Inner2{
         position: relative;
         display: flex;

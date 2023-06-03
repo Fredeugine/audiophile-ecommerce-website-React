@@ -51,7 +51,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
     return(
 
         <div className={checkout ? '' : 'None'}>
-            <form  className={tku ? 'xx99Opc': 'dForm' }>
+            <form  className={tku ? 'blurr2': 'dForm' }>
                 <h1 className='hh1'>Checkout</h1>
                 <h8 className='h55'>Billing Details</h8>
                 <div className="form-group">
@@ -128,7 +128,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
 
 }
 
-export function TkuPage({total,carti,setlst1,lst1,tku,settku,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt}){
+export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCatt,spkTP,setIsVisible2, setHDTF, setP, setM, set599, setzx9, setzx7,setearP,total,carti,setlst1,lst1,tku,settku,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt}){
 
 
 
@@ -152,7 +152,35 @@ export function TkuPage({total,carti,setlst1,lst1,tku,settku,mk2Crt,czx9Crt,setc
                     <span>${total}</span>
                 </div>
             </div>
-            <button className={'seePr'}>BACK TO HOME</button>
+            <button className={'seePr'} onClick={()=>{
+                setcartNum(0)
+                setaddC(false)
+                setcarti(false)
+                setCheckout(false)
+                settku(false)
+               spkTP(false)
+                setIsVisible2(false)
+                earCatt(false)
+                setHDTF(false)
+                setP(false)
+               setM(false)
+                set599(false)
+               setzx9(false)
+                setzx7(false)
+                setearP(false)
+                setmk2Crt(0)
+                setCartIncCrt(0)
+                setCartInc59Crt(0)
+                setCartIncx1Crt(0)
+                setczx7Crt(0)
+                setczx9Crt(0)
+                setcarti(0)
+                settotal(0)
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'auto' // Enables smooth scrolling animation
+                });
+            }}>BACK TO HOME</button>
             <div></div>
         </div>
 

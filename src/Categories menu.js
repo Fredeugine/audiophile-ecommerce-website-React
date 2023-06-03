@@ -86,7 +86,7 @@ export function DeviceSection(props){
 
     return(
         <div className={props.prop4}>
-             <button id='hmBtn' className={props.prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'seePr' : 'None'} onClick={()=>{
+             <button  className={props.prop1 === 'assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === 'assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)
                  props.earCatt(false)
@@ -98,7 +98,7 @@ export function DeviceSection(props){
                  props.setzx7(false)
                  props.setearP(false)
              }}>Home</button>
-            <div>
+            <div className='xx92pointer'>
                 <img
                     className="xx992"
                     src={props.prop1}
@@ -133,10 +133,28 @@ export function DeviceSection(props){
                 <span className="xx99Name">{props.prop2}</span>
                 <span className="xx992Inner2Text">{props.prop3}</span>
                 <button className="seePr" onClick={()=>{
-                    props.setP(true)
+                    if (props.prop2 === 'XX99 Mark II Headphones'){
+                        props.setP(true)
+                    }
+                    if (props.prop2 === 'XX99 Mark I Headphones') {
+                        props.setM11(true)
+                    }
+                    if (props.prop1 ==='assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+                    ){
+                        props.set599(true)
+                    }
+                    if (props.prop1 ==='assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'){
+                        props.setzx9(true)
+                    }
+                    if (props.prop1 ==='assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'){
+                        props.setzx7(true)
+                    }
+                    if (props.prop1 ==='assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'){
+                        props.setearP(true)
+                    }
                     window.scrollTo({
                         top: 0,
-                        behavior: 'auto' // Enables smooth scrolling animation
+                        behavior: 'smooth' // Enables smooth scrolling animation
                     });
                 }} >SEE PRODUCT</button>
             </div>
@@ -284,7 +302,7 @@ export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,
     return(
 
         <div className={prop4}>
-            <button  id='hdBack' className='seePr' onClick={()=>{
+            <button  className='hdBack' onClick={()=>{
                 if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
                     setIsVisible2(false)
                     setHDTF(true)
@@ -322,7 +340,7 @@ export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,
                     setzx7(false)
                     setearP(false)
                 }
-            }}><img src='assets/MYSVGS/BackButton.svg'/></button>
+            }}>Go Back</button>
             <div>
                 <img
                     className="xx992"

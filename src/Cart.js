@@ -19,7 +19,7 @@ export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Cr
     }
 
     return (
-        <div className={addC ? 'cartDiv' : 'None'} >
+        <div className={addC ? 'cartDiv' : 'none1'} >
             <div className='cr'>CART({carti}) <span className='seePr' onClick={()=>{
                 setmk2Crt(0)
                 setCartIncCrt(0)
@@ -44,9 +44,16 @@ export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Cr
             <div className='cartFl'>
                 <div className='cr'><span className='ttl'>TOTAL</span><span>$ {total}</span></div>
                 <button className='seePr' onClick={()=>{
-                    setCheckout(function (prevState){
-                        return !prevState
-                    })
+                    if (carti > 0) {
+                        setCheckout(function (prevState){
+                            return !prevState
+                        })
+                    }
+                    else {
+                        alert('😧Cart is Empty')
+                    }
+
+
                 }}>CHECKOUT</button>
             </div>
         </div>
