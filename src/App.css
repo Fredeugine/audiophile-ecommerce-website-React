@@ -13,18 +13,19 @@
 *{
 }
 @media screen and (max-width: 431px){
-    .buttonsDiv{
-        background-color: black;
-        width: 385px;
-        height: auto;
-    }
-
     body {
         background-color: white;
         color: white;
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
     }
+
+    .buttonsDiv{
+        background-color: black;
+        width: 385px;
+        height: 53px;
+    }
+
 
     .topButtons {
         width: 327px;
@@ -35,6 +36,27 @@
     }
 
     .topButtonsDiv {
+        height: 58px;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .topButtonsDiv1 {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        height: 58px;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 123123123;
+    }
+    .topButtonsDiv2 {
+        background-color: black;
+        position: fixed;
+        top: -100px;
         height: 58px;
         border-bottom: 1px solid white;
         display: flex;
@@ -57,7 +79,7 @@
 
     .xx99 {
         position: absolute;
-        top: 70px;
+        top: 60px;
         height: 520px;
         max-width: 385px;
     }
@@ -626,9 +648,9 @@
         transform: scale(0) translatex(-200px);
     }
     .menuOfHam{
+        position: fixed;
         transition: opacity 400ms, transform 400ms;
         opacity: 1;
-        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -641,6 +663,7 @@
         top: 9px;
         transform-origin: top left;
         transform: scale(100%) translatex(0);
+        z-index: 19239871238912739987;
     }
     .xx992Div2Spk{
         display: flex;
@@ -1205,7 +1228,7 @@
         height: auto;
         color: black;
         background-color: white;
-        z-index: 234234;
+        z-index: 234234234234234;
         border-radius: 3px;
         padding: 28px;
         font-style: normal;

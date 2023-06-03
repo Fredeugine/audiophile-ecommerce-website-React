@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
 
@@ -78,5 +78,68 @@ export function ProductInCart({cartInc,setCartInc}){
 
             </span>
     )
+}
+export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,hdTF,spkCat,}) {
+
+    const [scrolLUp, setscrollUp] = useState(true)
+    function handleClick() {
+        setIsVisible(function (prevState) {
+            return !prevState
+        });
+    }
+
+    function handleCart() {
+        setaddC(function (prevState) {
+            return !prevState
+        })
+    }
+    var prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+            // Scrolling up
+            setscrollUp(true)
+        } else {
+            // Scrolling down
+
+            if (currentScrollPos > 1200) {
+                setscrollUp(false)
+            }
+        }
+        prevScrollPos = currentScrollPos;
+    };
+
+
+
+        return (
+            <div className={checkout ? 'None' : "buttonsDiv"}>
+                <div className={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null}>
+                    <div className="topButtons">
+        <span>
+          {" "}
+            <img
+                className={isVisible ? 'hamburg' : 'hamburger'}
+                onClick={handleClick}
+                alt="icon-hamburger"
+                src={"assets/shared/tablet/icon-hamburger.svg"}
+            />
+
+        </span>
+                        <span>
+          <img className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg"/>
+        </span>
+                        <span>
+          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg"/>
+                            <span className='cartNum'>{cartNum}</span>
+        </span>
+                    </div>
+                </div>
+                <span className={hdTF || spkCat || earCat ? 'hh' : 'None'}>
+                    {spkCat ? 'Speakers' : '' || earCat ? 'Earphones' : '' || hdTF ? 'headphones' : ''}
+                </span>
+            </div>
+        )
 }
 

@@ -6,7 +6,7 @@ import {ProductsSection} from "./Categories menu";
 import {CartBtn} from "./Cart";
 import {useState} from "react";
 import {DetailForm, TkuPage} from "./DetailForm";
-
+import {NavStay} from "./Cart";
 
 export function App() {
     const [isVisible, setIsVisible] = useState(false);
@@ -47,20 +47,21 @@ export function App() {
 
 
 
-    function handleClick() {
-        setIsVisible(function (prevState){
-            return !prevState
-        } );
-    }
-    function handleCart(){
-        setaddC(function (prevState){
-            return !prevState
-        })
-    }
+
 
 
     return (
         <>
+            <NavStay
+                checkout={checkout}
+                setaddC={setaddC}
+                setIsVisible={setIsVisible}
+                isVisible={isVisible}
+                cartNum={cartNum}
+                hdTF={hdTF}
+                spkCat={spkCat}
+                earCat={earCat}
+            ></NavStay>
 
             <TkuPage
                 setcartNum={setcartNum}
@@ -158,32 +159,8 @@ export function App() {
                 addC={addC}
                 setaddC={setaddC}>
             </CartBtn>
-            <div className="buttonsDiv">
-                <div className="topButtonsDiv">
-                    <div className="topButtons">
-        <span>
-          {" "}
-            <img
-                className={isVisible ? 'hamburg' : 'hamburger'}
-                onClick={handleClick}
-                alt="icon-hamburger"
-                src={"assets/shared/tablet/icon-hamburger.svg"}
-            />
 
-        </span>
-                        <span>
-          <img className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg" />
-        </span>
-                        <span>
-          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg" />
-                            <span className='cartNum'>{cartNum}</span>
-        </span>
-                    </div>
-                </div>
-                <span className={hdTF || spkCat || earCat ? 'hh': 'None'}>
-                    {spkCat ? 'Speakers': '' || earCat ? 'Earphones' : ''|| hdTF ? 'headphones': ''}
-                </span>
-            </div>
+
             <div>
             <ProductsSection
                 lst1={lst1}

@@ -20,7 +20,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
     const [orcir,setorcir]=useState(false)
     const [orcir2,setorcir2]=useState(false)
     const [orcir3,setorcir3]=useState(false)
-
+    const [formValid,setformValid]= useState(false)
     function Summary(){
         return(
 
@@ -37,10 +37,16 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     <div className='cr3'><span className='ttl'>SHIPPING</span><span>$ 50</span></div>
                     <div className='cr3'><span className='ttl'>VAT (INCLUDED)</span><span>$ 1098</span></div>
                     <div className='cr34'><span className='ttl'>GRAND TOTAL</span><span className='gt'>$ {gtotal + total}</span></div>
-                    <button type="submit"  className='seePr' onClick={()=>{
-                        settku(function (prevState){
-                            return !prevState
-                        })
+                    <button type='submit' className='seePr' onClick={(event)=>{
+                        if (formValid) {
+                            settku(function (prevState){
+                                return !prevState
+                            })
+                            event.preventDefault()
+                        }
+
+
+
                     }}>CONTINUE & PAY</button>
                 </div>
             </div>
