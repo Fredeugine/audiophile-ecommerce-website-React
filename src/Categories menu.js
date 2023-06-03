@@ -357,14 +357,11 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                     <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
                                    cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
                     <button className="seePrP" onClick={()=>{
-                        if(cartInc > 0){
                             addToCart()
                             setaddC(true)
                             setTimeout(function (){
                                 setaddC(false)
                             },2800)
-                        }
-
                     }}>ADD TO CART</button>
                 </div>
 

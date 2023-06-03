@@ -37,14 +37,11 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     <div className='cr3'><span className='ttl'>SHIPPING</span><span>$ 50</span></div>
                     <div className='cr3'><span className='ttl'>VAT (INCLUDED)</span><span>$ 1098</span></div>
                     <div className='cr34'><span className='ttl'>GRAND TOTAL</span><span className='gt'>$ {gtotal + total}</span></div>
-                    <button type='submit' className='seePr' onClick={(event)=>{
-                        if (formValid) {
+                    <button type={"submit"} className='seePr' onClick={(event)=>{
                             settku(function (prevState){
                                 return !prevState
                             })
                             event.preventDefault()
-                        }
-
 
 
                     }}>CONTINUE & PAY</button>

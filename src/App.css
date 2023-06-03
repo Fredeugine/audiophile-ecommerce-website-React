@@ -913,6 +913,7 @@
         left: -8px;
         cursor: pointer;
         transition: transform 100ms linear;
+        margin-top: 25px;
     }
     .hdBack:hover{
         transform: scale(105.4%);
