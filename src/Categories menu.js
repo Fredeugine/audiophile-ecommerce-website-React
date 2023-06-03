@@ -1,12 +1,14 @@
 import './App.css';
 import {ProductInCart} from "./Cart";
 import {useState} from "react";
-
+import {CSSTransition} from "react-transition-group";
+import 'animate.css';
 
 export function CategoriesMenu(props) {
 
     return (
-        <div className='menuOfHam'>
+
+        <div className={ props.isVisible ? 'menuOfHam' : 'trans'}>
             <div  className="soundDevices">
                 <div className="headphonesDiv">
             <span>
@@ -75,6 +77,7 @@ export function CategoriesMenu(props) {
                 <div className='bodyDiv'></div>
             </div>
         </div>
+
     );
 }
 
@@ -279,6 +282,7 @@ export function ProductsSection({setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,
     }
 
     return(
+
         <div className={prop4}>
             <button  id='hdBack' className='seePr' onClick={()=>{
                 if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){

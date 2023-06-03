@@ -1,5 +1,5 @@
 import { useState} from "react";
-
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 export function ImgInCart(props){
 
     return(
@@ -23,6 +23,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
 
     function Summary(){
         return(
+
             <div className='cartFl'>
                 <span className='cr'>SUMMARY</span>
                 <ImgInCart  class={cartIncCrt > 0 ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
@@ -48,6 +49,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
     }
 
     return(
+
         <div className={checkout ? '' : 'None'}>
             <form  className={tku ? 'xx99Opc': 'dForm' }>
                 <h1 className='hh1'>Checkout</h1>
@@ -120,7 +122,9 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                 <Summary></Summary>
             </form>
         </div>
+
     )
+
 
 }
 
@@ -129,6 +133,7 @@ export function TkuPage({total,carti,setlst1,lst1,tku,settku,mk2Crt,czx9Crt,setc
 
 
     return(
+
         <div className={ tku ? 'tkuPage': 'None'}>
             <div className='ycirs'><img src='assets/MYSVGS/ticked.svg'/></div>
             <div><div className='tol'>THANK YOU <br/>FOR YOUR ORDER</div>
@@ -150,5 +155,6 @@ export function TkuPage({total,carti,setlst1,lst1,tku,settku,mk2Crt,czx9Crt,setc
             <button className={'seePr'}>BACK TO HOME</button>
             <div></div>
         </div>
+
     )
 }

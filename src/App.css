@@ -606,7 +606,22 @@
         transition: transform 0.4s ease;
 
     }
+    .trans{
+        transition: opacity 400ms;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        z-index: 5;
+        background-color: white;
+        width: 375px;
+        height: 750px;
+    }
     .menuOfHam{
+        transition: opacity 400ms;
+        opacity: 1;
         position: absolute;
         display: flex;
         align-items: center;
@@ -1140,7 +1155,7 @@
     .inns{
         width: 262px;
         height: 70px;
-        border-radius: 0px 0px 8px 8px;
+        border-radius: 0 0 8px 8px;
         background-color: black;
         color: #FFFFFF;
         font-style: normal;

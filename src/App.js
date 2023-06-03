@@ -104,7 +104,8 @@ export function App() {
             ></DetailForm>
 
             <div className={checkout ? 'None' : null}>
-            {isVisible ? <div><CategoriesMenu
+             <div><CategoriesMenu
+                isVisible={isVisible}
                 setearP = {setEarP}
                 HDTF={hdTF}
                 setHDTF={sethdTF}
@@ -117,7 +118,7 @@ export function App() {
                 setzx9={setZx9}
                 setzx7 ={setZx7}
 
-            /></div> : null}
+            /></div>
             <CartBtn
                 setCheckout={setCheckout}
                 total={total}
