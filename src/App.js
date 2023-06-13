@@ -44,6 +44,10 @@ export function App() {
     const [checkout,setCheckout] = useState(false);
     const [lst1, setlst1] = useState([]);
 
+    useEffect(function (){
+
+
+    })
 
     return (
         <>
@@ -656,12 +660,12 @@ export function App() {
                     <div className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'nn'}>
                         <div id={'zx9Div'} className='zx9Div'>
                             <div className="container">
-                                <div className="outer-circle" />
-                                <div className="inner-circle">
+                                <div id={'outer-circle'} className="outer-circle" />
+                                <div id={'inner-circle'} className="inner-circle">
                                     <img id={'spk2'} className="spk2" src="/assets/MYSVGS/Mspeaker.svg"/>
                                 </div>
                             </div>
-                            <div className={'zx9Inner'}>
+                            <div id={'zx9Inner'} className={'zx9Inner'}>
                             <p className="zx9Text">
                                 zx9 <br />
                                 speaker
@@ -671,7 +675,7 @@ export function App() {
                                 Upgrade to premium speakers that are phenomenally built to deliver truly
                                 remarkable sound.
                             </p>
-                            <button className="seePr" onClick={()=>{
+                            <button id={'zx9Button'} className="seePr" onClick={()=>{
                                 setZx9(true)
                                 window.scrollTo({
                                     top: 0,
@@ -680,7 +684,7 @@ export function App() {
                             }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div className="zx7Div">
+                        <div id={'zx7Div'} className="zx7Div">
                             <div className="zx7DivInner">
                                 <p className="zx7text">ZX7 speaker</p>
                                 <button className="seePr" onClick={()=>{
@@ -692,11 +696,11 @@ export function App() {
                                 }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div className="yx1Div">
-                            <div className="yx1DivInner1" />
-                            <div className="yx1DivInner2">
-                                <div className="yx1DivInner2Inner">
-                                    <span className="yx1DivInner2Text">YX1 earphones</span>
+                        <div id={'yx1Div'} className="yx1Div">
+                            <div id={"yx1DivInner1"} className="yx1DivInner1" />
+                            <div id={'"yx1DivInner2"'} className="yx1DivInner2">
+                                <div id={"yx1DivInner2Inner"} className="yx1DivInner2Inner">
+                                    <span id={"yx1DivInner2Text"} className="yx1DivInner2Text">YX1 earphones</span>
                                     <button className="seePr" onClick={()=>{
                                         setEarP(true)
                                         window.scrollTo({
@@ -714,7 +718,7 @@ export function App() {
 
             <div className="footer">
                 <div className={checkout ? 'None' : null}>
-                <div className="footerSec1">
+                <div id={'footerSec1'} className="footerSec1">
                     <div className="manImage" />
                     <div className="footerSec1Inner2">
                         Bringing you the <span>best</span> audio gear
