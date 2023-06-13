@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
+export function CartBtn({setcartnum,setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
 
     function ImgInCart(props){
 
@@ -29,6 +29,7 @@ export function CartBtn({setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Cr
                 setczx9Crt(0)
                 setcarti(0)
                 setTotal(0)
+                setcartnum(0)
             }}>Remove all</span></div>
 
             <div className='cartFl'>
@@ -114,12 +115,13 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
 
 
         return (
-            <div className={checkout ? 'None' : "buttonsDiv"}>
-                <div className={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null}>
-                    <div className="topButtons">
+            <div id={'buttonsDiv'} className={checkout ? 'None' : "buttonsDiv"}>
+                <div id={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null} className={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null}>
+                    <div id={'topButtons'} className="topButtons">
         <span>
           {" "}
             <img
+                id={isVisible ? 'hamburg' : 'hamburger'}
                 className={isVisible ? 'hamburg' : 'hamburger'}
                 onClick={handleClick}
                 alt="icon-hamburger"
@@ -128,8 +130,14 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
 
         </span>
                         <span>
-          <img className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg"/>
+          <img id={'blue'} className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg"/>
         </span>
+                        <span id={'tpNavBtns'} className='tpnavBtns'>
+                            <span>Home</span>
+                            <span>Headphones</span>
+                            <span>Speakers</span>
+                            <span>Earphones</span>
+                        </span>
                         <span>
           <img onClick={handleCart} className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg"/>
                             <span className='cartNum'>{cartNum}</span>

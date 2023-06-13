@@ -53,7 +53,7 @@ export function CategoriesMenu(props) {
                         <img src="assets/MYSVGS/rightarr.svg" />
                     </span>
                 </div>
-                <div className="earphonesDiv">
+                <div id={'earphonesDiv'} className="earphonesDiv">
             <span>
               <img className="earMenu" src="assets/MYSVGS/Mearphones.svg" />
             </span>

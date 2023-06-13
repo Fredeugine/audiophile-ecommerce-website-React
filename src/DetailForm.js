@@ -97,7 +97,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                    }}>
                        <span className='ycir'><span className={orcir ? 'ycirs' : 'None'}></span></span>
                        <span>Credit Card/ Debit <span>
-                           <img src='assets/MYSVGS/img.png'/>
+                           <img src='../public/assets/MYSVGS/img.png'/>
                        </span></span>
                    </span>
 
@@ -119,7 +119,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                             setorcir(false)
                     }}>
                        <span className='ycir'><span className={orcir3 ? 'ycirs' : 'None'}></span></span>
-                       <span>Bizum <span><img src='assets/MYSVGS/bizum.svg'/></span></span>
+                       <span>Bizum <span><img src='../public/assets/MYSVGS/bizum.svg'/></span></span>
                    </span>
                 </div>
                 <Summary></Summary>
@@ -138,7 +138,7 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
     return(
 
         <div className={ tku ? 'tkuPage': 'None'}>
-            <div className='ycirs'><img src='assets/MYSVGS/ticked.svg'/></div>
+            <div className='ycirs'><img src='../public/assets/MYSVGS/ticked.svg'/></div>
             <div><div className='tol'>THANK YOU <br/>FOR YOUR ORDER</div>
             <div className={'tols'}>You will receive an email confirmation shortly.</div></div>
             <div className={'inn'}>
