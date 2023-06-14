@@ -85,7 +85,8 @@ export function CategoriesMenu(props) {
 export function DeviceSection(props){
 
     return(
-        <div className={props.prop4}>
+
+        <div id={props.prop4} className={props.prop4}>
              <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)

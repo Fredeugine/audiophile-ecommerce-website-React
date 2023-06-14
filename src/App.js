@@ -161,7 +161,7 @@ export function App() {
             </CartBtn>
 
 
-            <div>
+            <div className={'xxMa2'}>
             <ProductsSection
                 setaddC={setaddC}
                 lst1={lst1}
@@ -437,7 +437,7 @@ export function App() {
                 </div>
             </div>
 
-            <div className={spkCat || earCat || prD || m1 || x59 ? 'None' : null}>
+            <div className={spkCat || earCat || prD || m1 || x59 ? 'None' : 'xxMa3'}>
                 <DeviceSection
                     setearP = {setEarP}
                     HDTF={hdTF}

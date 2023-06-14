@@ -33,12 +33,12 @@ export function CartBtn({setcartnum,setCheckout,setTotal,total,carti,setcarti,mk
             }}>Remove all</span></div>
 
             <div className='cartFl'>
-               <ImgInCart  class={cartIncCrt > 0 ? 'cr' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={cartIn59Crt > 0 ? 'cr' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='assets/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={cartIncx1Crt > 0 ? 'cr' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='assets/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={czx7Crt > 0 ? 'cr' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='assets/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart class={czx9Crt > 0 ? 'cr' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='assets/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart class={mk2Crt > 0 ? 'cr' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='assets/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
+               <ImgInCart  class={cartIncCrt > 0 ? 'cr' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={cartIn59Crt > 0 ? 'cr' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='/assets/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={cartIncx1Crt > 0 ? 'cr' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='/assets/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={czx7Crt > 0 ? 'cr' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='/assets/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart class={czx9Crt > 0 ? 'cr' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='/assets/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart class={mk2Crt > 0 ? 'cr' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
 
             </div>
 
@@ -115,6 +115,7 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
 
 
         return (
+            <>
             <div id={'buttonsDiv'} className={checkout ? 'None' : "buttonsDiv"}>
                 <div id={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null} className={scrolLUp ? "topButtonsDiv1": !scrolLUp ? 'topButtonsDiv2' : null}>
                     <div id={'topButtons'} className="topButtons">
@@ -125,12 +126,12 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
                 className={isVisible ? 'hamburg' : 'hamburger'}
                 onClick={handleClick}
                 alt="icon-hamburger"
-                src={"assets/shared/tablet/icon-hamburger.svg"}
+                src={"/assets/shared/tablet/icon-hamburger.svg"}
             />
 
         </span>
                         <span>
-          <img id={'blue'} className='blue' alt='Logo"' src="assets/shared/desktop/logo.svg"/>
+          <img id={'blue'} className='blue' alt='Logo"' src="/assets/shared/desktop/logo.svg"/>
         </span>
                         <span id={'tpNavBtns'} className='tpnavBtns'>
                             <span>Home</span>
@@ -139,15 +140,16 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
                             <span>Earphones</span>
                         </span>
                         <span>
-          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="assets/shared/desktop/icon-cart.svg"/>
+          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="/assets/shared/desktop/icon-cart.svg"/>
                             <span className='cartNum'>{cartNum}</span>
         </span>
                     </div>
                 </div>
-                <span className={hdTF || spkCat || earCat ? 'hh' : 'None'}>
-                    {spkCat ? 'Speakers' : '' || earCat ? 'Earphones' : '' || hdTF ? 'headphones' : ''}
-                </span>
             </div>
+    <span className={hdTF || spkCat || earCat ? 'hh' : 'None'}>
+                    {spkCat ? 'Speakers' : earCat ? 'Earphones' : hdTF ? 'headphones' : ''}
+                </span>
+    </>
         )
 }
 
