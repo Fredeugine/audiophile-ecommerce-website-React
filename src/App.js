@@ -501,7 +501,7 @@ export function App() {
                     prop4={hdTF ? 'xx99Div2': 'None'}
                 ></DeviceSection>
             </div>
-                <div className={xzx9 || xzx7 ? 'None': null}>
+                <div className={xzx9 || xzx7 ? 'None': 'xxMa3'}>
                     <DeviceSection
                         setearP = {setEarP}
                         HDTF={hdTF}
@@ -516,7 +516,7 @@ export function App() {
                         setzx7 ={setZx7}
                         setSpk={setSpkCat}
 
-                        prop1='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+                        prop1={''}
                         prop2={(
                             <React.Fragment>
                                 zx9<br/>Speaker
@@ -555,27 +555,27 @@ export function App() {
                         prop4={spkCat ? 'xx99Div2': 'None'}
                     ></DeviceSection>
                 </div>
-                <div className={earP ? 'None' : null}>
-                <DeviceSection
-                    setearP = {setEarP}
-                    HDTF={hdTF}
-                    setHDTF={sethdTF}
-                    setIsVisible2={setIsVisible}
-                    spkTP ={setSpkCat}
-                    earCatt = {setEarCat}
-                    setP={setPrD}
-                    setM={setM1}
-                    set599={set59}
-                    setzx9={setZx9}
-                    setzx7 ={setZx7}
+                <div className={earP ? 'None' : 'xxMa3'}>
+                    <DeviceSection
+                        setearP = {setEarP}
+                        HDTF={hdTF}
+                        setHDTF={sethdTF}
+                        setIsVisible2={setIsVisible}
+                        spkTP ={setSpkCat}
+                        earCatt = {setEarCat}
+                        setP={setPrD}
+                        setM={setM1}
+                        set599={set59}
+                        setzx9={setZx9}
+                        setzx7 ={setZx7}
 
-                    prop1='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
-                    prop2='YX1 WIRELESS EARPHONES'
-                    prop3='Tailor your listening experience with bespoke dynamic drivers from the
-                     new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
-                     in noisy environments with its active noise cancellation feature.'
-                    prop4={earCat ? 'xx99Div2': 'None'}
-                ></DeviceSection>
+                        prop1='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
+                        prop2='YX1 WIRELESS EARPHONES'
+                        prop3='Tailor your listening experience with bespoke dynamic drivers from the
+                         new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
+                         in noisy environments with its active noise cancellation feature.'
+                        prop4={earCat ? 'xx99Div2': 'None'}
+                    ></DeviceSection>
                 </div>
 
                 <div  className={!isVisible ? "sec2" :'sec2Opc'}>

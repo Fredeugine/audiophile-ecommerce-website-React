@@ -999,9 +999,56 @@
         margin-bottom: 50px;
         align-items: center;
     }
+    .xx99Div2 > .xx92pointer{
+        width: 100%;
+    }
     .xx92pointer > .xx992{
         max-width: 540px;
         height: 560px;
+        background-image: url("../public/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg");
+        background-size: cover;
+    }
+    .xx99Div2 > .xx992Inner2{
+        text-align: left;
+    }
+    .xx992Inner2 > .xx992Inner2Text{
+        text-align: left;
+    }
+    .xx992Inner2 > .np{
+        position: absolute;
+        left: 0;
+    }
+    .xx992Inner2 > button{
+        left: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .xxMa3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .xxMa3 > .xx99Div2{
+        display: flex;
+        margin-left: 24px;
+        flex-direction: column;
+        max-width: 689px;
+        height: 706px;
+        text-align: left;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .xx99Div2 > .xx92pointer{
+        width: 100%;
+    }
+    .xx92pointer > .xx992{
+        max-width: 689px;
+        height: 352px;
+        background-image: url("../public/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg");
+        background-size: cover;
     }
     .xx99Div2 > .xx992Inner2{
         text-align: left;

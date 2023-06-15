@@ -7,7 +7,6 @@ import 'animate.css';
 export function CategoriesMenu(props) {
 
     return (
-
         <div className={ props.isVisible ? 'menuOfHam' : 'trans'}>
             <div  className="soundDevices">
                 <div className="headphonesDiv">
@@ -77,7 +76,6 @@ export function CategoriesMenu(props) {
                 <div className='bodyDiv'></div>
             </div>
         </div>
-
     );
 }
 
@@ -85,7 +83,7 @@ export function CategoriesMenu(props) {
 export function DeviceSection(props){
 
     return(
-        <div  style={{marginTop:  props.prop2 === 'XX99 Mark II Headphones' && window.innerWidth < 432 ? '200px' : null, flexDirection: props.prop2 === 'XX99 Mark I Headphones' ? 'row-reverse' : 'row', marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
+        <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
              <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)
