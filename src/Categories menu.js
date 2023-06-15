@@ -85,8 +85,7 @@ export function CategoriesMenu(props) {
 export function DeviceSection(props){
 
     return(
-
-        <div id={props.prop4} className={props.prop4}>
+        <div  style={{marginTop:  props.prop2 === 'XX99 Mark II Headphones' && window.innerWidth < 432 ? '200px' : null, flexDirection: props.prop2 === 'XX99 Mark I Headphones' ? 'row-reverse' : 'row', marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
              <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)
@@ -131,9 +130,9 @@ export function DeviceSection(props){
             </div>
             <div className="xx992Inner2">
                 <span className="np">New Product</span>
-                <span className="xx99Name">{props.prop2}</span>
+                <span id={'xx99Name'} className="xx99Name">{props.prop2}</span>
                 <span className="xx992Inner2Text">{props.prop3}</span>
-                <button className="seePr" onClick={()=>{
+                <button id={'seePr'} className="seePr" onClick={()=>{
                     if (props.prop2 === 'XX99 Mark II Headphones'){
                         props.setP(true)
                     }

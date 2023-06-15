@@ -159,6 +159,7 @@
     }
     .soundDevices{
         gap: 10px !important;
+
     }
 
 
@@ -167,6 +168,7 @@
     .earphonesDiv, .speakersDiv, .headphonesDiv {
         min-width: 150px !important;
     }
+
 }
 
 
@@ -741,6 +743,8 @@
     width: 100%;
     height: 698px;
     padding: 24px;
+    margin-top: 40px;
+    margin-bottom: 130px;
 }
 
 .manImage {
@@ -983,7 +987,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 220px;
+        margin-top: 80px;
     }
     .xxMa3 > .xx99Div2{
         display: flex;
@@ -992,13 +996,26 @@
         max-width: 1110px;
         height: 560px;
         text-align: left;
-        border: 1px solid red;
-        margin-bottom: 0;
+        margin-bottom: 50px;
         align-items: center;
     }
     .xx92pointer > .xx992{
         max-width: 540px;
         height: 560px;
+    }
+    .xx99Div2 > .xx992Inner2{
+        text-align: left;
+    }
+    .xx992Inner2 > .xx992Inner2Text{
+        text-align: left;
+    }
+    .xx992Inner2 > .np{
+        position: absolute;
+        left: 0;
+    }
+    .xx992Inner2 > button{
+        left: 0;
+        margin: 0;
     }
 }
 .xx99Div2{
@@ -1045,6 +1062,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #000000;
+    width: 100%;
 }
 .xx992Inner2Text{
     justify-content: center;
@@ -1829,7 +1847,7 @@ a{
         margin-top: 0;
     }
 
-    .seePr {
+    #seePr {
         transition: transform 0.2s;
         margin-left: -6px;
         font-weight: 700;
@@ -1849,7 +1867,6 @@ a{
         transform: scale(1);
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
     }
     .seePr:hover{
         transform: scale(103.4%);
@@ -2232,7 +2249,7 @@ a{
         background: #D87D4A;
         width: 101px;
         height: 4px;
-        margin-top: -87px;
+        margin-top: -18px;
         margin-right: 20px;
     }
     #in1{
@@ -2300,18 +2317,18 @@ a{
         text-transform: uppercase;
 
     }
-    .xx99Div2{
+    #xx99Div2{
         display: flex;
         margin-top: 64px;
         margin-left: 24px;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content:  space-between;
         background: white;
         position: relative;
         width: 327px;
         height: 724px;
         text-align: center;
-        margin-bottom: 120px;
+        margin-bottom: 135px;
     }
     .xx99Opc{
         background-color: rgba(0, 0, 0, 0.4) ;
@@ -2332,8 +2349,8 @@ a{
         width: 327px;
         height: 340px;
     }
-    .xx99Name {
-        margin-top: 44px;
+    #xx99Name {
+        margin-top: -8px;
         height: 76px;
         font-style: normal;
         font-weight: 700;

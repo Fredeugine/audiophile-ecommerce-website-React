@@ -657,8 +657,8 @@ export function App() {
                         </div>
                     </div>
 
-                    <div className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'nn'}>
-                        <div id={'zx9Div'} className='zx9Div'>
+                    <div className={'nn'}>
+                        <div id={'zx9Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'zx9Div'}>
                             <div className="container">
                                 <div id={'outer-circle'} className="outer-circle" />
                                 <div id={'inner-circle'} className="inner-circle">
@@ -684,7 +684,7 @@ export function App() {
                             }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div id={'zx7Div'} className="zx7Div">
+                        <div id={'zx7Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"}>
                             <div className="zx7DivInner">
                                 <p className="zx7text">ZX7 speaker</p>
                                 <button className="seePr" onClick={()=>{
@@ -696,7 +696,7 @@ export function App() {
                                 }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div id={'yx1Div'} className="yx1Div">
+                        <div id={'yx1Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"}>
                             <div id={"yx1DivInner1"} className="yx1DivInner1" />
                             <div id={'"yx1DivInner2"'} className="yx1DivInner2">
                                 <div id={"yx1DivInner2Inner"} className="yx1DivInner2Inner">
@@ -711,52 +711,50 @@ export function App() {
                                 </div>
                             </div>
                         </div>
-
                             <div id={'footerSec1'} className="footerSec1">
-                                <div id={'manImage'} className="manImage" />
-                                <div id={"footerSec1Inner2"} className="footerSec1Inner2">
-                                    Bringing you the <span>best</span> audio gear
+                                    <div id={'manImage'} className="manImage" />
+                                    <div id={"footerSec1Inner2"} className="footerSec1Inner2">
+                                        Bringing you the <span>best</span> audio gear
+                                    </div>
+                                    <div id={"footerSec1Inner3"} className="footerSec1Inner3">
+                                        Located at the heart of New York City, Audiophile is the premier store
+                                        for high-end headphones, earphones, speakers, and audio accessories. We
+                                        have a large showroom and luxury demonstration rooms available for you
+                                        to browse and experience a wide range of our products. Stop by our store
+                                        to meet some of the fantastic people who make Audiophile the best place
+                                        to buy your portable audio equipment.
+                                    </div>
                                 </div>
-                                <div id={"footerSec1Inner3"} className="footerSec1Inner3">
-                                    Located at the heart of New York City, Audiophile is the premier store
-                                    for high-end headphones, earphones, speakers, and audio accessories. We
-                                    have a large showroom and luxury demonstration rooms available for you
-                                    to browse and experience a wide range of our products. Stop by our store
-                                    to meet some of the fantastic people who make Audiophile the best place
-                                    to buy your portable audio equipment.
+                            <div id={'footerSec2'} className="footerSec2">
+                                <span id={'orDsh'} className={'orDsh'}></span>
+                                <div id={'in1'} className={'in1'}>
+                                    <div id={'aud'} className="aud">
+                                        <img alt='Logo"' src="/assets/shared/desktop/logo.svg" />
+                                    </div>
+                                    <div id={'footerSec2Inner2'} className="footerSec2Inner2">
+                                        <span>Home</span>
+                                        <span>Headphones</span>
+                                        <span>Speakers</span>
+                                        <span>Earphones</span>
+                                    </div>
+                                </div>
+                                <div id={'in2'} className={'in2'}>
+                                    <p id={"footerSec2P"} className="footerSec2P">
+                                        Audiophile is an all-in-one stop to fulfill your audio needs. We're a
+                                        small team of music lovers and sound specialists who are devoted to
+                                        helping you get the most out of personal audio. Come and visit our demo
+                                        facility - we’re open 7 days a week.
+                                    </p>
+                                </div>
+                                <div id={'in3'} className={'in3'}>
+                                    <p id={'footerSec2P2'} className="footerSec2P2">Copyright 2021. All Rights Reserved</p>
+                                    <div id={"SocialMediaLinks"} className="SocialMediaLinks">
+                                        <img src="/assets/shared/desktop/icon-facebook.svg" />
+                                        <img src="/assets/shared/desktop/icon-twitter.svg" />
+                                        <img src="/assets/shared/desktop/icon-instagram.svg" />
+                                    </div>
                                 </div>
                             </div>
-                        <div id={'footerSec2'} className="footerSec2">
-                            <span id={'orDsh'} className={'orDsh'}></span>
-                            <div id={'in1'} className={'in1'}>
-                                <div id={'aud'} className="aud">
-                                    <img alt='Logo"' src="/assets/shared/desktop/logo.svg" />
-                                </div>
-                                <div id={'footerSec2Inner2'} className="footerSec2Inner2">
-                                    <span>Home</span>
-                                    <span>Headphones</span>
-                                    <span>Speakers</span>
-                                    <span>Earphones</span>
-                                </div>
-                            </div>
-                            <div id={'in2'} className={'in2'}>
-                                <p id={"footerSec2P"} className="footerSec2P">
-                                    Audiophile is an all-in-one stop to fulfill your audio needs. We're a
-                                    small team of music lovers and sound specialists who are devoted to
-                                    helping you get the most out of personal audio. Come and visit our demo
-                                    facility - we’re open 7 days a week.
-                                </p>
-                            </div>
-                            <div id={'in3'} className={'in3'}>
-                                <p id={'footerSec2P2'} className="footerSec2P2">Copyright 2021. All Rights Reserved</p>
-                                <div id={"SocialMediaLinks"} className="SocialMediaLinks">
-                                    <img src="/assets/shared/desktop/icon-facebook.svg" />
-                                    <img src="/assets/shared/desktop/icon-twitter.svg" />
-                                    <img src="/assets/shared/desktop/icon-instagram.svg" />
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 </div>
