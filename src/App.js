@@ -516,7 +516,7 @@ export function App() {
                         setzx7 ={setZx7}
                         setSpk={setSpkCat}
 
-                        prop1={''}
+                        prop1='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                         prop2={(
                             <React.Fragment>
                                 zx9<br/>Speaker

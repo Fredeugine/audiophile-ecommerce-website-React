@@ -56,7 +56,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
         <div className={checkout ? '' : 'None'}>
             <form  className={tku ? 'blurr2': 'dForm' }>
                 <h1 className='hh1'>Checkout</h1>
-                <h8 className='h55'>Billing Details</h8>
+                <h6 className='h55'>Billing Details</h6>
                 <div className="form-group">
                     <label>Name</label>
                     <input type="text" id="name" placeholder="Alexei Ward" required={true} />
@@ -69,7 +69,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     <label htmlFor="phone">Phone Number</label>
                     <input type="tel" id="phone" placeholder="656789034" required={true} />
                 </div>
-                <h8 className='h55'>Shipping Info</h8>
+                <h6 className='h55'>Shipping Info</h6>
                 <div className="form-group">
                     <label htmlFor="address">Your Address</label>
                     <input type="text" id="address" placeholder="Avenida Navarra" required={true}  />
@@ -87,7 +87,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     <input type="text" id="country" placeholder="Spain" required={true} />
                 </div>
 
-                <h8 className='h55'>Payment Details</h8>
+                <h6 className='h55'>Payment Details</h6>
                 <div className="form-group">
                     <label htmlFor="country">Payment Method</label>
                    <span className='eMon' onClick={()=>{

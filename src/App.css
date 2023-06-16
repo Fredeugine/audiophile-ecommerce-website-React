@@ -856,6 +856,7 @@
         justify-content: normal;
         padding-left: 39px;
         padding-right: 40px;
+        max-height: 400px;
     }
     .footerSec2 > .in1{
         display: flex;
@@ -912,7 +913,7 @@
     justify-content: center;
     background: black;
     width: 100%;
-    height: 654px;
+    max-height: 365px;
     padding-bottom: 20px;
 }
 .orDsh{
@@ -1005,8 +1006,6 @@
     .xx92pointer > .xx992{
         max-width: 540px;
         height: 560px;
-        background-image: url("../public/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg");
-        background-size: cover;
     }
     .xx99Div2 > .xx992Inner2{
         text-align: left;
@@ -1045,23 +1044,23 @@
         width: 100%;
     }
     .xx92pointer > .xx992{
+        width: 100%;
         max-width: 689px;
         height: 352px;
-        background-image: url("../public/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg");
-        background-size: cover;
     }
     .xx99Div2 > .xx992Inner2{
-        text-align: left;
+        text-align: center;
     }
     .xx992Inner2 > .xx992Inner2Text{
-        text-align: left;
+        text-align: center;
     }
     .xx992Inner2 > .np{
         position: absolute;
-        left: 0;
+        text-align: center;
+        left: 70px;
     }
     .xx992Inner2 > button{
-        left: 0;
+
         margin: 0;
     }
 }
@@ -1200,15 +1199,115 @@ a{
 .xx99Div2x{
     opacity: 20%;
 }
+@media screen and (min-width: 432px)  {
+    .xxMa2 > .xx99Div2P{
+        width: 100%;
+       align-items: center;
+
+    }
+    .xx99Div2P > .xx992Inner2P{
+        flex-direction: row;
+        max-width: 1110px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .xx992Inner2P > .xx992{
+        width: 100%;
+        max-width: 540px;
+        height: 650px;
+    }
+    .xx992Inner2P2 > .xx99Name{
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .xx992Inn > .fea{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+    }
+    .xx99Div2P > .xx992Inn{
+        max-width: 1110px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .xx992Inn > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .xx992Inn > div > .feaText{
+        max-width: 635px;
+        height: 250px;
+    }
+    .xx99Div2P > .xx992Btm{
+        border: 1px solid red;
+        max-width: 1110px;
+    }
+    .xx992Btm > .btPics{
+        flex-direction: row;
+        max-width: 1110px;
+        border: 1px solid red;
+        height: 592px;
+    }
+    .btPics > div > .Pic1{
+        max-width: 450px;
+        height: 280px;
+    }
+    .btPicsInn{
+        max-width: 445px;
+        height: 592px;
+    }
+    .btPics > div {
+        max-width: 445px;
+        height: 592px;
+    }
+
+    .btPics > .Pic3{
+        max-width: 635px;
+        height: 592px;
+    }
+    .xx992Btm > .simPr{
+        max-width: 1110px;
+    }
+    .simPr > .fea{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .simPr > .btmSec{
+        flex-direction: row;
+        max-width: 1110px;
+        height: 471px;
+        justify-content: space-between;
+    }
+    .btmSec > .btmDiv{
+        max-width: 350px;
+        height: 471px;
+    }
+    .btmDiv > .btmPic3{
+        width: 100%;
+        max-width: 350px;
+        height: 318px;
+    }
+}
+.Pic3{
+    max-width: 327px;
+    width: 100%;
+    border-radius: 8px;
+}
 .xx99Div2P{
     display: flex;
     margin-top: 64px;
     margin-left: 24px;
     flex-direction: column;
-    justify-content:  space-between;
     background: white;
     position: relative;
-    width: 327px;
+    width: 100%;
     height: 724px;
     text-align: left;
     margin-bottom: 2770px;
@@ -1219,8 +1318,16 @@ a{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+    max-width: 327px;
+}
+.xx992Inner2P2{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     width: 327px;
 }
+
 .xx992Inner2TextP{
     font-style: normal;
     font-weight: 500;
@@ -1302,6 +1409,10 @@ a{
     left: 15px;
 
 }
+.xx992Inn{
+    width: 100%;
+    max-width: 327px;
+}
 .fea{
     width: 327px;
     height: 36px;
@@ -1314,7 +1425,8 @@ a{
 
 }
 .feaText{
-    width: 327px;
+    max-width: 327px;
+    width: 100%;
     height: 475px;
     font-weight: 500;
     font-size: 15px;
@@ -1327,7 +1439,8 @@ a{
 
 }
 .oList{
-
+    display: flex;
+    flex-direction: column;
 }
 .listsInner{
     position: relative;
@@ -1348,39 +1461,64 @@ a{
 .ll{
     opacity: 0.5;
 }
+.xx992Btm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 327px;
+}
 .btPics{
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
     height: 756px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 120px;
+    justify-content: space-between;
+}
+.btPicsInn{
+    width: 100%;
+    max-width: 327px;
+    height: 756px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .Pic1{
-    width: 327px;
+    max-width: 327px;
+    width: 100%;
     border-radius: 8px;
 }
 .simPr > span{
     display: inline-flex;
     justify-content: center;
+    margin-bottom: 64px;
 }
 .btmSec{
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 327px;
 }
 .btmDiv{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 32px;
+    width: 100%;
+    max-width: 327px;
+    height: 265px;
 }
 .btmPic3{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
     height: 120px;
     border-radius: 8px;
     background-color: #F1F1F1;
@@ -1388,6 +1526,14 @@ a{
 .btmPic3 > img{
     width: 71.56px;
     height: 86px;
+}
+.simPr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 327px;
+    justify-content: center;
+    align-items: center;
 }
 .btmInn{
     display: flex;
@@ -1843,7 +1989,7 @@ a{
     }
 
     #np {
-        position: absolute;
+        position: unset;
         height: 19px;
         font-weight: 400;
         font-size: 14px;
@@ -2289,7 +2435,7 @@ a{
         justify-content: center;
         background: black;
         width: 100%;
-        height: 654px;
+        max-height: 654px;
         padding-bottom: 20px;
     }
     #orDsh{
@@ -2334,6 +2480,7 @@ a{
         opacity: 0.5;
         width: 327px;
         height: 150px;
+
     }
     #footerSec2P2{
         font-weight: 700;
@@ -2383,11 +2530,15 @@ a{
         overflow: hidden;
         filter: blur(1px)
     }
-    .xx992{
-        width: 327px;
+    #xx92pointer{
+        width: 100%;
+    }
+    #xx992{
+        width: 100%;
+        max-width: 327px;
         height: 352px;
     }
-    .xx992Inner2{
+    #xx992Inner2{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -2407,7 +2558,7 @@ a{
         text-transform: uppercase;
         color: #000000;
     }
-    .xx992Inner2Text{
+    #xx992Inner2Text{
         justify-content: center;
         font-style: normal;
         font-weight: 500;
@@ -2419,7 +2570,7 @@ a{
         color: #000000;
         opacity: 0.5;
     }
-    .xx992Inner2 > button{
+    #xx992Inner2 > button{
         margin-top: 8px;
     }
     .hamburg{

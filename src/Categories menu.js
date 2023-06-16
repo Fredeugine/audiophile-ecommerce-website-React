@@ -1,6 +1,6 @@
 import './App.css';
 import {ProductInCart} from "./Cart";
-import {useState} from "react";
+import {useEffect} from "react";
 import {CSSTransition} from "react-transition-group";
 import 'animate.css';
 
@@ -81,7 +81,6 @@ export function CategoriesMenu(props) {
 
 
 export function DeviceSection(props){
-
     return(
         <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
              <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
@@ -96,10 +95,12 @@ export function DeviceSection(props){
                  props.setzx7(false)
                  props.setearP(false)
              }}>Home</button>
-            <div className='xx92pointer'>
+            <div id={'xx92pointer'} className='xx92pointer'>
                 <img
-                    className="xx992"
                     src={props.prop1}
+                    id={'xx992'}
+                    className="xx992"
+
                     onClick={()=>{
                         if (props.prop2 === 'XX99 Mark II Headphones'){
                             props.setP(true)
@@ -126,10 +127,10 @@ export function DeviceSection(props){
                     }}
                 />
             </div>
-            <div className="xx992Inner2">
-                <span className="np">New Product</span>
+            <div id={'xx992Inner2'} className="xx992Inner2">
+                <span id={'np'} className="np">New Product</span>
                 <span id={'xx99Name'} className="xx99Name">{props.prop2}</span>
-                <span className="xx992Inner2Text">{props.prop3}</span>
+                <span id={"xx992Inner2Text"} className="xx992Inner2Text">{props.prop3}</span>
                 <button id={'seePr'} className="seePr" onClick={()=>{
                     if (props.prop2 === 'XX99 Mark II Headphones'){
                         props.setP(true)
@@ -300,6 +301,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
     return(
 
         <div className={prop4}>
+
             <button  className='hdBack' onClick={()=>{
                 if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
                     setIsVisible2(false)
@@ -339,61 +341,68 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                     setearP(false)
                 }
             }}>Go Back</button>
-            <div>
-                <img
-                    className="xx992"
-                    src={prop1}
-                />
-            </div>
+
             <div className="xx992Inner2P">
-                <span className="np">New Product</span>
-                <span className="xx99Name">{prop2}</span>
-                <span className="xx992Inner2TextP">{prop3}</span>
-
-                <span className='price'>{prop5}</span>
-                <div className='spCa'>
-                    <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
-                                   cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
-                    <button className="seePrP" onClick={()=>{
-                            addToCart()
-                            setaddC(true)
-                            setTimeout(function (){
-                                setaddC(false)
-                            },2800)
-                    }}>ADD TO CART</button>
-                </div>
-
-                <div className='fea'>Features</div>
-                <div className='feaText'>{prop6}</div>
-                <div className='fea'>In the box</div>
-                <div className='lists'>
-                    <ol className='oList'>
-                        <li className='listsInner'>
-                            <span className='orr'>{prop7}</span><span className='ll'>{prop8}</span>
-                        </li>
-                        <li className='listsInner'>
-                            <span className='orr'>{prop9}</span><span className='ll'>{prop10}</span>
-                        </li>
-                        <li className='listsInner'>
-                            <span className='orr'>1x</span><span className='ll'>User Manual</span>
-                        </li>
-                        <li className='listsInner'>
-                            <span className='orr'>{prop11}</span><span className='ll'>{prop12}</span>
-                        </li>
-                        <li className='listsInner'>
-                            <span className='orr'>{prop13}</span><span className='ll'>{prop14}</span>
-                        </li>
-                        <li className='listsInner'>
-                            <span className='orr'>{prop15}</span><span className='ll'>{prop16}</span>
-                        </li>
-                    </ol>
+                    <img className="xx992" src={prop1} />
+                <div className="xx992Inner2P2">
+                    <span className="np">New Product</span>
+                    <span className="xx99Name">{prop2}</span>
+                    <span className="xx992Inner2TextP">{prop3}</span>
+                    <span className='price'>{prop5}</span>
+                    <div className='spCa'>
+                        <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
+                                       cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
+                        <button className="seePrP" onClick={()=>{
+                                addToCart()
+                                setaddC(true)
+                                setTimeout(function (){
+                                    setaddC(false)
+                                },2800)
+                        }}>ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div>
+
+            <div className={'xx992Inn'}>
+                <div>
+                    <div className='fea'>Features</div>
+                    <div className='feaText'>{prop6}</div>
+                </div>
+                <div>
+                    <div className='fea'>In the box</div>
+                    <div className='lists'>
+                        <ol className='oList'>
+                            <li className='listsInner'>
+                                <span className='orr'>{prop7}</span><span className='ll'>{prop8}</span>
+                            </li>
+                            <li className='listsInner'>
+                                <span className='orr'>{prop9}</span><span className='ll'>{prop10}</span>
+                            </li>
+                            <li className='listsInner'>
+                                <span className='orr'>1x</span><span className='ll'>User Manual</span>
+                            </li>
+                            <li className='listsInner'>
+                                <span className='orr'>{prop11}</span><span className='ll'>{prop12}</span>
+                            </li>
+                            <li className='listsInner'>
+                                <span className='orr'>{prop13}</span><span className='ll'>{prop14}</span>
+                            </li>
+                            <li className='listsInner'>
+                                <span className='orr'>{prop15}</span><span className='ll'>{prop16}</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className={'xx992Btm'}>
                 <div className='btPics'>
-                    <img className='Pic1'  src={prop17}/>
-                   <img  className='Pic1' src={prop18}/>
-                    <img className='Pic1' src={prop19}/>
+                    <div className={'btPicsInn'}>
+                        <img className='Pic1'  src={prop17}/>
+                        <img  className='Pic1' src={prop18}/>
+                    </div>
+                    <img className='Pic3' src={prop19}/>
                 </div>
                 <div className='simPr'>
                     <span className='fea'>YOU MAY ALSO LIKE</span>
