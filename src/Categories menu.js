@@ -342,17 +342,17 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                 }
             }}>Go Back</button>
 
-            <div className="xx992Inner2P">
-                    <img className="xx992" src={prop1} />
-                <div className="xx992Inner2P2">
-                    <span className="np">New Product</span>
-                    <span className="xx99Name">{prop2}</span>
-                    <span className="xx992Inner2TextP">{prop3}</span>
-                    <span className='price'>{prop5}</span>
-                    <div className='spCa'>
+            <div id={"xx992Inner2P"} className="xx992Inner2P">
+                    <img id={"xx992"} className="xx992" src={window.matchMedia('(min-width: 432px)').matches ? '/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg' : prop1 } />
+                <div id={"xx992Inner2P2"} className="xx992Inner2P2">
+                    <span  className="np">New Product</span>
+                    <span id={'xx99Name'} className="xx99Name">{prop2}</span>
+                    <span id={"xx992Inner2TextP"} className="xx992Inner2TextP">{prop3}</span>
+                    <span id={prop5} className='price'>{prop5}</span>
+                    <div id={'spCa'} className='spCa'>
                         <ProductInCart setCartInc = {prd ? setCartInc: x59 ? setCartInc59: earP ? setCartIncx1: xzx7 ? setczx7: xzx9 ? setczx9: m1 ? setmk2 : null}
                                        cartInc={prd ? cartInc: x59 ? cartIn59: earP ? cartIncx1: xzx7 ? czx7: xzx9 ? czx9: m1 ? mk2 : null}></ProductInCart>
-                        <button className="seePrP" onClick={()=>{
+                        <button id={'seePrp'} className="seePrP" onClick={()=>{
                                 addToCart()
                                 setaddC(true)
                                 setTimeout(function (){
@@ -363,31 +363,31 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                 </div>
             </div>
 
-            <div className={'xx992Inn'}>
-                <div>
-                    <div className='fea'>Features</div>
-                    <div className='feaText'>{prop6}</div>
+            <div id={'xx992Inn'} className={'xx992Inn'}>
+                <div className={'Intrin'} id={'Intrin'}>
+                    <div id={'fea'} className='fea'>Features</div>
+                    <div id={'prop6'} className='feaText'>{prop6}</div>
                 </div>
-                <div>
-                    <div className='fea'>In the box</div>
-                    <div className='lists'>
-                        <ol className='oList'>
-                            <li className='listsInner'>
-                                <span className='orr'>{prop7}</span><span className='ll'>{prop8}</span>
+                <div id={'hkk'} className={'hkk'}>
+                    <div id={'fea'} className='fea'>In the box</div>
+                    <div id={'lists'} className='lists'>
+                        <ol id={'oLists'} className='oList'>
+                            <li id={'listsInner'} className='listsInner'>
+                                <span id={'orr'} className='orr'>{prop7}</span><span className='ll'>{prop8}</span>
                             </li>
-                            <li className='listsInner'>
+                            <li id={'listsInner'} className='listsInner'>
                                 <span className='orr'>{prop9}</span><span className='ll'>{prop10}</span>
                             </li>
-                            <li className='listsInner'>
+                            <li id={'listsInner'} className='listsInner'>
                                 <span className='orr'>1x</span><span className='ll'>User Manual</span>
                             </li>
-                            <li className='listsInner'>
+                            <li id={'listsInner'} className='listsInner'>
                                 <span className='orr'>{prop11}</span><span className='ll'>{prop12}</span>
                             </li>
-                            <li className='listsInner'>
+                            <li id={'listsInner'} className='listsInner'>
                                 <span className='orr'>{prop13}</span><span className='ll'>{prop14}</span>
                             </li>
-                            <li className='listsInner'>
+                            <li id={'listsInner'} className='listsInner'>
                                 <span className='orr'>{prop15}</span><span className='ll'>{prop16}</span>
                             </li>
                         </ol>
@@ -396,22 +396,22 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
             </div>
 
-            <div className={'xx992Btm'}>
-                <div className='btPics'>
-                    <div className={'btPicsInn'}>
-                        <img className='Pic1'  src={prop17}/>
-                        <img  className='Pic1' src={prop18}/>
+            <div id={'xx992Btm'} className={'xx992Btm'}>
+                <div id={'btPics'} className='btPics'>
+                    <div id={'btPicsInn'} className={'btPicsInn'}>
+                        <img id={'Pic1'} className='Pic1'  src={prop17}/>
+                        <img id={'Pic1'}  className='Pic1' src={prop18}/>
                     </div>
-                    <img className='Pic3' src={prop19}/>
+                    <img id={'Pic3'} className='Pic3' src={prop19}/>
                 </div>
-                <div className='simPr'>
-                    <span className='fea'>YOU MAY ALSO LIKE</span>
-                    <div className='btmSec'>
-                        <div className='btmDiv'>
-                            <span className='btmPic3'> <img src={prop20}/></span>
-                            <span className='btmInn'>
-                                <span className='fea'>{prop21}</span>
-                                <button className='seePr' onClick={()=>{
+                <div id={'simPr'} className='simPr'>
+                    <span id={'fea'} className='fea'>YOU MAY ALSO LIKE</span>
+                    <div id={'btmSec'} className='btmSec'>
+                        <div id={'btmDic'} className='btmDiv'>
+                            <span id={'btmPic3'} className='btmPic3'> <img src={prop20}/></span>
+                            <span id={'btmInn'} className='btmInn'>
+                                <span id={'fea'} className='fea'>{prop21}</span>
+                                <button id={'seePr'} className='seePr' onClick={()=>{
                                     window.scrollTo({
                                         top: 0,
                                         behavior: 'auto' // Enables smooth scrolling animation
@@ -419,18 +419,18 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                                 }}>SEE PRODUCT</button>
                             </span>
                         </div>
-                        <div className='btmDiv'>
-                            <span className='btmPic3'> <img src={prop22}/></span>
-                            <span className='btmInn'>
-                                <span className='fea'>{prop23}</span>
-                                <button className='seePr'>SEE PRODUCT</button>
+                        <div id={'btmDic'} className='btmDiv'>
+                            <span id={'btmPic3'} className='btmPic3'> <img src={prop22}/></span>
+                            <span id={'btmInn'} className='btmInn'>
+                                <span id={'fea'} className='fea'>{prop23}</span>
+                                <button id={'seePr'} className='seePr'>SEE PRODUCT</button>
                             </span>
                         </div>
-                        <div className='btmDiv'>
-                            <span className='btmPic3'> <img src={prop24}/></span>
-                            <span className='btmInn'>
-                                <span className='fea'>{prop25}</span>
-                                <button className='seePr' onClick={()=>{
+                        <div id={'btmDic'} className='btmDiv'>
+                            <span id={'btmPic3'} className='btmPic3'> <img src={prop24}/></span>
+                            <span id={'btmInn'} className='btmInn'>
+                                <span id={'fea'} className='fea'>{prop25}</span>
+                                <button id={'seePr'} className='seePr' onClick={()=>{
                                     window.scrollTo({
                                         top: 0,
                                         behavior: 'auto' // Enables smooth scrolling animation

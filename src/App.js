@@ -658,7 +658,7 @@ export function App() {
                     </div>
 
                     <div className={'nn'}>
-                        <div id={'zx9Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'zx9Div'}>
+                        <div id={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'zx9Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : 'zx9Div'}>
                             <div className="container">
                                 <div id={'outer-circle'} className="outer-circle" />
                                 <div id={'inner-circle'} className="inner-circle">
@@ -684,7 +684,7 @@ export function App() {
                             }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div id={'zx7Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"}>
+                        <div id={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"}>
                             <div className="zx7DivInner">
                                 <p className="zx7text">ZX7 speaker</p>
                                 <button className="seePr" onClick={()=>{
@@ -696,7 +696,7 @@ export function App() {
                                 }}>SEE PRODUCT</button>
                             </div>
                         </div>
-                        <div id={'yx1Div'} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"}>
+                        <div id={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"}>
                             <div id={"yx1DivInner1"} className="yx1DivInner1" />
                             <div id={'"yx1DivInner2"'} className="yx1DivInner2">
                                 <div id={"yx1DivInner2Inner"} className="yx1DivInner2Inner">

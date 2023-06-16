@@ -1199,7 +1199,7 @@ a{
 .xx99Div2x{
     opacity: 20%;
 }
-@media screen and (min-width: 432px)  {
+@media screen and (min-width: 850px)  {
     .xxMa2 > .xx99Div2P{
         width: 100%;
        align-items: center;
@@ -1210,11 +1210,12 @@ a{
         max-width: 1110px;
         justify-content: space-between;
         align-items: center;
+        height: 560px;
     }
     .xx992Inner2P > .xx992{
         width: 100%;
         max-width: 540px;
-        height: 650px;
+        height: 560px;
     }
     .xx992Inner2P2 > .xx99Name{
         margin-top: 0;
@@ -1235,7 +1236,7 @@ a{
         justify-content: space-between;
         flex-direction: row;
     }
-    .xx992Inn > div{
+    .xx992Inn > .Intrin{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1294,6 +1295,123 @@ a{
         max-width: 350px;
         height: 318px;
     }
+    .xx992Inner2P > .xx992Inner2P2{
+        max-width: 445px;
+        height: 407px;
+    }
+}
+@media screen and (max-width: 890px)  {
+    .xxMa2 > .xx99Div2P{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1680px !important;
+    }
+    .xx99Div2P > .xx992Inner2P{
+        flex-direction: row;
+        max-width: 689px;
+        justify-content: space-between;
+        align-items: center;
+        height: 480px;
+    }
+    .xx992Inner2P > .xx992{
+        width: 100%;
+        max-width: 281px;
+        height: 480px;
+    }
+    .xx992Inner2P > .xx992Inner2P2{
+        max-width: 339px;
+        height: 390px;
+    }
+    .xx992Inner2P2 > .xx99Name{
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .xx992Inn > .fea{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+    }
+    .xx99Div2P > .xx992Inn{
+        max-width: 689px;
+        border: 1px solid red;
+        display: flex;
+        gap: 120px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .xx992Inn > .Intrin{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+    }
+    .xx992Inn > .hkk{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: unset;
+    }
+    .xx992Inn > div > .feaText{
+        max-width: 689px;
+        height: 318px;
+    }
+    .xx99Div2P > .xx992Btm{
+        border: 1px solid red;
+        max-width: 689px;
+    }
+    .xx992Btm > .btPics{
+        flex-direction: row;
+        max-width: 690px;
+        border: 1px solid red;
+        height: 368px;
+        justify-content: space-between;
+
+    }
+    .btPics > div > .Pic1{
+        max-width: 277px;
+        height: 174px;
+    }
+    .btPics > div {
+        max-width: 277px;
+        height: 368px;
+    }
+
+    .btPics > .Pic3{
+        max-width: 395px;
+        height: 368px;
+    }
+    .xx992Btm > .simPr{
+        max-width: 689px;
+    }
+    .simPr > .fea{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+    }
+    .simPr > .btmSec{
+        flex-direction: row;
+        max-width: 689px;
+        height: 471px;
+        justify-content: space-between;
+        gap: 11px;
+    }
+    .btmSec > .btmDiv{
+        max-width: 350px;
+        height: 471px;
+    }
+    .btmDiv > .btmPic3{
+        width: 100%;
+        max-width: 350px;
+        height: 318px;
+    }
+    .lists > .oList{
+        max-width: 199px;
+        height: 124px;
+    }
 }
 .Pic3{
     max-width: 327px;
@@ -1325,7 +1443,8 @@ a{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
 }
 
 .xx992Inner2TextP{
@@ -1414,7 +1533,8 @@ a{
     max-width: 327px;
 }
 .fea{
-    width: 327px;
+    max-width: 327px;
+    width: 100%;
     height: 36px;
     font-style: normal;
     font-weight: 700;
@@ -1441,6 +1561,7 @@ a{
 .oList{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .listsInner{
     position: relative;
@@ -2638,7 +2759,12 @@ a{
     .xx99Div2x{
         opacity: 20%;
     }
-    .xx99Div2P{
+    #Pic3{
+        max-width: 327px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    #xx99Div2P{
         display: flex;
         margin-top: 64px;
         margin-left: 24px;
@@ -2653,13 +2779,17 @@ a{
         font-style: normal;
         color: #000000;
     }
-    .xx992Inner2P{
+    #xx992Inner2P{
         display: flex;
         flex-direction: column;
         gap: 24px;
         width: 327px;
+        margin-bottom: 440px;
     }
-    .xx992Inner2TextP{
+    #Intrin{
+        gap: 24px;
+    }
+    #xx992Inner2TextP{
         font-style: normal;
         font-weight: 500;
         font-size: 15px;
@@ -2669,7 +2799,7 @@ a{
         height: 125px;
         opacity: 0.5;
     }
-    .price{
+    #price{
         width: 73px;
         height: 25px;
         font-weight: 700;
@@ -2679,14 +2809,14 @@ a{
         text-transform: uppercase;
 
     }
-    .spCa{
+    #spCa{
         position: relative;
         display: flex;
         justify-content: space-between;
         width: 296px;
         height: 48px;
     }
-    .plusAndMinus{
+    #plusAndMinus{
         position: relative;
         display: inline-flex;
         justify-content: center;
@@ -2701,7 +2831,7 @@ a{
         text-transform: uppercase;
 
     }
-    .seePrP{
+    #seePrP{
         transition: transform 0.2s;
         font-weight: 700;
         font-size: 13px;
@@ -2716,16 +2846,19 @@ a{
         border-radius: 8px;
         border: 2px solid rgb(0,0,0,0.6);
     }
-    .cartBtn{
+    #cartBtn{
         position: relative;
     }
-    .cartNum{
+    #xx992Btm{
+        margin-bottom: 10000px;
+    }
+    #cartNum{
         position: absolute;
         top: -2px;
         color: #D87D4A;
         font-size: 10px;
     }
-    .seePrP:hover{
+    #seePrP:hover{
         transform: scale(104.4%);
     }
     .add,.subtr{
@@ -2740,7 +2873,7 @@ a{
         left: 15px;
 
     }
-    .fea{
+    #fea{
         width: 327px;
         height: 36px;
         font-style: normal;
@@ -2751,23 +2884,28 @@ a{
         text-transform: uppercase;
 
     }
-    .feaText{
-        width: 327px;
+    #feaText{
+        width: 100%;
+        max-width: 327px;
         height: 475px;
         font-weight: 500;
         font-size: 15px;
         line-height: 25px;
         opacity: 0.5;
     }
-    .lists{
+    #oLists{
+       width:199px;
+        height: 157px;
+    }
+    #hkk{
+        flex-direction: column;
+    }
+    #lists{
         position: relative;
         margin-bottom: 88px;
 
     }
-    .oList{
-
-    }
-    .listsInner{
+    #listsInner{
         position: relative;
         left: -40px;
         display: inline-flex;
@@ -2778,7 +2916,7 @@ a{
         line-height: 25px;
 
     }
-    .orr{
+    #orr{
         color: #D87D4A;
         opacity: 100%;
 
@@ -2786,7 +2924,7 @@ a{
     .ll{
         opacity: 0.5;
     }
-    .btPics{
+    #btPics{
         width: 327px;
         height: 756px;
         display: flex;
@@ -2794,27 +2932,29 @@ a{
         gap: 20px;
         margin-bottom: 120px;
     }
-    .Pic1{
+    #Pic1{
         width: 327px;
+        max-width: 327px;
         border-radius: 8px;
     }
-    .simPr > span{
+
+    #simPr > span{
         display: inline-flex;
         justify-content: center;
     }
-    .btmSec{
+    #btmSec{
         display: flex;
         flex-direction: column;
         gap: 56px;
     }
-    .btmDiv{
+    #btmDiv{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 32px;
     }
-    .btmPic3{
+    #btmPic3{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2823,11 +2963,11 @@ a{
         border-radius: 8px;
         background-color: #F1F1F1;
     }
-    .btmPic3 > img{
+    #btmPic3 > img{
         width: 71.56px;
         height: 86px;
     }
-    .btmInn{
+    #btmInn{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2835,10 +2975,10 @@ a{
         width: 177px;
         height: 113px;
     }
-    .btmInn > span{
+    #btmInn > span{
         text-align: center;
     }
-    .btmInn > button{
+    #btmInn > button{
         position: static;
     }
     .hdBack{

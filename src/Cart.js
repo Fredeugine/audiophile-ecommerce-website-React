@@ -72,7 +72,7 @@ export function ProductInCart({cartInc,setCartInc}){
 
     return (
 
-            <span className='plusAndMinus'>
+            <span id={'plusAndMinus'} className='plusAndMinus'>
                         <span className='subtr' onClick={subCalc}>-</span>
                         <span className='cartCount'>{cartInc}</span>
                         <span className='add' onClick={cartCalc}>+</span>
@@ -140,8 +140,8 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
                             <span>Earphones</span>
                         </span>
                         <span>
-          <img onClick={handleCart} className='cartBtn' alt="Cart button" src="/assets/shared/desktop/icon-cart.svg"/>
-                            <span className='cartNum'>{cartNum}</span>
+          <img onClick={handleCart} id={'cartBtn'} className='cartBtn' alt="Cart button" src="/assets/shared/desktop/icon-cart.svg"/>
+                            <span id={'cartNum'} className='cartNum'>{cartNum}</span>
         </span>
                     </div>
                 </div>
