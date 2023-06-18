@@ -786,7 +786,6 @@
 }
 @media screen and (min-width: 850px){
     .nn > .footerSec2{
-        border: 1px solid green;
         align-items: center;
         justify-content: normal;
         padding-left: 165px;
@@ -851,7 +850,6 @@
 }
 @media screen and (max-width: 850px){
     .nn > .footerSec2{
-        border: 1px solid green;
         align-items: center;
         justify-content: normal;
         padding-left: 39px;
@@ -999,6 +997,7 @@
         text-align: left;
         margin-bottom: 50px;
         align-items: center;
+        gap: 120px;
     }
     .xx99Div2 > .xx92pointer{
         width: 100%;
@@ -1033,7 +1032,7 @@
     .xxMa3 > .xx99Div2{
         display: flex;
         margin-left: 24px;
-        flex-direction: column;
+        flex-direction: column !important;
         max-width: 689px;
         height: 706px;
         text-align: left;
@@ -1199,7 +1198,7 @@ a{
 .xx99Div2x{
     opacity: 20%;
 }
-@media screen and (min-width: 850px)  {
+@media screen and (min-width: 890px)  {
     .xxMa2 > .xx99Div2P{
         width: 100%;
        align-items: center;
@@ -1231,10 +1230,10 @@ a{
     }
     .xx99Div2P > .xx992Inn{
         max-width: 1110px;
-        border: 1px solid red;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        margin-top: 100px;
     }
     .xx992Inn > .Intrin{
         display: flex;
@@ -1246,13 +1245,12 @@ a{
         height: 250px;
     }
     .xx99Div2P > .xx992Btm{
-        border: 1px solid red;
         max-width: 1110px;
+        margin-top: 120px
     }
     .xx992Btm > .btPics{
         flex-direction: row;
         max-width: 1110px;
-        border: 1px solid red;
         height: 592px;
     }
     .btPics > div > .Pic1{
@@ -1304,7 +1302,7 @@ a{
     .xxMa2 > .xx99Div2P{
         width: 100%;
         align-items: center;
-        margin-bottom: 1680px !important;
+        margin-bottom: 1680px;
     }
     .xx99Div2P > .xx992Inner2P{
         flex-direction: row;
@@ -1336,11 +1334,12 @@ a{
     }
     .xx99Div2P > .xx992Inn{
         max-width: 689px;
-        border: 1px solid red;
         display: flex;
         gap: 120px;
         justify-content: space-between;
         flex-direction: column;
+        margin-top: 100px;
+
     }
     .xx992Inn > .Intrin{
         display: flex;
@@ -1353,19 +1352,19 @@ a{
         flex-direction: row;
         gap: 32px;
         justify-content: unset;
+        margin-top: -100px;
     }
     .xx992Inn > div > .feaText{
         max-width: 689px;
         height: 318px;
     }
     .xx99Div2P > .xx992Btm{
-        border: 1px solid red;
         max-width: 689px;
+        margin-top: 120px;
     }
     .xx992Btm > .btPics{
         flex-direction: row;
         max-width: 690px;
-        border: 1px solid red;
         height: 368px;
         justify-content: space-between;
 
@@ -1420,17 +1419,16 @@ a{
 }
 .xx99Div2P{
     display: flex;
-    margin-top: 64px;
     margin-left: 24px;
     flex-direction: column;
-    background: white;
     position: relative;
     width: 100%;
     height: 724px;
     text-align: left;
-    margin-bottom: 2770px;
+    margin-bottom: 1710px;
     font-style: normal;
     color: #000000;
+    margin-top: 300px;
 }
 .xx992Inner2P{
     display: flex;
@@ -1728,6 +1726,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    max-width: 612px;
 }
 .cartFl > .seePr{
     position: static;
@@ -1739,8 +1739,7 @@ a{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 327px;
-    height: auto;
+    max-width: 1126px;
     background: white;
     color: black;
     padding: 24px;
@@ -1752,10 +1751,12 @@ a{
     gap: 24px;
 
 }
+
 .hh1,.h55{
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
     text-transform: uppercase;
 }
 .h55{
@@ -1765,9 +1766,34 @@ a{
     text-transform: uppercase;
     color: #D87D4A;
 }
+
+#root > .ll{
+    display: flex;
+    z-index: 2342342;
+    width: 100%;
+    max-width: 1126px;
+    height: 100%;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.ikk{
+    margin-left: 50px;
+}
+@media screen and (min-width: 1738px) {
+    #dForm{
+        display: none;
+    }
+}
 .form-group{
     display: flex;
     flex-direction: column;
+    gap: 9px;
+}
+.form-groups{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
     gap: 9px;
 }
 .form-group > label{
@@ -1775,14 +1801,24 @@ a{
     line-height: 16px;
     letter-spacing: -0.214286px;
 }
+.f1{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 644px;
+}
+
 .form-group > input{
-    width: 280px;
+    width: 309px;
     height: 56px;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: -0.25px;
     border: 1px solid #CFCFCF;
     border-radius: 8px;
+}
+#address{
+    width: 634px;
 }
 .form-group> input::placeholder{
     font-weight: 700;
@@ -1809,7 +1845,8 @@ a{
     padding-left: 16px;
     gap: 16px;
     border: 1px solid #CFCFCF;
-    width: 280px;
+    width: 100%;
+    max-width: 309px;
     height: 56px;
     border-radius: 8px;
     font-style: normal;
@@ -1915,6 +1952,7 @@ a{
     line-height: 25px;
     opacity: 0.5;
 }
+
 .inn{
     width: 238px;
     height: auto;
@@ -1968,7 +2006,7 @@ a{
 .none1{
     transition: opacity 400ms, transform 400ms;
     display: flex;
-    left: 1.4px;
+    right: 0;
     top: 40px;
     flex-direction: column;
     justify-content: space-between;
@@ -1990,11 +2028,24 @@ a{
     transform-origin: top right;
     transform: scale(0) translateY(-200px);
 }
+@media screen and (min-width: 1000px) {
+     div > #cartDiv{
+        width: 450px;
+         right: 100px;
+
+    }
+}
+@media screen and (min-width: 500px) {
+    div > .cartDiv{
+        width: 400px;
+
+    }
+}
 .cartDiv{
     position: fixed;
     transition: opacity 400ms, transform 400ms;
     display: flex;
-    left: 1.4px;
+    right: 0;
     top: 40px;
     flex-direction: column;
     justify-content: space-between;
@@ -2770,14 +2821,13 @@ a{
         margin-left: 24px;
         flex-direction: column;
         justify-content:  space-between;
-        background: white;
         position: relative;
         width: 327px;
         height: 724px;
         text-align: left;
-        margin-bottom: 2770px;
         font-style: normal;
         color: #000000;
+        margin-bottom: 3240px;
     }
     #xx992Inner2P{
         display: flex;
@@ -2899,11 +2949,15 @@ a{
     }
     #hkk{
         flex-direction: column;
+        margin-top: 100px;
     }
     #lists{
         position: relative;
         margin-bottom: 88px;
 
+    }
+    #xx992Inn{
+        margin-top: 0;
     }
     #listsInner{
         position: relative;
@@ -3046,7 +3100,7 @@ a{
         border-radius: 0;
         border: none;
     }
-    .dForm{
+    #dForm{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -3063,30 +3117,30 @@ a{
         gap: 24px;
 
     }
-    .hh1,.h55{
+    #hh1,#h55{
          font-size: 28px;
          line-height: 38px;
          letter-spacing: 1px;
          text-transform: uppercase;
      }
-    .h55{
+    #h55{
         font-size: 13px;
         line-height: 25px;
         letter-spacing: 0.928571px;
         text-transform: uppercase;
         color: #D87D4A;
     }
-    .form-group{
+    #form-group{
         display: flex;
         flex-direction: column;
         gap: 9px;
     }
-    .form-group > label{
+    #form-group > label{
         font-size: 12px;
         line-height: 16px;
         letter-spacing: -0.214286px;
     }
-    .form-group > input{
+    #form-group > input{
         width: 280px;
         height: 56px;
         font-size: 14px;
@@ -3095,7 +3149,7 @@ a{
         border: 1px solid #CFCFCF;
         border-radius: 8px;
     }
-    .form-group> input::placeholder{
+    #form-group> input::placeholder{
         font-weight: 700;
         font-size: 14px;
         line-height: 19px;
@@ -3103,7 +3157,7 @@ a{
         opacity: 0.4;
     }
 
-    .form-group > input:hover,.form-group > input:focus,.eMon:hover{
+    #form-group > input:hover,.form-group > input:focus,.eMon:hover{
         border-color: #D87D4A;
         outline: 1px solid rgba(216, 125, 74, 0.2);
     }
@@ -3114,7 +3168,7 @@ a{
 
     }
 
-    .eMon{
+    #eMon{
         display: flex;
         align-items: center;
         padding-left: 16px;
@@ -3301,7 +3355,7 @@ a{
         transform-origin: top right;
         transform: scale(0) translateY(-200px);
     }
-    .cartDiv{
+    #cartDiv{
         position: fixed;
         transition: opacity 400ms, transform 400ms;
         display: flex;

@@ -19,7 +19,7 @@ export function CartBtn({setcartnum,setCheckout,setTotal,total,carti,setcarti,mk
     }
 
     return (
-        <div className={addC ? 'cartDiv' : 'none1'} >
+        <div id={addC ? 'cartDiv' : 'none1'} className={addC ? 'cartDiv' : 'none1'} >
             <div className='cr'>CART({carti}) <span className='seePr' onClick={()=>{
                 setmk2Crt(0)
                 setCartIncCrt(0)

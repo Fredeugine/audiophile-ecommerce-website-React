@@ -22,6 +22,9 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
     const [orcir3,setorcir3]=useState(false)
     const [formValid,setformValid]= useState(false)
     function Summary(){
+        if (checkout){
+            document.querySelector('.hh').style.display = 'none'
+        }
         return(
 
             <div className='cartFl'>
@@ -53,75 +56,80 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
 
     return(
 
-        <div className={checkout ? '' : 'None'}>
-            <form  className={tku ? 'blurr2': 'dForm' }>
-                <h1 className='hh1'>Checkout</h1>
-                <h6 className='h55'>Billing Details</h6>
-                <div className="form-group">
-                    <label>Name</label>
-                    <input type="text" id="name" placeholder="Alexei Ward" required={true} />
+        <div id={checkout ? 'll' : 'None'} className={checkout ? 'll' : 'None'}>
+            <form id={tku ? 'blurr2': 'dForm' }  className={tku ? 'blurr2': 'dForm' }>
+                <h1 id={'hh1'} className='hh1'>Checkout</h1>
+                <h6 id={'h55'} className='h55'>Billing Details</h6>
+                <div id={'f1'} className={'f1'}>
+                    <div id={"form-group"}  className="form-group">
+                        <label htmlFor={'name'}>Name</label>
+                        <input type="text" id="name" placeholder="Alexei Ward" required={true} />
+                    </div>
+                    <div id={"form-group"} className="form-group">
+                        <label htmlFor="email">Email Address</label>
+                        <input type="email" id="email" placeholder="alexei@mail.com" required={true} />
+                    </div>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
-                    <input type="email" id="email" placeholder="alexei@mail.com" required={true} />
-                </div>
-                <div className="form-group">
+
+
+
+                <div id={"form-group"} className="form-group">
                     <label htmlFor="phone">Phone Number</label>
                     <input type="tel" id="phone" placeholder="656789034" required={true} />
                 </div>
-                <h6 className='h55'>Shipping Info</h6>
-                <div className="form-group">
+                <h6 id={'h55'} className='h55'>Shipping Info</h6>
+                <div id={"form-group"} className="form-group">
                     <label htmlFor="address">Your Address</label>
                     <input type="text" id="address" placeholder="Avenida Navarra" required={true}  />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="city">City</label>
-                    <input type="text" id="city" placeholder="Madrid"  required={true}/>
+                <div id={'f1'} className={'f1'}>
+                    <div id={"form-group"} className="form-group">
+                        <label htmlFor="city">City</label>
+                        <input type="text" id="city" placeholder="Madrid"  required={true}/>
+                    </div>
+                    <div id={"form-group"} className="form-group">
+                        <label htmlFor="zipcode">ZIP Code</label>
+                        <input type="text" id="zipcode" placeholder="10001" required={true} />
+                    </div>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="zipcode">ZIP Code</label>
-                    <input type="text" id="zipcode" placeholder="10001" required={true} />
-                </div>
-                <div className="form-group">
+                <div id={"form-group"} className="form-group">
                     <label htmlFor="country">Country</label>
                     <input type="text" id="country" placeholder="Spain" required={true} />
                 </div>
 
-                <h6 className='h55'>Payment Details</h6>
-                <div className="form-group">
-                    <label htmlFor="country">Payment Method</label>
-                   <span className='eMon' onClick={()=>{
+                <h6 id={'h55'} className='h55'>Payment Details</h6>
+                <label htmlFor="country">Payment Method</label>
+                <div id={"form-groups"}  className="form-groups">
+                   <span id={'emon'} className='eMon' onClick={()=>{
                        setorcir(true)
                            setorcir2(false)
                            setorcir3(false)
                    }}>
                        <span className='ycir'><span className={orcir ? 'ycirs' : 'None'}></span></span>
                        <span>Credit Card/ Debit <span>
-                           <img src='../public/assets/MYSVGS/img.png'/>
+                           <img className={'ikk'} src='/assets/MYSVGS/img.png'/>
                        </span></span>
                    </span>
 
-                    <span className='eMon' onClick={()=>{
+                    <span id={'emon'} className='eMon' onClick={()=>{
                         setorcir2(true)
                             setorcir3(false)
                             setorcir(false)
 
                     }} >
-                        <span className='ycir'><span className={orcir2 ? 'ycirs' : 'None'}></span></span>
+                        <span  className='ycir'><span className={orcir2 ? 'ycirs' : 'None'}></span></span>
                        <span>Cash on Delivery</span>
                    </span>
-
-
-                    <span className='eMon' onClick={()=>{
-
-                        setorcir3(true)
-                            setorcir2(false)
-                            setorcir(false)
-                    }}>
-                       <span className='ycir'><span className={orcir3 ? 'ycirs' : 'None'}></span></span>
-                       <span>Bizum <span><img src='../public/assets/MYSVGS/bizum.svg'/></span></span>
-                   </span>
                 </div>
+                <span id={'emon'} className='eMon' onClick={()=>{
+
+                    setorcir3(true)
+                    setorcir2(false)
+                    setorcir(false)
+                }}>
+                       <span className='ycir'><span className={orcir3 ? 'ycirs' : 'None'}></span></span>
+                       <span>Bizum <span><img className={'ikk'} src='/assets/MYSVGS/bizum.svg'/></span></span>
+                   </span>
                 <Summary></Summary>
             </form>
         </div>
@@ -138,10 +146,10 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
     return(
 
         <div className={ tku ? 'tkuPage': 'None'}>
-            <div className='ycirs'><img src='../public/assets/MYSVGS/ticked.svg'/></div>
+            <div className='ycirs'><img src='/assets/MYSVGS/ticked.svg'/></div>
             <div><div className='tol'>THANK YOU <br/>FOR YOUR ORDER</div>
             <div className={'tols'}>You will receive an email confirmation shortly.</div></div>
-            <div className={'inn'}>
+            <div id={'inn'} className={'inn'}>
                 <ImgInCart  class={lst1[0] === 'a'  ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
                 <ImgInCart  class={lst1[0] === 'b'? 'cr2' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='assets/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
                 <ImgInCart  class={lst1[0] === 'c' ? 'cr2' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='assets/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>

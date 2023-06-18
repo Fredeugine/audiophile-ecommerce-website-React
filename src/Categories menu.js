@@ -300,7 +300,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
     return(
 
-        <div className={prop4}>
+        <div id={prop4} className={prop4}>
 
             <button  className='hdBack' onClick={()=>{
                 if ( prop5 ==='$2,999' || prop5 === '$ 1,750' || prop5 === '$ 899'){
@@ -342,7 +342,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                 }
             }}>Go Back</button>
 
-            <div id={"xx992Inner2P"} className="xx992Inner2P">
+            <div id={"xx992Inner2P"} style={{marginTop: window.innerWidth < 432  ? '100px' : null}} className="xx992Inner2P">
                     <img id={"xx992"} className="xx992" src={window.matchMedia('(min-width: 432px)').matches ? '/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg' : prop1 } />
                 <div id={"xx992Inner2P2"} className="xx992Inner2P2">
                     <span  className="np">New Product</span>
