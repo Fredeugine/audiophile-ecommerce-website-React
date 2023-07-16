@@ -79,6 +79,7 @@
     display: flex;
     gap: 32px;
     margin-right: 170px;
+    cursor: pointer;
 }
 .xx99Div{
     display: flex;
@@ -287,6 +288,7 @@
     color: black;
     z-index: 4;
     justify-content: center;
+    margin-top: -120px;
 }
 
 
@@ -1913,6 +1915,56 @@ a{
     justify-content: space-between;
     margin-bottom: 32px;
 }
+@media screen and (min-width: 432px) {
+    #tkuPage{
+        max-width: 540px;
+        max-height: 581px;
+    }
+    #inn{
+        display: flex;
+        flex-direction: row;
+        max-width: 444px;
+        width: 100%;
+        height: 140px;
+    }
+    #inn1{
+        width: 100%;
+        max-width: 246px;
+        max-height: 140px;
+        padding: 24px;
+    }
+    #inns{
+        width: 100%;
+        max-width: 198px;
+        max-height: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    #inns > span, #inns > div{
+        margin: 0;
+    }
+    #hr1{
+        margin-top: -20px;
+    }
+    #tkuPage > button{
+        max-width: 444px;
+        margin-right: 90px;
+    }
+    #tol{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+    }
+    #tols{
+        margin-top: 20px;
+    }
+
+
+}
 .tkuPage{
     position: fixed;
     top: 50%;
@@ -1923,8 +1975,10 @@ a{
     gap: 24px;
     color: black;
     background-color: white;
+    width: 100%;
     max-width: 327px;
-    height: 600px;
+    height: 100%;
+    max-height: 600px;
     font-style: normal;
     padding: 32px;
     border-radius: 8px;
@@ -1948,32 +2002,35 @@ a{
     line-height: 25px;
     opacity: 0.5;
 }
-
+.
 .inn{
+    display: flex;
+    flex-direction: column;
     width: 238px;
     height: auto;
     border-radius: 8px;
     background-color: #F1F1F1;
-    padding-top: 24px;
-    padding-right: 24px;
 }
 .hr1{
     height: 1px;
     width: 215px;
     background-color: black;
     opacity: 0.08;
+
 }
 .inn > p{
     text-align: center;
 }
 .inns{
-    width: 262px;
-    height: 70px;
+    max-width: 262px;
+    width: 100%;
+    max-height: 70px;
     border-radius: 0 0 8px 8px;
     background-color: black;
     color: #FFFFFF;
     font-style: normal;
     padding-top: 16px;
+    height: 100%;
 }
 .inns > div{
     font-weight: 500;
@@ -1995,7 +2052,8 @@ a{
     position: static;
     align-self: center;
     margin-right: 23px;
-    width: 263px;
+    max-width: 263px;
+    width: 100%;
     border-radius: 0;
 
 }

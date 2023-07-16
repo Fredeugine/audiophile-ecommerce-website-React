@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 export function CartBtn({setcartnum,setCheckout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt,setCartIncx1,cartIncx1,addC,setCartInc,cartInc,setCartInc59,cartIn59}){
 
@@ -134,7 +135,7 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
           <img id={'blue'} className='blue' alt='Logo"' src="/assets/shared/desktop/logo.svg"/>
         </span>
                         <span id={'tpNavBtns'} className='tpnavBtns'>
-                            <span>Home</span>
+                           <span>Home</span>
                             <span>Headphones</span>
                             <span>Speakers</span>
                             <span>Earphones</span>

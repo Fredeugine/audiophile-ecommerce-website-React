@@ -7,6 +7,7 @@ import {CartBtn} from "./Cart";
 import {useState} from "react";
 import {DetailForm, TkuPage} from "./DetailForm";
 import {NavStay} from "./Cart";
+import {BrowserRouter} from "react-router-dom";
 
 export function App() {
     const [isVisible, setIsVisible] = useState(false);
