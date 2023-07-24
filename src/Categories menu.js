@@ -83,7 +83,11 @@ export function CategoriesMenu(props) {
 export function DeviceSection(props){
     return(
         <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
-             <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? 'hdBack' : 'None'} onClick={()=>{
+             <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
+             props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' ||
+             props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+                 ?
+                 'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
                  props.setIsVisible2(false)
                  props.earCatt(false)
@@ -343,7 +347,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
             }}>Go Back</button>
 
             <div id={"xx992Inner2P"} style={{marginTop: window.innerWidth < 432  ? '100px' : null}} className="xx992Inner2P">
-                    <img id={"xx992"} className="xx992" src={window.matchMedia('(min-width: 432px)').matches ? '/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg' : prop1 } />
+                    <img id={"xx992"} className="xx992" src={prop1} />
                 <div id={"xx992Inner2P2"} className="xx992Inner2P2">
                     <span  className="np">New Product</span>
                     <span id={'xx99Name'} className="xx99Name">{prop2}</span>
