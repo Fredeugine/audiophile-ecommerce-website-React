@@ -11,7 +11,7 @@ export function CategoriesMenu(props) {
             <div  className="soundDevices">
                 <div className="headphonesDiv">
             <span>
-              <img className="hdMenu" src="/assets/MYSVGS/headphones.svg" />
+              <img className="hdMenu" src="/images/MYSVGS/headphones.svg" />
             </span>
                     <span className="proT">Headphones</span>
                     <span className="shop" onClick={() =>{
@@ -28,12 +28,12 @@ export function CategoriesMenu(props) {
 
                     }}>
               <span className="shopFnt">Shop</span>{" "}
-                        <img src="/assets/MYSVGS/rightarr.svg" />
+                        <img src="/images/MYSVGS/rightarr.svg" />
             </span>
                 </div>
                 <div className="speakersDiv">
             <span>
-              <img className="spkMenu" src="/assets/MYSVGS/Mspeaker.svg" />
+              <img className="spkMenu" src="/images/MYSVGS/Mspeaker.svg" />
             </span>
                     <span className="proT">Speakers</span>
                     <span className="shop" onClick={() =>{
@@ -49,12 +49,12 @@ export function CategoriesMenu(props) {
                         props.setearP(false)
                     }}>
               <span className="shopFnt" >Shop</span>{" "}
-                        <img src="/assets/MYSVGS/rightarr.svg" />
+                        <img src="/images/MYSVGS/rightarr.svg" />
                     </span>
                 </div>
                 <div id={'earphonesDiv'} className="earphonesDiv">
             <span>
-              <img className="earMenu" src="/assets/MYSVGS/Mearphones.svg" />
+              <img className="earMenu" src="/images/MYSVGS/Mearphones.svg" />
             </span>
                     <span className="proT">Earphones</span>
                     <span className="shop" onClick={()=>{
@@ -70,7 +70,7 @@ export function CategoriesMenu(props) {
                         props.setearP(false)
                     }}>
              <span className="shopFnt">Shop</span>{" "}
-                        <img src="/assets/MYSVGS/rightarr.svg" />
+                        <img src="/images/MYSVGS/rightarr.svg" />
                     </span>
                 </div>
                 <div className='bodyDiv'></div>
@@ -82,10 +82,10 @@ export function CategoriesMenu(props) {
 
 export function DeviceSection(props){
     return(
-        <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
-             <button  className={props.prop1 === '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
-             props.prop1 === '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg' ||
-             props.prop1 === '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+        <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === '/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/images/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='/images/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='/images/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === '/images/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
+             <button  className={props.prop1 === '/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
+             props.prop1 === '/images/product-yx1-earphones/mobile/image-category-page-preview.jpg' ||
+             props.prop1 === '/images/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                  ?
                  'hdBack' : 'None'} onClick={()=>{
                  props.spkTP(false)
@@ -112,17 +112,17 @@ export function DeviceSection(props){
                         if (props.prop2 === 'XX99 Mark I Headphones') {
                             props.setM11(true)
                         }
-                        if (props.prop1 ==='/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+                        if (props.prop1 ==='/images/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                         ){
                             props.set599(true)
                         }
-                        if (props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'){
+                        if (props.prop1 ==='/images/product-zx9-speaker/mobile/image-category-page-preview.jpg'){
                             props.setzx9(true)
                         }
-                        if (props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'){
+                        if (props.prop1 ==='/images/product-zx7-speaker/mobile/image-category-page-preview.jpg'){
                             props.setzx7(true)
                         }
-                        if (props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'){
+                        if (props.prop1 ==='/images/product-yx1-earphones/mobile/image-category-page-preview.jpg'){
                             props.setearP(true)
                         }
 
@@ -142,17 +142,17 @@ export function DeviceSection(props){
                     if (props.prop2 === 'XX99 Mark I Headphones') {
                         props.setM11(true)
                     }
-                    if (props.prop1 ==='/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+                    if (props.prop1 ==='/images/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                     ){
                         props.set599(true)
                     }
-                    if (props.prop1 ==='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'){
+                    if (props.prop1 ==='/images/product-zx9-speaker/mobile/image-category-page-preview.jpg'){
                         props.setzx9(true)
                     }
-                    if (props.prop1 ==='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'){
+                    if (props.prop1 ==='/images/product-zx7-speaker/mobile/image-category-page-preview.jpg'){
                         props.setzx7(true)
                     }
-                    if (props.prop1 ==='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'){
+                    if (props.prop1 ==='/images/product-yx1-earphones/mobile/image-category-page-preview.jpg'){
                         props.setearP(true)
                     }
                     window.scrollTo({
@@ -165,7 +165,7 @@ export function DeviceSection(props){
     )
 }
 DeviceSection.defaultProps = {
-    prop1: '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
+    prop1: '/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
     prop2: 'XX99 Mark II Headphones',
     prop3: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.'
 };
@@ -450,7 +450,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
     )
 }
 ProductsSection.defaultProps = {
-    prop1: '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
+    prop1: '/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
     prop2: 'XX99 Mark II Headphones',
     prop3: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
     prop5:'$2,999',
@@ -467,14 +467,14 @@ ProductsSection.defaultProps = {
     prop14:'',
     prop15:'',
     prop16:'',
-    prop17:'/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg',
-    prop18:'/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg',
-    prop19:'/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg',
-    prop20:'/assets/MYSVGS/headphones.svg',
+    prop17:'/images/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg',
+    prop18:'/images/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg',
+    prop19:'/images/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg',
+    prop20:'/images/MYSVGS/headphones.svg',
     prop21:'XX99 MARK I',
-    prop22:'/assets/MYSVGS/xx59.svg',
+    prop22:'/images/MYSVGS/xx59.svg',
     prop23:'XX59',
-    prop24:'/assets/MYSVGS/Mspeaker.svg',
+    prop24:'/images/MYSVGS/Mspeaker.svg',
     prop25:'ZX9 SPEAKER'
 };
 export function ScrollUp(){

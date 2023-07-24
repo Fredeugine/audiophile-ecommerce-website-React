@@ -107,7 +107,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                    }}>
                        <span className='ycir'><span className={orcir ? 'ycirs' : 'None'}></span></span>
                        <span>Credit Card/ Debit <span>
-                           <img className={'ikk'} src='/assets/MYSVGS/img.png'/>
+                           <img className={'ikk'} src='/images/MYSVGS/img.png'/>
                        </span></span>
                    </span>
 
@@ -128,7 +128,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     setorcir(false)
                 }}>
                        <span className='ycir'><span className={orcir3 ? 'ycirs' : 'None'}></span></span>
-                       <span>Bizum <span><img className={'ikk'} src='/assets/MYSVGS/bizum.svg'/></span></span>
+                       <span>Bizum <span><img className={'ikk'} src='/images/MYSVGS/bizum.svg'/></span></span>
                    </span>
                 <Summary></Summary>
             </form>
@@ -146,7 +146,7 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
     return(
 
         <div id={tku ? 'tkuPage': 'None'} className={tku ? 'tkuPage': 'None'}>
-            <div className='ycirs'><img src='/assets/MYSVGS/ticked.svg'/></div>
+            <div className='ycirs'><img src='/images/MYSVGS/ticked.svg'/></div>
             <div><div id={'tol'} className='tol'>THANK YOU <br/>FOR YOUR ORDER</div>
             <div id={'tols'} className={'tols'}>You will receive an email confirmation shortly.</div></div>
             <div id={'inn'} className={'inn'}>

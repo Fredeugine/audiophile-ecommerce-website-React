@@ -215,15 +215,15 @@ export function App() {
                 set599={set59}
                 setzx9={setZx9}
                 setzx7 ={setZx7}
-                prop1='/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
+                prop1='/images/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
                 prop2='XX99 Mark I Headphones'
                 prop4={!m1 ? 'None' : 'xx99Div2P'}
                 prop5='$ 1,750'
                 prop6='As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz. From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.'
-                prop17='/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg'
-                prop18='/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg'
-                prop19='/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg'
-                prop20='/assets/MYSVGS/m2.svg'
+                prop17='/images/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg'
+                prop18='/images/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg'
+                prop19='/images/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg'
+                prop20='/images/MYSVGS/m2.svg'
                 prop21='XX99 MARK II'
             />
 
@@ -251,7 +251,7 @@ export function App() {
                 set599={set59}
                 setzx9={setZx9}
                 setzx7 ={setZx7}
-                prop1='/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+                prop1='/images/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                 prop2={(
                 <React.Fragment>
                     XX59<br/>Headphones
@@ -260,11 +260,11 @@ export function App() {
                 prop4={!x59 ? 'None' : 'xx99Div2P'}
                 prop5='$ 899'
                 prop6='These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos. More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the  XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.'
-                prop17='/assets/product-xx59-headphones/mobile/image-gallery-1.jpg'
-                prop18='/assets/product-xx59-headphones/mobile/image-gallery-2.jpg'
-                prop19='/assets/product-xx59-headphones/mobile/image-gallery-3.jpg'
-                prop20='/assets/MYSVGS/m2.svg'
-                prop22='/assets/MYSVGS/headphones.svg'
+                prop17='/images/product-xx59-headphones/mobile/image-gallery-1.jpg'
+                prop18='/images/product-xx59-headphones/mobile/image-gallery-2.jpg'
+                prop19='/images/product-xx59-headphones/mobile/image-gallery-3.jpg'
+                prop20='/images/MYSVGS/m2.svg'
+                prop22='/images/MYSVGS/headphones.svg'
                 prop21='XX99 MARK II'
                 prop23='XX99 MARK I'
 
@@ -292,7 +292,7 @@ export function App() {
                 set599={set59}
                 setzx9={setZx9}
                 setzx7 ={setZx7}
-                prop1='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+                prop1='/images/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
                         ZX9<br/>Headphones
@@ -303,14 +303,14 @@ export function App() {
                 prop6='Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m). Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.'
                 prop13='1x'
                 prop14='10m Optical Cable'
-                prop17='/assets/product-zx9-speaker/mobile/image-gallery-1.jpg'
-                prop18='/assets/product-zx9-speaker/mobile/image-gallery-2.jpg'
-                prop19='/assets/product-zx9-speaker/mobile/image-gallery-3.jpg'
-                prop20='/assets/MYSVGS/spk1.svg'
+                prop17='/images/product-zx9-speaker/mobile/image-gallery-1.jpg'
+                prop18='/images/product-zx9-speaker/mobile/image-gallery-2.jpg'
+                prop19='/images/product-zx9-speaker/mobile/image-gallery-3.jpg'
+                prop20='/images/MYSVGS/spk1.svg'
                 prop21='ZX7 Speaker'
-                prop22='/assets/MYSVGS/headphones.svg'
+                prop22='/images/MYSVGS/headphones.svg'
                 prop23='XX99 MARK I'
-                prop24='/assets/MYSVGS/xx59.svg'
+                prop24='/images/MYSVGS/xx59.svg'
                 prop25='XX59'
                 prop8='Speaker Unit'
                 prop12='3.5mm 10m Audio Cable'
@@ -339,7 +339,7 @@ export function App() {
                 set599={set59}
                 setzx9={setZx9}
                 setzx7 ={setZx7}
-                prop1='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
+                prop1='/images/product-zx7-speaker/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
                         ZX7<br/>Headphones
@@ -351,14 +351,14 @@ export function App() {
                 prop12='3.5mm 7.5m Audio Cable'
                 prop13='1x'
                 prop14='7.5m Optical Cable'
-                prop17='/assets/product-zx7-speaker/mobile/image-gallery-1.jpg'
-                prop18='/assets/product-zx7-speaker/mobile/image-gallery-2.jpg'
-                prop19='/assets/product-zx7-speaker/mobile/image-gallery-3.jpg'
-                prop20='/assets/MYSVGS/Mspeaker.svg'
+                prop17='/images/product-zx7-speaker/mobile/image-gallery-1.jpg'
+                prop18='/images/product-zx7-speaker/mobile/image-gallery-2.jpg'
+                prop19='/images/product-zx7-speaker/mobile/image-gallery-3.jpg'
+                prop20='/images/MYSVGS/Mspeaker.svg'
                 prop21='ZX9 Speaker'
-                prop22='/assets/MYSVGS/headphones.svg'
+                prop22='/images/MYSVGS/headphones.svg'
                 prop23='XX99 MARK I'
-                prop24='/assets/MYSVGS/xx59.svg'
+                prop24='/images/MYSVGS/xx59.svg'
                 prop25='XX59'
                 prop8='Speaker Unit'
                 prop7='2x'
@@ -386,7 +386,7 @@ export function App() {
                 set599={set59}
                 setzx9={setZx9}
                 setzx7 ={setZx7}
-                prop1='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
+                prop1='/images/product-yx1-earphones/mobile/image-category-page-preview.jpg'
                 prop2={(
                     <React.Fragment>
                         YX1 WIRELESS<br/>EARPHONES
@@ -398,9 +398,9 @@ export function App() {
                 prop12='USB-C Charging Cable'
                 prop13='1x'
                 prop14='Travel Pouch'
-                prop17='/assets/product-yx1-earphones/mobile/image-gallery-1.jpg'
-                prop18='/assets/product-yx1-earphones/mobile/image-gallery-2.jpg'
-                prop19='/assets/product-yx1-earphones/mobile/image-gallery-3.jpg'
+                prop17='/images/product-yx1-earphones/mobile/image-gallery-1.jpg'
+                prop18='/images/product-yx1-earphones/mobile/image-gallery-2.jpg'
+                prop19='/images/product-yx1-earphones/mobile/image-gallery-3.jpg'
                 prop8='Earphone Unit'
                 prop9='6x'
                 prop10='Multi-size Earplugs'
@@ -416,7 +416,7 @@ export function App() {
             <div id={'xx99Div'} className={hdTF || earCat || xzx9 || xzx7 || earP ? 'None' : 'xx99Div'} >
 
                 <div id={'xx99Divs'} className={spkCat || prD ? 'None' : 'xx99Divs'}>
-                    <img id={'xx99'} className="xx99" alt="" src={ "/assets/home/mobile/image-header.jpg"} />
+                    <img id={'xx99'} className="xx99" alt="" src={ "/images/home/mobile/image-header.jpg"} />
                     <div id={'xx99Inner'} className="xx99Inner">
                         <div id={'np'} className="np">
                             <p>NEW PRODUCT</p>
@@ -467,7 +467,7 @@ export function App() {
                     setzx9={setZx9}
                     setzx7 ={setZx7}
                     setM11={setM1}
-                    prop1='/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
+                    prop1='/images/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
                     prop2='XX99 Mark I Headphones'
                     prop3='As the gold standard for headphones,
                     the classic XX99 Mark I offers detailed and accurate audio
@@ -489,7 +489,7 @@ export function App() {
                     setzx9={setZx9}
                     setzx7 ={setZx7}
 
-                    prop1='/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+                    prop1='/images/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                     prop2={(
                         <React.Fragment>
                             XX59<br/>Headphones
@@ -517,7 +517,7 @@ export function App() {
                         setzx7 ={setZx7}
                         setSpk={setSpkCat}
 
-                        prop1='/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+                        prop1='/images/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                         prop2={(
                             <React.Fragment>
                                 zx9<br/>Speaker
@@ -543,7 +543,7 @@ export function App() {
                         setzx9={setZx9}
                         setzx7 ={setZx7}
 
-                        prop1='/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
+                        prop1='/images/product-zx7-speaker/mobile/image-category-page-preview.jpg'
                         prop2={(
                             <React.Fragment>
                                 zx7<br/>speaker
@@ -570,7 +570,7 @@ export function App() {
                         setzx9={setZx9}
                         setzx7 ={setZx7}
 
-                        prop1='/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
+                        prop1='/images/product-yx1-earphones/mobile/image-category-page-preview.jpg'
                         prop2='YX1 WIRELESS EARPHONES'
                         prop3='Tailor your listening experience with bespoke dynamic drivers from the
                          new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
@@ -583,7 +583,7 @@ export function App() {
                     <div className="soundDevices">
                         <div className="headphonesDiv">
             <span>
-              <img className="hd" src="/assets/MYSVGS/headphones.svg" />
+              <img className="hd" src="/images/MYSVGS/headphones.svg" />
             </span>
                             <span className="proT">Headphones</span>
                             <span className="shop">
@@ -603,12 +603,12 @@ export function App() {
                       behavior: 'auto' // Enables smooth scrolling animation
                   });
               }}>Shop</span>{" "}
-                                <img src="/assets/MYSVGS/rightarr.svg" />
+                                <img src="/images/MYSVGS/rightarr.svg" />
             </span>
                         </div>
                         <div className="speakersDiv">
             <span>
-              <img className="spk" src="/assets/MYSVGS/Mspeaker.svg" />
+              <img className="spk" src="/images/MYSVGS/Mspeaker.svg" />
             </span>
                             <span className="proT">Speakers</span>
                             <span className="shop">
@@ -628,12 +628,12 @@ export function App() {
                       behavior: 'auto' // Enables smooth scrolling animation
                   });
               }}>Shop</span>{" "}
-                                <img src="/assets/MYSVGS/rightarr.svg" />
+                                <img src="/images/MYSVGS/rightarr.svg" />
             </span>
                         </div>
                         <div id={'earphonesDiv'} className="earphonesDiv">
             <span>
-              <img className="ear" src="/assets/MYSVGS/Mearphones.svg" />
+              <img className="ear" src="/images/MYSVGS/Mearphones.svg" />
             </span>
                             <span className="proT">Earphones</span>
                             <span className="shop">
@@ -653,7 +653,7 @@ export function App() {
                       behavior: 'auto' // Enables smooth scrolling animation
                   });
               }}>Shop</span>{" "}
-                                <img src="/assets/MYSVGS/rightarr.svg" />
+                                <img src="/images/MYSVGS/rightarr.svg" />
             </span>
                         </div>
                     </div>
@@ -663,7 +663,7 @@ export function App() {
                             <div className="container">
                                 <div id={'outer-circle'} className="outer-circle" />
                                 <div id={'inner-circle'} className="inner-circle">
-                                    <img id={'spk2'} className="spk2" src="/assets/MYSVGS/Mspeaker.svg"/>
+                                    <img id={'spk2'} className="spk2" src="/images/MYSVGS/Mspeaker.svg"/>
                                 </div>
                             </div>
                             <div id={'zx9Inner'} className={'zx9Inner'}>
@@ -730,7 +730,7 @@ export function App() {
                                 <span id={'orDsh'} className={'orDsh'}></span>
                                 <div id={'in1'} className={'in1'}>
                                     <div id={'aud'} className="aud">
-                                        <img alt='Logo"' src="/assets/shared/desktop/logo.svg" />
+                                        <img alt='Logo"' src="/images/shared/desktop/logo.svg" />
                                     </div>
                                     <div id={'footerSec2Inner2'} className="footerSec2Inner2">
                                         <span>Home</span>
@@ -750,9 +750,9 @@ export function App() {
                                 <div id={'in3'} className={'in3'}>
                                     <p id={'footerSec2P2'} className="footerSec2P2">Copyright 2021. All Rights Reserved</p>
                                     <div id={"SocialMediaLinks"} className="SocialMediaLinks">
-                                        <img src="/assets/shared/desktop/icon-facebook.svg" />
-                                        <img src="/assets/shared/desktop/icon-twitter.svg" />
-                                        <img src="/assets/shared/desktop/icon-instagram.svg" />
+                                        <img src="/images/shared/desktop/icon-facebook.svg" />
+                                        <img src="/images/shared/desktop/icon-twitter.svg" />
+                                        <img src="/images/shared/desktop/icon-instagram.svg" />
                                     </div>
                                 </div>
                             </div>

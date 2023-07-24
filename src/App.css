@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Manrope';
-    src: url('../public/assets/Manrope-VariableFont_wght.woff2') format('woff2');
+    src: url('../public/images/Manrope-VariableFont_wght.woff2') format('woff2');
     /* Add additional font formats if necessary */
     font-weight: normal;
     font-style: normal;
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 .blue{
     position: absolute;
@@ -88,7 +88,7 @@
     background-color: #181818;
     height: 550px;
     width: 100%;
-   
+
 
 }
 .xx99Divs {
@@ -108,7 +108,7 @@
     width: 450px;
     height: 650px;
     margin-top: -200px;
-   
+
 }
 @media screen and (max-width: 850px) {
     .xx99Div{
@@ -531,7 +531,7 @@
 }
 @media screen and (min-width: 850px){
     .nn > .zx7Div {
-        background-image:  url('../public/assets/product-zx7-speaker/desktop/img.png');
+        background-image:  url('../public/images/product-zx7-speaker/desktop/img.png');
         max-width: 1110px;
     }
 }
@@ -541,7 +541,7 @@
     width: 100%;
     max-width: 689px;
     height: 320px;
-    background-image: url("../public/assets/product-zx7-speaker/mobile/img.png");
+    background-image: url("../public/images/product-zx7-speaker/mobile/img.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -616,7 +616,7 @@
 }
 
 .yx1DivInner1{
-    background-image: url("../public/assets/home/mobile/image-earphones-yx1.jpg");
+    background-image: url("../public/images/home/mobile/image-earphones-yx1.jpg");
     background-size: cover;
     border-radius: 8px;
     width: 327px;
@@ -667,7 +667,7 @@
         max-width: 540px;
         width: 100%;
         height: 588px;
-        background-image: url("../public/assets/shared/desktop/image-best-gear.jpg");
+        background-image: url("../public/images/shared/desktop/image-best-gear.jpg");
     }
     .footerSec1 >.footerSec1Inner2{
         left: 0;
@@ -700,7 +700,7 @@
         max-width: 689px;
         width: 100%;
         height: 300px;
-        background-image: url("../public/assets/shared/tablet/image-best-gear.jpg");
+        background-image: url("../public/images/shared/tablet/image-best-gear.jpg");
     }
     .footerSec1 >.footerSec1Inner2{
         left: 50px;
@@ -753,7 +753,7 @@
     width: 100%;
     max-width: 327px;
     height: 300px;
-    background-image: url("../public/assets/shared/mobile/image-best-gear.jpg");
+    background-image: url("../public/images/shared/mobile/image-best-gear.jpg");
     background-size: cover;
     border-radius: 8px;
     margin-bottom: 40px;
@@ -2523,7 +2523,7 @@ a{
         position: relative;
         width: 327px;
         height: 320px;
-        background-image: url("../public/assets/home/mobile/image-speaker-zx7.jpg");
+        background-image: url("../public/images/home/mobile/image-speaker-zx7.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2568,7 +2568,7 @@ a{
     }
 
     #yx1DivInner1 {
-        background-image: url("../public/assets/home/mobile/image-earphones-yx1.jpg");
+        background-image: url("../public/images/home/mobile/image-earphones-yx1.jpg");
         background-size: cover;
         border-radius: 8px;
         width: 327px;
@@ -2617,7 +2617,7 @@ a{
     #manImage {
         width: 327px;
         height: 300px;
-        background-image: url("../public/assets/shared/mobile/image-best-gear.jpg");
+        background-image: url("../public/images/shared/mobile/image-best-gear.jpg");
         background-size: cover;
         border-radius: 8px;
         margin-bottom: 40px;
