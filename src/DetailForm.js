@@ -1,4 +1,4 @@
-import { useState} from "react";
+import {useEffect, useState} from "react";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 export function ImgInCart(props){
 
@@ -16,25 +16,24 @@ export function ImgInCart(props){
         </div>
     )
 }
+
 export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,total,carti,setcarti,mk2Crt,czx9Crt,setczx7Crt,setmk2Crt,setczx9Crt,czx7Crt,cartIncx1Crt,setCartIncx1Crt,setCartIncCrt,cartIncCrt,cartIn59Crt,setCartInc59Crt}){
     const [orcir,setorcir]=useState(false)
     const [orcir2,setorcir2]=useState(false)
     const [orcir3,setorcir3]=useState(false)
     const [formValid,setformValid]= useState(false)
     function Summary(){
-        if (checkout){
-            document.querySelector('.hh').style.display = 'none'
-        }
+
         return(
 
             <div className='cartFl'>
                 <span className='cr'>SUMMARY</span>
-                <ImgInCart  class={cartIncCrt > 0 ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={cartIn59Crt > 0 ? 'cr2' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='assets/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={cartIncx1Crt > 0 ? 'cr2' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='assets/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart  class={czx7Crt > 0 ? 'cr2' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='assets/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart class={czx9Crt > 0 ? 'cr2' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='assets/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
-                <ImgInCart class={mk2Crt > 0 ? 'cr2' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='assets/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={cartIncCrt > 0 ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='images/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={cartIn59Crt > 0 ? 'cr2' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='images/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={cartIncx1Crt > 0 ? 'cr2' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='images/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart  class={czx7Crt > 0 ? 'cr2' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='images/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart class={czx9Crt > 0 ? 'cr2' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='images/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
+                <ImgInCart class={mk2Crt > 0 ? 'cr2' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='images/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
                 <div className='cartFl'>
                     <div className='cr3'><span className='ttl'>TOTAL</span><span>$ {total}</span></div>
                     <div className='cr3'><span className='ttl'>SHIPPING</span><span>$ 50</span></div>
@@ -53,7 +52,6 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
 
         )
     }
-
     return(
 
         <div id={checkout ? 'll' : 'None'} className={checkout ? 'll' : 'None'}>
@@ -107,7 +105,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                    }}>
                        <span className='ycir'><span className={orcir ? 'ycirs' : 'None'}></span></span>
                        <span>Credit Card/ Debit <span>
-                           <img className={'ikk'} src='/images/MYSVGS/img.png'/>
+                           <img className={'ikk'} src='images/MYSVGS/img.png'/>
                        </span></span>
                    </span>
 
@@ -128,7 +126,7 @@ export function DetailForm({settku,tku,gtotal,setCheckout,checkout,setTotal,tota
                     setorcir(false)
                 }}>
                        <span className='ycir'><span className={orcir3 ? 'ycirs' : 'None'}></span></span>
-                       <span>Bizum <span><img className={'ikk'} src='/images/MYSVGS/bizum.svg'/></span></span>
+                       <span>Bizum <span><img className={'ikk'} src='images/MYSVGS/bizum.svg'/></span></span>
                    </span>
                 <Summary></Summary>
             </form>
@@ -146,17 +144,17 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
     return(
 
         <div id={tku ? 'tkuPage': 'None'} className={tku ? 'tkuPage': 'None'}>
-            <div className='ycirs'><img src='/images/MYSVGS/ticked.svg'/></div>
+            <div className='ycirs'><img src='images/MYSVGS/ticked.svg'/></div>
             <div><div id={'tol'} className='tol'>THANK YOU <br/>FOR YOUR ORDER</div>
             <div id={'tols'} className={'tols'}>You will receive an email confirmation shortly.</div></div>
             <div id={'inn'} className={'inn'}>
                     <div id={'inn1'} className={'inn1'}>
-                        <ImgInCart  class={lst1[0] === 'a'  ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
-                        <ImgInCart  class={lst1[0] === 'b'? 'cr2' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='assets/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
-                        <ImgInCart  class={lst1[0] === 'c' ? 'cr2' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='assets/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
-                        <ImgInCart  class={lst1[0] === 'd' ? 'cr2' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='assets/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
-                        <ImgInCart class={lst1[0] === 'e' ? 'cr2' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='assets/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
-                        <ImgInCart class={lst1[0] === 'f' ? 'cr2' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='assets/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
+                        <ImgInCart  class={lst1[0] === 'a'  ? 'cr2' : 'None'  }  setCartInc={setCartIncCrt} cartInc={cartIncCrt} price='$ 2,999'  pName='XX99 MK II' src='images/product-xx99-mark-two-headphones/mobile/image-product.jpg'></ImgInCart>
+                        <ImgInCart  class={lst1[0] === 'b'? 'cr2' : 'None'  } setCartInc={setCartInc59Crt} cartInc={cartIn59Crt} pName='XX59' price='$899' src='images/product-xx59-headphones/mobile/image-product.jpg'></ImgInCart>
+                        <ImgInCart  class={lst1[0] === 'c' ? 'cr2' : 'None'  } setCartInc={setCartIncx1Crt} cartInc={cartIncx1Crt} pName='YX1' price='$ 599' src='images/product-yx1-earphones/mobile/image-product.jpg'></ImgInCart>
+                        <ImgInCart  class={lst1[0] === 'd' ? 'cr2' : 'None'  } setCartInc={setczx7Crt} cartInc={czx7Crt} pName='ZX7' price='$ 3,500' src='images/product-zx7-speaker/mobile/image-product.jpg'></ImgInCart>
+                        <ImgInCart class={lst1[0] === 'e' ? 'cr2' : 'None'  }  setCartInc={setczx9Crt} cartInc={czx9Crt} pName='ZX9' price='$ 4,500' src='images/product-zx9-speaker/mobile/image-product.jpg'></ImgInCart>
+                        <ImgInCart class={lst1[0] === 'f' ? 'cr2' : 'None'  } setCartInc={setmk2Crt} cartInc={mk2Crt} pName='XX99 MARK I' price='$ 1,750' src='images/product-xx99-mark-one-headphones/tablet/image-product.jpg'></ImgInCart>
                         <hr id={'hr1'} className='hr1'/>
                         <p className='rm'>and {carti-1} other item(s)</p>
                     </div>
