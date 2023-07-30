@@ -3,6 +3,7 @@ import {ProductInCart} from "./Cart";
 import {useEffect} from "react";
 import {CSSTransition} from "react-transition-group";
 import 'animate.css';
+import {Link} from "react-router-dom";
 
 export function CategoriesMenu(props) {
 
@@ -82,23 +83,23 @@ export function CategoriesMenu(props) {
 
 export function DeviceSection(props){
     return(
-        <div  style={{marginTop: window.innerWidth < 432  ? '150px' :  props.prop1 === 'images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='images/product-yx1-earphones/mobile/image-category-page-preview.jpg' || props.prop1 ==='images/product-zx9-speaker/mobile/image-category-page-preview.jpg' ? '230px' : null, flexDirection: (props.prop2 === 'XX99 Mark I Headphones' || props.prop1 ==='images/product-zx7-speaker/mobile/image-category-page-preview.jpg') && window.innerWidth > 850  ? 'row-reverse' : null, marginBottom: props.prop1 === 'images/product-xx59-headphones/mobile/image-category-page-preview.jpg' ? '120px' : null}} id={props.prop4} className={props.prop4}>
-             <button  className={props.prop1 === 'images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
+        <div  id={props.prop4} className={props.prop4}>
+           <button  className={props.prop1 === 'images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
              props.prop1 === 'images/product-yx1-earphones/mobile/image-category-page-preview.jpg' ||
              props.prop1 === 'images/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                  ?
                  'hdBack' : 'None'} onClick={()=>{
-                 props.spkTP(false)
-                 props.setIsVisible2(false)
-                 props.earCatt(false)
-                 props.setHDTF(false)
-                 props.setP(false)
-                 props.setM(false)
-                 props.set599(false)
-                 props.setzx9(false)
-                 props.setzx7(false)
-                 props.setearP(false)
-             }}>Home</button>
+               props.spkTP(false)
+               props.setIsVisible2(false)
+               props.earCatt(false)
+               props.setHDTF(false)
+               props.setP(false)
+               props.setM(false)
+               props.set599(false)
+               props.setzx9(false)
+               props.setzx7(false)
+               props.setearP(false)
+           }}> <Link to={'/'}>Home</Link></button>
             <div id={'xx92pointer'} className='xx92pointer'>
                 <img
                     src={props.prop1}
@@ -173,9 +174,6 @@ DeviceSection.defaultProps = {
 
 export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xzx9,xzx7,m1,setczx9Crt,setczx7Crt,setmk2Crt,setmk2,mk2,setczx9,czx9,setczx7,czx7,earP,setCartIncx1Crt,setCartInc59Crt,setCartIncCrt,x59,prd,HDTF,setCartIncx1,cartIncx1,cartIn59,setCartInc59,setcartNumm,prop1,prop2,prop3,prop4,prop5,prop6,prop7,prop8,prop9,cartInc,prop10,prop11,prop12,prop13,prop14,prop15,prop16,prop17,prop18,prop19,prop20,prop21,prop22,prop23,prop24,prop25,setCartInc,setIsVisible2,setHDTF,spkTP,earCatt,setP,setM,set599,setzx9,setzx7,setearP}){
 
-
-
-
     function addToCart() {
         var inputString = prop5;
         var numericString = '';
@@ -191,7 +189,6 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
 
         if (prd) {
-
             setcartNumm(function (prevState) {
                 return prevState + cartInc
             })
@@ -212,6 +209,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
         }
         if (x59) {
+
             setcartNumm(function (prevState) {
                 return prevState + cartIn59
             })
@@ -230,6 +228,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
         }
         if(earP){
+
             setcartNumm(function (prevState) {
                 return prevState + cartIncx1
             })
@@ -247,6 +246,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
             }
         }
         if(xzx7){
+
             setcartNumm(function (prevState) {
                 return prevState + czx7
             })
@@ -265,6 +265,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
 
         }
         if(xzx9){
+
             setcartNumm(function (prevState) {
                 return prevState + czx9
             })
