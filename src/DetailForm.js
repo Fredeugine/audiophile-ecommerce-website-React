@@ -190,7 +190,7 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
                 settotal(0)
                 window.scrollTo({
                     top: 0,
-                    behavior: 'auto' // Enables smooth scrolling animation
+                    behavior: 'smooth' // Enables smooth scrolling animation
                 });
             }}>BACK TO HOME</button>
             <div></div>

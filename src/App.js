@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import {CategoriesMenu} from "./Categories menu";
-import {Footer} from "./Components";
 import {useState} from "react";
 import {DetailForm, TkuPage} from "./DetailForm";
 import {NavStay} from "./Cart";
@@ -123,11 +122,22 @@ export function App() {
                 checkout={checkout}
                 setaddC={setaddC}
                 setIsVisible={setIsVisible}
-                isVisible={isVisible}
                 cartNum={cartNum}
                 hdTF={hdTF}
                 spkCat={spkCat}
                 earCat={earCat}
+                isVisible={isVisible}
+                setearP = {setEarP}
+                HDTF={hdTF}
+                setHDTF={sethdTF}
+                setIsVisible2={setIsVisible}
+                spkTP ={setSpkCat}
+                earCatt = {setEarCat}
+                setP={setPrD}
+                setM={setM1}
+                set599={set59}
+                setzx9={setZx9}
+                setzx7 ={setZx7}
             ></NavStay>
 
 
@@ -276,10 +286,14 @@ export function App() {
                                                 for the passionate music enthusiast.
                                             </p>
                                         </div>
-                                        <button className="seePr" onClick={()=>{
+                                        <Link to={'headphones'}><button className="seePr" onClick={()=>{
                                             setPrD(true)
                                             sethdTF(true)
-                                        }}>SEE PRODUCT</button>
+                                            window.scrollTo({
+                                                top: 0,
+                                                behavior: 'smooth' // Enables smooth scrolling animation
+                                            });
+                                        }}>SEE PRODUCT</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +318,7 @@ export function App() {
                          setEarP(false)
                          window.scrollTo({
                              top: 0,
-                             behavior: 'auto' // Enables smooth scrolling animation
+                             behavior: 'smooth' // Enables smooth scrolling animation
                          });
                      }}> <Link to={'headphones'}>Shop</Link></span>{" "}
                                         <img src="images/MYSVGS/rightarr.svg" />
@@ -329,7 +343,7 @@ export function App() {
                           setEarP(false)
                           window.scrollTo({
                               top: 0,
-                              behavior: 'auto' // Enables smooth scrolling animation
+                              behavior: 'smooth' // Enables smooth scrolling animation
                           });
                       }}><Link to={'speakers'}>Shop</Link></span>{" "}
                                             <img src="images/MYSVGS/rightarr.svg" />
@@ -354,7 +368,7 @@ export function App() {
                           setEarP(false)
                           window.scrollTo({
                               top: 0,
-                              behavior: 'auto' // Enables smooth scrolling animation
+                              behavior: 'smooth' // Enables smooth scrolling animation
                           });
                       }}><Link to={'earphones'}>Shop</Link></span>{" "}
                                             <img src="images/MYSVGS/rightarr.svg" />
@@ -384,7 +398,7 @@ export function App() {
                                                 setZx9(true)
                                                 window.scrollTo({
                                                     top: 0,
-                                                    behavior: 'auto' // Enables smooth scrolling animation
+                                                    behavior: 'smooth' // Enables smooth scrolling animation
                                                 });
                                             }}>SEE PRODUCT</button>
                                         </div>
@@ -396,7 +410,7 @@ export function App() {
                                                 setZx7(true)
                                                 window.scrollTo({
                                                     top: 0,
-                                                    behavior: 'auto' // Enables smooth scrolling animation
+                                                    behavior: 'smooth' // Enables smooth scrolling animation
                                                 });
                                             }}>SEE PRODUCT</button>
                                         </div>
@@ -410,7 +424,7 @@ export function App() {
                                                     setEarP(true)
                                                     window.scrollTo({
                                                         top: 0,
-                                                        behavior: 'auto' // Enables smooth scrolling animation
+                                                        behavior: 'smooth' // Enables smooth scrolling animation
                                                     });
                                                 }}>SEE PRODUCT</button>
                                             </div>

@@ -34,7 +34,16 @@
     width: 385px;
     height: 53px;
 }
+@media screen and (min-width: 430px){
+    #home{
+        margin-top: 0;
+    }
 
+}
+#tpNavBtns > a{
+    color: white;
+    text-decoration: none;
+}
 
 
 .topButtonsDiv1 {
@@ -1211,6 +1220,7 @@ a{
         justify-content: space-between;
         align-items: center;
         height: 560px;
+        margin-top: -100px;
     }
     .xx992Inner2P > .xx992{
         width: 100%;
@@ -1311,6 +1321,7 @@ a{
         justify-content: space-between;
         align-items: center;
         height: 480px;
+        margin-top: -100px;
     }
     .xx992Inner2P > .xx992{
         width: 100%;
@@ -1684,7 +1695,7 @@ a{
     left: -8px;
     cursor: pointer;
     transition: transform 100ms linear;
-    margin-top: 25px;
+    margin-top: -100px;
 }
 .hdBack:hover{
     transform: scale(105.4%);
@@ -2881,6 +2892,7 @@ a{
         margin-bottom: 3240px;
     }
     #xx992Inner2P{
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -3102,7 +3114,11 @@ a{
         left: -8px;
         cursor: pointer;
         transition: transform 100ms linear;
-        margin-top: 25px;
+        margin-top: 100px;
+    }
+    #home{
+        margin-top: 10px;
+        color: black !important;
     }
     .hdBack:hover{
         transform: scale(105.4%);

@@ -15,7 +15,7 @@ export function CategoriesMenu(props) {
               <img className="hdMenu" src="images/MYSVGS/headphones.svg" />
             </span>
                     <span className="proT">Headphones</span>
-                    <span className="shop" onClick={() =>{
+                    <Link to={'headphones'}><span className="shop" onClick={() =>{
                         props.setIsVisible2(false)
                         props.setHDTF(true)
                         props.spkTP(false)
@@ -26,18 +26,22 @@ export function CategoriesMenu(props) {
                         props.setzx9(false)
                         props.setzx7(false)
                         props.setearP(false)
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth' // Enables smooth scrolling animation
+                        });
 
                     }}>
               <span className="shopFnt">Shop</span>{" "}
                         <img src="images/MYSVGS/rightarr.svg" />
-            </span>
+            </span></Link>
                 </div>
                 <div className="speakersDiv">
             <span>
               <img className="spkMenu" src="images/MYSVGS/Mspeaker.svg" />
             </span>
                     <span className="proT">Speakers</span>
-                    <span className="shop" onClick={() =>{
+                    <Link to={'speakers'}><span className="shop" onClick={() =>{
                         props.spkTP(true)
                         props.setIsVisible2(false)
                         props.earCatt(false)
@@ -48,17 +52,21 @@ export function CategoriesMenu(props) {
                         props.setzx9(false)
                         props.setzx7(false)
                         props.setearP(false)
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth' // Enables smooth scrolling animation
+                        });
                     }}>
               <span className="shopFnt" >Shop</span>{" "}
                         <img src="images/MYSVGS/rightarr.svg" />
-                    </span>
+                    </span></Link>
                 </div>
                 <div id={'earphonesDiv'} className="earphonesDiv">
             <span>
               <img className="earMenu" src="images/MYSVGS/Mearphones.svg" />
             </span>
                     <span className="proT">Earphones</span>
-                    <span className="shop" onClick={()=>{
+                    <Link to={'earphones'}><span className="shop" onClick={()=>{
                         props.setHDTF(true)
                         props.earCatt(true)
                         props.spkTP(false)
@@ -69,10 +77,14 @@ export function CategoriesMenu(props) {
                         props.setzx9(false)
                         props.setzx7(false)
                         props.setearP(false)
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth' // Enables smooth scrolling animation
+                        });
                     }}>
              <span className="shopFnt">Shop</span>{" "}
                         <img src="images/MYSVGS/rightarr.svg" />
-                    </span>
+                    </span></Link>
                 </div>
                 <div className='bodyDiv'></div>
             </div>
@@ -84,7 +96,7 @@ export function CategoriesMenu(props) {
 export function DeviceSection(props){
     return(
         <div  id={props.prop4} className={props.prop4}>
-           <button  className={props.prop1 === 'images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
+           <button id={'home'}  className={props.prop1 === 'images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg' ||
              props.prop1 === 'images/product-yx1-earphones/mobile/image-category-page-preview.jpg' ||
              props.prop1 === 'images/product-zx9-speaker/mobile/image-category-page-preview.jpg'
                  ?
@@ -347,7 +359,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                 }
             }}>Go Back</button>
 
-            <div id={"xx992Inner2P"} style={{marginTop: window.innerWidth < 432  ? '100px' : null}} className="xx992Inner2P">
+            <div id={"xx992Inner2P"} className="xx992Inner2P">
                     <img id={"xx992"} className="xx992" src={prop1} />
                 <div id={"xx992Inner2P2"} className="xx992Inner2P2">
                     <span  className="np">New Product</span>
@@ -419,7 +431,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                                 <button id={'seePr'} className='seePr' onClick={()=>{
                                     window.scrollTo({
                                         top: 0,
-                                        behavior: 'auto' // Enables smooth scrolling animation
+                                        behavior: 'smooth' // Enables smooth scrolling animation
                                     });
                                 }}>SEE PRODUCT</button>
                             </span>
@@ -428,7 +440,12 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                             <span id={'btmPic3'} className='btmPic3'> <img src={prop22}/></span>
                             <span id={'btmInn'} className='btmInn'>
                                 <span id={'fea'} className='fea'>{prop23}</span>
-                                <button id={'seePr'} className='seePr'>SEE PRODUCT</button>
+                                <button id={'seePr'} className='seePr' onClick={()=>{
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth' // Enables smooth scrolling animation
+                                    });
+                                }}>SEE PRODUCT</button>
                             </span>
                         </div>
                         <div id={'btmDic'} className='btmDiv'>
@@ -438,7 +455,7 @@ export function ProductsSection({setaddC,setlst1,lst1,total,setTotal,setcarti,xz
                                 <button id={'seePr'} className='seePr' onClick={()=>{
                                     window.scrollTo({
                                         top: 0,
-                                        behavior: 'auto' // Enables smooth scrolling animation
+                                        behavior: 'smooth' // Enables smooth scrolling animation
                                     });
                                 }}>SEE PRODUCT</button>
                             </span>
@@ -455,7 +472,7 @@ ProductsSection.defaultProps = {
     prop2: 'XX99 Mark II Headphones',
     prop3: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
     prop5:'$2,999',
-    prop6:'Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.\n' +
+    prop6:'Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the smooth on/off and pause features ensure that you’ll never miss a beat.\n' +
         '\n' +
         'The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.',
     prop7:'1x',
@@ -481,7 +498,7 @@ ProductsSection.defaultProps = {
 export function ScrollUp(){
     return window.scrollTo({
         top: 0,
-        behavior: 'auto' // Enables smooth scrolling animation
+        behavior: 'smooth' // Enables smooth scrolling animation
     });
 }
 

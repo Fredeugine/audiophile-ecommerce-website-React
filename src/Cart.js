@@ -81,7 +81,7 @@ export function ProductInCart({cartInc,setCartInc}){
             </span>
     )
 }
-export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,hdTF,spkCat,}) {
+export function NavStay({setearP,setzx7,setzx9,set599,setM,setP,setHDTF,earCatt,setIsVisible2,spkTP,checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,hdTF,spkCat,}) {
 
     const [scrolLUp, setscrollUp] = useState(true)
     function handleClick() {
@@ -135,10 +135,66 @@ export function NavStay({checkout,setIsVisible,setaddC,isVisible,cartNum,earCat,
           <img id={'blue'} className='blue' alt='Logo"' src="images/shared/desktop/logo.svg"/>
         </span>
                         <span id={'tpNavBtns'} className='tpnavBtns'>
-                           <span>Home</span>
-                            <span>Headphones</span>
-                            <span>Speakers</span>
-                            <span>Earphones</span>
+                         <Link to={'/'}><span onClick={()=>{
+                              spkTP(false)
+                              setIsVisible2(false)
+                              earCatt(false)
+                              setHDTF(false)
+                              setP(false)
+                              setM(false)
+                              set599(false)
+                              setzx9(false)
+                              setzx7(false)
+                              setearP(false)
+                         }}>Home</span></Link>
+                             <Link to={'headphones'}><span onClick={()=>{
+                               setIsVisible2(false)
+                               setHDTF(true)
+                               spkTP(false)
+                               earCatt(false)
+                               setP(false)
+                               setM(false)
+                               set599(false)
+                               setzx9(false)
+                               setzx7(false)
+                               setearP(false)
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth' // Enables smooth scrolling animation
+                                });
+                             }}>Headphones</span></Link>
+                           <Link to={'speakers'}><span onClick={()=>{
+                               spkTP(true)
+                               setIsVisible2(false)
+                               earCatt(false)
+                               setHDTF(true)
+                               setP(false)
+                               setM(false)
+                               set599(false)
+                               setzx9(false)
+                               setzx7(false)
+                               setearP(false)
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth' // Enables smooth scrolling animation
+                                });
+                           }}>Speakers</span></Link>
+                            <Link to={'earphones'}><span onClick={()=>{
+                               setHDTF(true)
+                               earCatt(true)
+                               spkTP(false)
+                               setIsVisible2(false)
+                               setP(false)
+                               setM(false)
+                               set599(false)
+                               setzx9(false)
+                               setzx7(false)
+                               setearP(false)
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth' // Enables smooth scrolling animation
+                                });
+                            }}>Earphones</span></Link>
                         </span>
                         <span>
           <img onClick={handleCart} id={'cartBtn'} className='cartBtn' alt="Cart button" src="images/shared/desktop/icon-cart.svg"/>
