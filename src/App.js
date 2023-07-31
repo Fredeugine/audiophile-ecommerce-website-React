@@ -264,9 +264,10 @@ export function App() {
                 setzx7 ={setZx7}
                 tku={tku} settku={settku}
             ></TkuPage>
+            <body>
                     <div className={checkout ? 'None' : null}>
 
-                        <div className={isVisible ? 'xx99Opc' : null} onClick={(event)=>{
+                        <div className={isVisible ? 'xx99Opc' : null} onClick={()=>{
                             setIsVisible(false)
                             setaddC(false)
                         }}>
@@ -301,7 +302,7 @@ export function App() {
                                 <div className="soundDevices">
                                     <div className="headphonesDiv">
                     <span>
-                      <img className="hd" src="images/MYSVGS/headphones.svg" />
+                      <img alt={'headphones Button'} className="hd" src="images/MYSVGS/headphones.svg" />
                     </span>
                                         <span className="proT">Headphones</span>
                                         <span className="shop">
@@ -479,7 +480,7 @@ export function App() {
 
                         </div>
                     </div>
-
+            </body>
         </>
 
     );

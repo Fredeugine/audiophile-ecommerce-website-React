@@ -45,6 +45,18 @@
     text-decoration: none;
 }
 
+#xx99Inner > a{
+    position: relative;
+   left: -80px;
+}
+@media screen and (max-width: 430px) {
+    #xx99Inner > a{
+        top: -40px;
+    }
+}
+@media screen and (max-width: 430px)  {
+
+}
 
 .topButtonsDiv1 {
     background-color: black;
@@ -97,8 +109,6 @@
     background-color: #181818;
     height: 550px;
     width: 100%;
-
-
 }
 .xx99Divs {
     position: relative;
@@ -128,7 +138,7 @@
         height: 740px;
     }
     .xx99{
-        margin-top: 0px;
+        margin-top: 0;
         position: relative;
         left: -200px;
         width: 520px;
@@ -298,7 +308,7 @@
     color: black;
     z-index: 4;
     justify-content: center;
-    margin-top: -120px;
+    margin-top: -60px;
 }
 
 
@@ -1169,7 +1179,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    z-index: 5;
     background-color: white;
     width: 375px;
     height: 750px;
@@ -1515,6 +1524,10 @@ a{
 }
 .cartBtn{
     position: relative;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 .cartNum{
     position: absolute;
@@ -2011,7 +2024,6 @@ a{
     line-height: 25px;
     opacity: 0.5;
 }
-.
 .inn{
     display: flex;
     flex-direction: column;
@@ -2148,7 +2160,7 @@ a{
 
     #buttonsDiv{
         background-color: black;
-        width: 385px;
+        max-width: 390px;
         height: 53px;
     }
 
@@ -2172,6 +2184,7 @@ a{
         justify-content: center;
         width: 100%;
         z-index: 123123123;
+        max-width: 390px;
     }
     .topButtonsDiv2 {
         background-color: black;
@@ -2186,7 +2199,6 @@ a{
     #xx99Div{
         background-color: #181818;
         height: 532px;
-        width: 385px;
         margin-bottom: 0;
     }
     #xx99Divs {
@@ -2237,7 +2249,6 @@ a{
     }
 
     #mk2 {
-        margin-top: 4px;
         height: 80px;
         font-weight: 700;
         font-size: 36px;
@@ -2306,6 +2317,7 @@ a{
         padding: 24px;
         flex-direction: column;
         gap: 24px;
+        max-width: 320px;
     }
     .nn{
         margin-top: 0;
@@ -2540,12 +2552,14 @@ a{
     }
 
     .zx7DivInner {
-        width: 204px;
+        width: 100%;
+        max-width: 204px;
         position: absolute;
         display: flex;
         flex-direction: column;
         top: 22%;
         left: 9%;
+        min-height: 140px;
     }
 
     .zx7text, .yx1DivInner2Text {
@@ -2598,8 +2612,9 @@ a{
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 247px;
-        height: 118px;
+        width: 100%;
+        max-width: 247px;
+        min-height: 118px;
         left: 12.5%;
         top: 20%;
         justify-content: space-between;
@@ -2833,7 +2848,6 @@ a{
         align-items: center;
         justify-content: center;
         margin-top: 50px;
-        z-index: 5;
         background-color: white;
         width: 375px;
         height: 750px;
