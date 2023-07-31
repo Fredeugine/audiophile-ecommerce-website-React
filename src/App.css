@@ -109,6 +109,7 @@
     background-color: #181818;
     height: 550px;
     width: 100%;
+
 }
 .xx99Divs {
     position: relative;
@@ -120,6 +121,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    z-index: 5;
 }
 
 
@@ -1000,6 +1002,7 @@
     letter-spacing: 1.42857px;
     text-transform: uppercase;
     color: white !important;
+    z-index: 2;
 
 }
 @media screen and (min-width: 850px) {
@@ -2200,6 +2203,7 @@ a{
         background-color: #181818;
         height: 532px;
         margin-bottom: 0;
+        z-index: 5;
     }
     #xx99Divs {
         position: unset;
@@ -2210,6 +2214,7 @@ a{
         max-width: 400px;
         margin:0;
         height: 100%;
+        z-index: 5;
     }
 
 
@@ -2692,8 +2697,7 @@ a{
         background: #D87D4A;
         width: 101px;
         height: 4px;
-        margin-top: -18px;
-        margin-right: 20px;
+        margin-right: 0;
     }
     #in1{
         align-items: center;
