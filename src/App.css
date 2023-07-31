@@ -111,6 +111,7 @@
     width: 100%;
 
 }
+
 .xx99Divs {
     position: relative;
     display: flex;
@@ -1945,6 +1946,7 @@ a{
         max-width: 540px;
         max-height: 581px;
     }
+
     #inn{
         display: flex;
         flex-direction: row;
@@ -2072,7 +2074,7 @@ a{
     line-height: 25px;
     margin-left: 22px;
 }
-.tkuPage > button{
+.tkuPage > .seePr{
     position: static;
     align-self: center;
     margin-right: 23px;
@@ -3329,6 +3331,13 @@ a{
         justify-content: space-between;
         margin-bottom: 32px;
     }
+    #trr{
+        position: static;
+        align-self: center;
+        margin-right: 23px;
+        width: 263px;
+        border-radius: 0;
+    }
     .tkuPage{
         position: fixed;
         top: 50%;
@@ -3406,7 +3415,7 @@ a{
         line-height: 25px;
         margin-left: 22px;
     }
-    .tkuPage > button{
+    .tkuPage > .seePr{
         position: static;
         align-self: center;
         margin-right: 23px;

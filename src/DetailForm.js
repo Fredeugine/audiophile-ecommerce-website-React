@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import {Link} from "react-router-dom";
 export function ImgInCart(props){
 
     return(
@@ -164,7 +165,7 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
                     <span>${total}</span>
                 </div>
             </div>
-            <button className={'seePr'} onClick={()=>{
+            <Link to={'/'}><button id={'trr'} className={'seePr'} onClick={()=>{
                 setcartNum(0)
                 setaddC(false)
                 setcarti(false)
@@ -192,8 +193,7 @@ export function TkuPage({setcartNum,setaddC,settotal,setcarti,setCheckout,earCat
                     top: 0,
                     behavior: 'smooth' // Enables smooth scrolling animation
                 });
-            }}>BACK TO HOME</button>
-            <div></div>
+            }}>BACK TO HOME</button></Link>
         </div>
 
     )
