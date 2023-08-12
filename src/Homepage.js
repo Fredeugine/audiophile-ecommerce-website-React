@@ -147,25 +147,25 @@ export function Homepage({checkout, isVisible, setIsVisible
                                         Upgrade to premium speakers that are phenomenally built to deliver truly
                                         remarkable sound.
                                     </p>
-                                    <button id={'zx9Button'} className="seePr" onClick={()=>{
+                                    <Link to={'speakers'}><button id={'zx9Button'} className="seePr" onClick={()=>{
                                         setZx9(true)
                                         window.scrollTo({
                                             top: 0,
                                             behavior: 'smooth' // Enables smooth scrolling animation
                                         });
-                                    }}>SEE PRODUCT</button>
+                                    }}>SEE PRODUCT</button></Link>
                                 </div>
                             </div>
                             <div id={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "zx7Div"}>
                                 <div className="zx7DivInner">
                                     <p className="zx7text">ZX7 speaker</p>
-                                    <button className="seePr" onClick={()=>{
+                                    <Link className={'trs'} to={'speakers'}><button  id={'trs'} className="seePr" onClick={()=>{
                                         setZx7(true)
                                         window.scrollTo({
                                             top: 0,
                                             behavior: 'smooth' // Enables smooth scrolling animation
                                         });
-                                    }}>SEE PRODUCT</button>
+                                    }}>SEE PRODUCT</button></Link>
                                 </div>
                             </div>
                             <div id={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"} className={hdTF || xzx9 || xzx7 || earP  ? 'None' : "yx1Div"}>
@@ -173,13 +173,13 @@ export function Homepage({checkout, isVisible, setIsVisible
                                 <div id={'"yx1DivInner2"'} className="yx1DivInner2">
                                     <div id={"yx1DivInner2Inner"} className="yx1DivInner2Inner">
                                         <span id={"yx1DivInner2Text"} className="yx1DivInner2Text">YX1 earphones</span>
-                                        <button className="seePr" onClick={()=>{
+                                        <Link to={'earphones'}><button id={'trs'} className="seePr" onClick={()=>{
                                             setEarP(true)
                                             window.scrollTo({
                                                 top: 0,
                                                 behavior: 'smooth' // Enables smooth scrolling animation
                                             });
-                                        }}>SEE PRODUCT</button>
+                                        }}>SEE PRODUCT</button></Link>
                                     </div>
                                 </div>
                             </div>

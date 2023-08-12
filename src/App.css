@@ -594,7 +594,7 @@
     color: #000000;
 }
 
-.zx7DivInner > button, .yx1DivInner2Inner > button {
+.zx7DivInner > a > button, .yx1DivInner2Inner > a > button {
     position: static;
     background-color: transparent;
     color: black;
@@ -2582,7 +2582,7 @@ a{
         color: #000000;
     }
 
-    .zx7DivInner > button, .yx1DivInner2Inner > button {
+    .zx7DivInner > a > button, .yx1DivInner2Inner > a > button{
         position: static;
         background-color: transparent;
         color: black;
