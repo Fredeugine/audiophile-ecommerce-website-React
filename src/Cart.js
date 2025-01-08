@@ -52,7 +52,7 @@ export function CartBtn({setcartnum,setCheckout,setTotal,total,carti,setcarti,mk
                         })
                     }
                     else {
-                        alert('😧Cart is Empty')
+                        alert('😧Cart is Empty God')
                     }
 
 
